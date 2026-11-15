@@ -1,0 +1,26 @@
+/* Màu tranh minh hoạ – lấy từ biến --ttv-*; màu da, tóc, má là màu chức năng riêng của trang */
+.hinh { display: block; width: 100%; height: auto; }
+.hinh .f-muc { fill: var(--ttv-chu); }
+.hinh .f-son { fill: var(--ttv-chinh); }
+.hinh .f-sao { fill: var(--ttv-sao); }
+.hinh .f-goc { fill: var(--ttv-goc); }
+.hinh .f-goc-dam { fill: var(--ttv-goc-dam); }
+.hinh .f-goc-nhat { fill: var(--ttv-goc-nhat); }
+.hinh .f-nen { fill: var(--ttv-nen); }
+.hinh .f-trang { fill: #fff; }
+.hinh .f-troi { fill: var(--ttv-troi); }
+.hinh .f-lua { fill: var(--ttv-lua); }
+.hinh .f-xam { fill: var(--ttv-chu-phu); }
+.hinh .f-dung { fill: var(--ttv-dung); }
+.hinh .f-da { fill: #F7D3B5; }
+.hinh .f-toc { fill: #3B2F2A; }
+.hinh .f-ma { fill: #F4A9A0; }
+.hinh .f-nuoc-mat { fill: #4FA8DE; }
+.hinh .s-muc { stroke: var(--ttv-chu); fill: none; }
+.hinh .s-son { stroke: var(--ttv-chinh); fill: none; }
+.hinh .s-xam { stroke: var(--ttv-chu-phu); fill: none; }
+.hinh .s-sao { stroke: var(--ttv-sao); fill: none; }
+.hinh .s-dung { stroke: var(--ttv-dung); fill: none; }
+.hinh .s-trang { stroke: #fff; fill: none; }
+.hinh .s-vien { stroke: var(--ttv-goc); }
+.hinh .f-trang.s-vien, .hinh .f-trang.s-muc { fill: #fff; }

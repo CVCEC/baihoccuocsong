@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài học cuộc sống</title>
+<link rel="stylesheet" href="v1/cvcec-chung.css">
+<link rel="stylesheet" href="css/hinh.css">
+<link rel="stylesheet" href="css/bai.css">
+<script src="v1/cvcec-chung.js" defer></script>
+<script src="js/hinh.js"></script>
+</head>
+<body class="ttv-trang">
+
+<header class="ttv-canh bh-dau">
+  <div class="bh-dau-trong">
+    <img src="assets/trau-wave.png" alt="Trâu Con vẫy tay chào">
+    <div class="bh-dau-chu">
+      <span class="bh-nhan">Lời thơ xưa – bài học nay</span>
+      <h1 class="ttv-tieu-de">Bài học cuộc sống</h1>
+      <p class="bh-phu" id="dau-phu"></p>
+    </div>
+  </div>
+</header>
+
+<main data-ttv-nen="don-gian">
+  <div class="bh-khung" id="khung">
+    <section class="ttv-the bh-kho" aria-labelledby="t-kho">
+      <a class="bh-ve" href="index.html">← Danh sách các khổ</a>
+      <h2 id="t-kho"></h2>
+      <ol id="ds-kho"></ol>
+    </section>
+  </div>
+</main>
+
+<footer data-ttv-chan></footer>
+
+<script>
+/* =====================================================================
+   Trang bài dùng chung cho mọi khổ. Dữ liệu từng khổ ở data/<bài>/khoNN.js
+   (mỗi tệp đặt window.BAI_HOC). Địa chỉ: kho.html#lensau-1 … #lensau-18
+   ===================================================================== */
+const DS_BAI = { lensau: { ten: "Lên Sáu", tong: 18 } };
+const m = (location.hash || "").match(/^#([a-z]+)-(\d+)$/);
+const BAI = m && DS_BAI[m[1]] ? m[1] : "lensau";
+const SO = m ? Math.min(Math.max(1, +m[2]), DS_BAI[BAI].tong) : 1;
+window.addEventListener("hashchange", function () { location.reload(); });
+
+function $(id) { return document.getElementById(id); }
+function tao(the, lop, chu) { const el = document.createElement(the); if (lop) el.className = lop; if (chu != null) el.textContent = chu; return el; }
+function nfc(s) { return (s || "").normalize("NFC"); }
+function so2(n) { return String(n).padStart(2, "0"); }
+function khoaKho(b, n) { return "cuocsong:" + b + ":kho" + n; }
+function docLuu(k) { try { const s = localStorage.getItem(k); return s ? JSON.parse(s) : null; } catch (e) { return null; } }
+
+(function () {
+  const sc = document.createElement("script");
+  sc.src = "data/" + BAI + "/kho" + so2(SO) + ".js";
+  sc.onload = function () { veTrang(window.BAI_HOC); };
+  sc.onerror = function () { $("khung").appendChild(tao("p", "ttv-the", "Chưa tải được khổ này. Các bạn thử lại sau nhé.")); };
+  document.head.appendChild(sc);
+})();
+
+function veTrang(B) {
+  document.title = "Bài học cuộc sống · " + DS_BAI[BAI].ten + " – Khổ " + B.kho;
+  const KHOA = khoaKho(BAI, B.kho);
+  let duLieu = Object.assign({ sao: {}, viet: {}, ngay: [] }, docLuu(KHOA) || {});
+  function luu() { try { localStorage.setItem(KHOA, JSON.stringify(duLieu)); } catch (e) {} }
+  const SAO = [];
+  function coSao(id, ten) { SAO.push({ id: id, ten: ten }); }
+  function datSao(id) { if (duLieu.sao[id]) return; duLieu.sao[id] = true; luu(); veSao(); }
+
+  $("dau-phu").textContent = "Bài thơ “" + DS_BAI[BAI].ten + "” của Tản Đà · Khổ " + B.kho + " · Chủ đề: " + B.chuDe;
+  $("t-kho").textContent = "Bài thơ " + DS_BAI[BAI].ten + " · " + DS_BAI[BAI].tong + " khổ";
+  (function () {
+    const ol = $("ds-kho");
+    for (let i = 1; i <= DS_BAI[BAI].tong; i++) {
+      const xong = (docLuu(khoaKho(BAI, i)) || {}).xong;
+      const li = tao("li", i === B.kho ? "dang" : (xong ? "xong" : ""));
+      const a = tao("a", "", String(i)); a.href = "kho.html#" + BAI + "-" + i;
+      a.setAttribute("aria-label", "Khổ " + i + (i === B.kho ? ", đang học" : ""));
+      if (i === B.kho) a.setAttribute("aria-current", "page");
+      li.appendChild(a); ol.appendChild(li);
+    }
+  })();
+
+  const khung = $("khung");
+  let soMuc = 0;
+  const thieu = [];
+  function theMoi(id, tieuDe, en) {
+    soMuc++;
+    const sec = tao("section", "ttv-the"); sec.id = id;
+    const dau = tao("div", "bh-the-dau");
+    const h2 = tao("h2"); h2.appendChild(tao("span", "bh-so", String(soMuc))); h2.appendChild(document.createTextNode(tieuDe));
+    dau.appendChild(h2);
+    sec.appendChild(dau);
+    if (en) {
+      const nut = tao("button", "bh-en", "EN"); nut.type = "button"; nut.lang = "en"; nut.setAttribute("aria-expanded", "false");
+      const p = tao("p", "bh-giai-en", en); p.lang = "en";
+      nut.addEventListener("click", function () { const mo = !p.classList.contains("mo"); p.classList.toggle("mo", mo); nut.setAttribute("aria-expanded", mo ? "true" : "false"); });
+      dau.appendChild(nut); sec.appendChild(p);
+    }
+    khung.appendChild(sec);
+    return sec;
+  }
+
+  /* ---------- 1. Khổ thơ + cô Hà đọc ---------- */
+  (function () {
+    const sec = theMoi("phan-tho", "Khổ " + B.kho + " · " + B.tieuDe,
+      (B.tieuDeEn ? B.tieuDeEn + " " : "") + "Tap the button to hear cô Hà read this verse, and read along. Each line has 3 words.");
+    const tho = tao("div", "bh-tho"); const cau = [];
+    B.tho.forEach(function (nhom) {
+      const div = tao("div", "nhom");
+      nhom.forEach(function (c) { const p = tao("p"); const sp = tao("span", "bh-nua", c[0]); cau.push({ el: sp, bd: c[1], kt: c[2] }); p.appendChild(sp); div.appendChild(p); });
+      tho.appendChild(div);
+    });
+    sec.appendChild(tho);
+    const hang = tao("div", "bh-nut-hang"); const nut = tao("button", "ttv-nut", "▶ Nghe cô Hà đọc thơ"); nut.type = "button";
+    hang.appendChild(nut); sec.appendChild(hang);
+    sec.appendChild(tao("p", "bh-ghi", "Mỗi câu thơ có 3 chữ. Chữ sáng lên theo giọng cô, các bạn đọc theo nhé!"));
+    const am = new Audio(); am.preload = "none"; let dang = false;
+    function toSang() {
+      const t = am.currentTime;
+      cau.forEach(function (n) { n.el.classList.toggle("sang", dang && t >= n.bd - 0.05 && t <= n.kt + 0.1); });
+      if (dang) requestAnimationFrame(toSang);
+    }
+    nut.addEventListener("click", function () {
+      if (dang) { am.pause(); return; }
+      if (!am.src) am.src = B.amThanh.tho;
+      am.currentTime = 0; const p = am.play(); if (p && p.catch) p.catch(function () {});
+    });
+    am.addEventListener("play", function () { dang = true; nut.textContent = "⏸ Dừng"; requestAnimationFrame(toSang); });
+    am.addEventListener("pause", function () { dang = false; nut.textContent = "▶ Nghe cô Hà đọc thơ"; toSang(); });
+    am.addEventListener("ended", function () { datSao("tho"); });
+    coSao("tho", "Nghe cô Hà đọc thơ");
+  })();
+
+  /* ---------- 2. Video ---------- */
+  if (B.video) {
+    const sec = theMoi("phan-video", "Xem Trâu Con kể", "Watch Trâu Con explain this verse in simple words. Cô Hà reads the poem, then Trâu Con tells you what it means.");
+    const v = tao("video"); v.src = B.video.src; if (B.video.poster) v.poster = B.video.poster;
+    v.controls = true; v.preload = "none"; v.setAttribute("playsinline", ""); v.setAttribute("controlsList", "nodownload noplaybackrate"); v.disablePictureInPicture = true;
+    v.addEventListener("ended", function () { datSao("video"); });
+    sec.appendChild(v); coSao("video", "Xem video");
+  } else thieu.push("Video Trâu Con kể khổ thơ");
+
+  /* ---------- 3. Dịch xuôi ---------- */
+  if (B.dichXuoi) {
+    const sec = theMoi("phan-xuoi", "Hiểu khổ thơ bằng lời dễ hiểu", null);
+    const nut = tao("button", "bh-en", "EN"); nut.type = "button"; nut.lang = "en"; nut.setAttribute("aria-expanded", "false");
+    sec.querySelector(".bh-the-dau").appendChild(nut);
+    const box = tao("div");
+    B.dichXuoi.forEach(function (c) {
+      const d = tao("div", "bh-cap");
+      const pt = tao("p", "bh-cap-tho"); B.tho[c.nhom].forEach(function (x) { pt.appendChild(tao("span", "", x[0])); });
+      d.appendChild(pt); d.appendChild(tao("p", "bh-cap-xuoi", c.vi));
+      const en = tao("p", "bh-cap-en", c.en); en.lang = "en"; d.appendChild(en); box.appendChild(d);
+    });
+    sec.appendChild(box);
+    nut.addEventListener("click", function () {
+      const mo = nut.getAttribute("aria-expanded") !== "true"; nut.setAttribute("aria-expanded", mo ? "true" : "false");
+      box.querySelectorAll(".bh-cap-en").forEach(function (e) { e.classList.toggle("mo", mo); });
+    });
+  } else thieu.push("Hiểu khổ thơ bằng lời dễ hiểu (có tiếng Anh)");
+
+  /* ---------- 4. Thẻ từ ---------- */
+  if (B.tuKho) {
+    const sec = theMoi("phan-tu", "Thẻ từ khó", "Tap each card to see what the word means. Turn over all the cards to earn a star.");
+    sec.appendChild(tao("p", "bh-ghi", "Chạm vào thẻ để xem nghĩa.")).style.margin = "0 0 12px";
+    const luoi = tao("div", "bh-the-tu"); const daLat = new Set();
+    B.tuKho.forEach(function (w, i) {
+      const b = tao("button", "bh-tu"); b.type = "button"; b.setAttribute("aria-pressed", "false");
+      b.appendChild(tao("span", "mat-truoc", w.tu));
+      const sau = tao("span", "mat-sau", w.nghia); const em = tao("em", "", w.en); em.lang = "en"; sau.appendChild(em); b.appendChild(sau);
+      b.addEventListener("click", function () {
+        const lat = !b.classList.contains("lat"); b.classList.toggle("lat", lat); b.setAttribute("aria-pressed", lat ? "true" : "false");
+        daLat.add(i); if (daLat.size === B.tuKho.length) datSao("tu");
+      });
+      luoi.appendChild(b);
+    });
+    sec.appendChild(luoi); coSao("tu", "Lật đủ thẻ từ");
+  } else thieu.push("Thẻ từ khó");
+
+  /* ---------- 5. Nghe cô Hà giảng + lời giảng ---------- */
+  (function () {
+    const coEn = B.loiGiang.some(function (d) { return d.en; });
+    const phut = Math.round((B.amThanh.giangGiay || 0) / 60);
+    const sec = theMoi("phan-giang", "Nghe cô Hà giảng",
+      "Listen to cô Hà's lesson (about " + phut + " minutes) and follow the words below." + (coEn ? " Tap EN to see a short English explanation of each part." : "") + " Tap any part to listen from there.");
+    const hang = tao("div", "bh-giang");
+    const img = tao("img"); img.src = "assets/trau-listening.png"; img.alt = ""; hang.appendChild(img);
+    const cot = tao("div");
+    const a = tao("audio"); a.controls = true; a.preload = "none"; a.setAttribute("controlsList", "nodownload"); a.src = B.amThanh.giang;
+    cot.appendChild(a); cot.appendChild(tao("p", "bh-ghi", "Bài giảng của cô Hà, khoảng " + phut + " phút."));
+    hang.appendChild(cot); sec.appendChild(hang);
+    const dau = tao("div", "bh-loi-dau"); dau.appendChild(tao("h3", "", "Lời cô giảng"));
+    let nutEn = null;
+    if (coEn) { nutEn = tao("button", "bh-en", "EN"); nutEn.type = "button"; nutEn.lang = "en"; nutEn.setAttribute("aria-expanded", "false"); dau.appendChild(nutEn); }
+    sec.appendChild(dau);
+    const loi = tao("div", "bh-loi"); loi.setAttribute("aria-label", "Lời cô giảng"); sec.appendChild(loi);
+    sec.appendChild(tao("p", "bh-ghi", "Chữ sáng theo giọng cô. Chạm vào một đoạn để nghe lại từ chỗ đó."));
+    a.addEventListener("timeupdate", function () { if (a.duration && a.currentTime / a.duration > 0.8) datSao("giang"); });
+    function nhayToi(t) {
+      const choi = function () { const p = a.play(); if (p && p.catch) p.catch(function () {}); };
+      if (a.readyState >= 1) { try { a.currentTime = t; } catch (e) {} choi(); return; }
+      a.addEventListener("loadedmetadata", function () { try { a.currentTime = t; } catch (e) {} choi(); }, { once: true });
+      a.preload = "auto"; a.load();
+    }
+    const doan = [];
+    B.loiGiang.forEach(function (d) {
+      const b = tao("button", "bh-doan"); b.type = "button";
+      if (d.tho) d.tho.forEach(function (c) { b.appendChild(tao("span", "tho", c)); }); else b.appendChild(tao("span", "vi", d.vi));
+      if (d.en) { const en = tao("span", "en", d.en); en.lang = "en"; b.appendChild(en); }
+      b.addEventListener("click", function () { nhayToi(Math.max(0, d.t - 0.3)); });
+      doan.push({ el: b, t: d.t }); loi.appendChild(b);
+    });
+    let dangSo = -1;
+    function capNhat() {
+      const t = a.currentTime; let k = -1;
+      for (let i = 0; i < doan.length; i++) if (t >= doan[i].t - 0.2) k = i;
+      if (a.paused && t === 0) k = -1;
+      if (k === dangSo) return;
+      if (dangSo >= 0) doan[dangSo].el.classList.remove("dang");
+      dangSo = k;
+      if (k >= 0) {
+        const el = doan[k].el; el.classList.add("dang");
+        const top = el.offsetTop - loi.offsetTop - 8;
+        if (top < loi.scrollTop || top + el.offsetHeight > loi.scrollTop + loi.clientHeight) {
+          try { loi.scrollTo({ top: top, behavior: "smooth" }); } catch (e) { loi.scrollTop = top; }
+        }
+      }
+    }
+    a.addEventListener("timeupdate", capNhat); a.addEventListener("seeked", capNhat);
+    if (nutEn) nutEn.addEventListener("click", function () {
+      const mo = nutEn.getAttribute("aria-expanded") !== "true"; nutEn.setAttribute("aria-expanded", mo ? "true" : "false"); loi.classList.toggle("hien-en", mo);
+    });
+    coSao("giang", "Nghe cô Hà giảng");
+    if (!coEn) thieu.push("Giải thích tiếng Anh cho lời giảng");
+  })();
+
+  /* ---------- 6. Câu hỏi ---------- */
+  if (B.cauHoi || B.keBoMe) {
+    const sec = theMoi("phan-hoi", B.cauHoi ? "Trả lời câu hỏi" : "Kể cho bố mẹ nghe",
+      B.cauHoi ? "Look at the pictures and choose the best answer. Get them all right to earn a star. Then talk about the last questions with your family."
+               : "Talk about these questions from cô Hà with your family.");
+    if (B.cauHoi) {
+      const box = tao("div"); const dungHet = new Set();
+      B.cauHoi.forEach(function (q, i) {
+        const c = tao("div", "bh-cau"); c.appendChild(tao("h3", "", "Câu " + (i + 1) + ". " + q.hoi));
+        const ds = tao("div", "bh-lua-chon"); const ph = tao("div", "bh-phan-hoi"); const nhan = tao("span"); const giai = tao("span", "giai");
+        ph.appendChild(nhan); ph.appendChild(giai);
+        q.chon.forEach(function (ch, j) {
+          const b = tao("button"); b.type = "button";
+          if (window.HINH && HINH[ch[1]]) b.insertAdjacentHTML("beforeend", HINH[ch[1]]);
+          b.appendChild(tao("span", "", ch[0]));
+          b.addEventListener("click", function () {
+            ds.querySelectorAll("button").forEach(function (x) { x.classList.remove("sai"); });
+            if (j === q.dung) {
+              b.classList.add("dung"); nhan.className = "ttv-nhan-dung"; nhan.textContent = "Đúng rồi!"; giai.textContent = q.giai; dungHet.add(i);
+              ds.querySelectorAll("button").forEach(function (x) { x.disabled = true; });
+              if (dungHet.size === B.cauHoi.length) datSao("hoi");
+            } else { b.classList.add("sai"); nhan.className = "ttv-nhan-sai"; nhan.textContent = "Thử lại nhé"; giai.textContent = ""; }
+            ph.classList.add("hien");
+          });
+          ds.appendChild(b);
+        });
+        c.appendChild(ds); c.appendChild(ph); box.appendChild(c);
+      });
+      sec.appendChild(box); coSao("hoi", "Trả lời đúng các câu hỏi");
+    } else thieu.push("Câu hỏi có tranh minh hoạ");
+    if (B.keBoMe) {
+      const ke = tao("div", "bh-ke"); if (B.cauHoi) ke.appendChild(tao("h3", "", "Kể cho bố mẹ nghe"));
+      const ul = tao("ul"); B.keBoMe.forEach(function (k) { ul.appendChild(tao("li", "", k)); }); ke.appendChild(ul); sec.appendChild(ke);
+    }
+  } else thieu.push("Câu hỏi có tranh minh hoạ");
+
+  /* ---------- 7. Viết ---------- */
+  if (B.viet) {
+    const sec = theMoi("phan-viet", "Viết đoạn văn ngắn",
+      "Pick your level. Dễ (easy): fill in the missing words. Vừa (medium): finish three sentences. Khó (hard): write a short paragraph of 5–7 sentences. Your writing is saved on this device.");
+    const muc = tao("div", "bh-muc"); muc.setAttribute("role", "tablist");
+    const ten = [["mam", "★ Dễ"], ["choi", "★★ Vừa"], ["la", "★★★ Khó"]]; const phan = {};
+    ten.forEach(function (x, i) {
+      const b = tao("button", "", x[1]); b.type = "button"; b.setAttribute("role", "tab"); b.setAttribute("aria-selected", i === 0 ? "true" : "false"); b.dataset.muc = x[0];
+      muc.appendChild(b);
+      b.addEventListener("click", function () {
+        muc.querySelectorAll("button").forEach(function (y) { y.setAttribute("aria-selected", y === b ? "true" : "false"); });
+        Object.keys(phan).forEach(function (k) { phan[k].classList.toggle("mo", k === x[0]); });
+      });
+    });
+    sec.appendChild(muc);
+    ["mam", "choi", "la"].forEach(function (k, i) { phan[k] = tao("div", "bh-viet-phan" + (i === 0 ? " mo" : "")); phan[k].setAttribute("role", "tabpanel"); sec.appendChild(phan[k]); });
+
+    // Dễ: điền từ
+    phan.mam.appendChild(tao("p", "bh-goi-y", "Chạm vào từ để điền vào chỗ trống:"));
+    const cauDien = tao("div", "bh-cau-dien"); phan.mam.appendChild(cauDien);
+    const dapAn = [];
+    B.viet.mam.cau.split(/(\[[^\]]+\])/).forEach(function (p) {
+      const mm = p.match(/^\[(.+)\]$/);
+      if (mm) { const o = tao("button", "bh-o"); o.type = "button"; o.setAttribute("aria-label", "Chỗ trống"); o.dataset.dung = mm[1]; o.dataset.chon = "";
+        o.addEventListener("click", function () { if (o.dataset.chon) boChon(o); }); dapAn.push(o); cauDien.appendChild(o); }
+      else if (p) cauDien.appendChild(document.createTextNode(p));
+    });
+    const kho = tao("div", "bh-kho-tu"); phan.mam.appendChild(kho);
+    const tuDien = dapAn.map(function (o) { return o.dataset.dung; }).concat(B.viet.mam.them || []).sort(function (a, b) { return a.localeCompare(b, "vi"); });
+    tuDien.forEach(function (w) {
+      const b = tao("button", "", w); b.type = "button";
+      b.addEventListener("click", function () {
+        const trong = dapAn.find(function (o) { return !o.dataset.chon; }); if (!trong) return;
+        trong.dataset.chon = w; trong.textContent = w; trong.classList.add("co"); trong.classList.remove("dung", "sai"); b.disabled = true; trong._nut = b; kq.textContent = "";
+      });
+      kho.appendChild(b);
+    });
+    function boChon(o) { if (o._nut) o._nut.disabled = false; o.dataset.chon = ""; o.textContent = ""; o._nut = null; o.classList.remove("co", "dung", "sai"); }
+    const hang = tao("div", "bh-nut-hang"); const nk = tao("button", "ttv-nut", "Kiểm tra"); nk.type = "button"; const nx = tao("button", "ttv-nut-phu", "Làm lại"); nx.type = "button"; const kq = tao("span");
+    hang.appendChild(nk); hang.appendChild(nx); hang.appendChild(kq); phan.mam.appendChild(hang);
+    nx.addEventListener("click", function () { dapAn.forEach(boChon); kq.textContent = ""; });
+    nk.addEventListener("click", function () {
+      let d = 0; dapAn.forEach(function (o) { const ok = nfc(o.dataset.chon) === nfc(o.dataset.dung); o.classList.toggle("dung", ok); o.classList.toggle("sai", !!o.dataset.chon && !ok); if (ok) d++; });
+      kq.className = d === dapAn.length ? "ttv-nhan-dung" : "ttv-nhan-sai"; kq.textContent = d === dapAn.length ? "Đúng rồi!" : "Thử lại nhé";
+      if (d === dapAn.length) datSao("viet");
+    });
+
+    // Vừa: hoàn thành câu
+    phan.choi.appendChild(tao("p", "bh-goi-y", "Viết tiếp cho thành câu của em:"));
+    B.viet.choi.forEach(function (c, i) {
+      const id = "o-choi-" + i; const lb = tao("label", "", c.mo + " …"); lb.htmlFor = id;
+      const ta = tao("textarea"); ta.id = id; ta.dataset.luu = "choi" + i; ta.placeholder = "Ví dụ: " + c.mo + " " + c.vd.replace("…", "");
+      ta.value = duLieu.viet["choi" + i] || c.mo + " "; phan.choi.appendChild(lb); phan.choi.appendChild(ta);
+    });
+    // Khó: đoạn văn
+    phan.la.appendChild(tao("p", "bh-goi-y", B.viet.la.de));
+    phan.la.appendChild(tao("p", "", "Gợi ý:")).style.margin = "0";
+    const gy = tao("ul", "bh-goi-y-ds"); B.viet.la.goiY.forEach(function (g) { gy.appendChild(tao("li", "", g)); }); phan.la.appendChild(gy);
+    const lb = tao("label", "", "Đoạn văn của em"); lb.htmlFor = "o-la"; phan.la.appendChild(lb);
+    const taLa = tao("textarea", "dai"); taLa.id = "o-la"; taLa.dataset.luu = "la"; taLa.value = duLieu.viet.la || ""; phan.la.appendChild(taLa);
+    const dem = tao("p", "bh-dem"); phan.la.appendChild(dem);
+    phan.la.appendChild(tao("p", "", "Từ hay có thể dùng:")).style.cssText = "margin:10px 0 0;font-weight:800";
+    const tg = tao("ul", "bh-tu-goi-y"); B.viet.la.tu.forEach(function (w) { tg.appendChild(tao("li", "", w)); }); phan.la.appendChild(tg);
+    function demCau(s) { return (nfc(s).match(/[^.!?…]+[.!?…]+/g) || []).filter(function (x) { return x.trim().split(/\s+/).length >= 3; }).length; }
+    function capNhatDem() { const n = demCau(taLa.value); dem.textContent = "Em đã viết " + n + " câu."; return n; }
+    capNhatDem();
+    sec.querySelectorAll("textarea[data-luu]").forEach(function (ta) {
+      ta.addEventListener("input", function () {
+        duLieu.viet[ta.dataset.luu] = ta.value; luu();
+        if (ta.dataset.luu === "la" && capNhatDem() >= 5) datSao("viet");
+        const choiXong = B.viet.choi.every(function (c, i) { return nfc(duLieu.viet["choi" + i] || "").trim().length > nfc(c.mo).length + 5; });
+        if (choiXong) datSao("viet");
+      });
+    });
+    const hc = tao("div", "bh-nut-hang"); hc.style.marginTop = "14px";
+    const nc = tao("button", "ttv-nut-phu", "Sao chép bài viết"); nc.type = "button"; const bao = tao("span", "bh-ghi"); bao.style.margin = "0";
+    hc.appendChild(nc); hc.appendChild(bao); sec.appendChild(hc);
+    nc.addEventListener("click", function () {
+      const ph = []; const ch = B.viet.choi.map(function (c, i) { return (duLieu.viet["choi" + i] || "").trim(); }).filter(Boolean).join("\n");
+      if (ch) ph.push(ch); if ((duLieu.viet.la || "").trim()) ph.push(duLieu.viet.la.trim());
+      if (!ph.length) { bao.textContent = "Em chưa viết gì ở mức Vừa hoặc Khó."; return; }
+      const chu = DS_BAI[BAI].ten + " – Khổ " + B.kho + "\n\n" + ph.join("\n\n");
+      try { navigator.clipboard.writeText(chu).then(function () { bao.textContent = "Đã sao chép. Em dán gửi thầy cô nhé!"; }, function () { bao.textContent = "Máy này chưa cho sao chép. Em chọn chữ rồi sao chép nhé."; }); }
+      catch (e) { bao.textContent = "Máy này chưa cho sao chép. Em chọn chữ rồi sao chép nhé."; }
+    });
+    coSao("viet", "Viết bài");
+  } else thieu.push("Viết đoạn văn ngắn (Dễ – Vừa – Khó)");
+
+  /* ---------- 8. Bài học cuộc sống ---------- */
+  if (B.baiHoc) {
+    const sec = theMoi("phan-bai-hoc", "Bài học cuộc sống", B.baiHocEn || null);
+    const hang = tao("div", "bh-bai-hoc"); const img = tao("img"); img.src = "assets/trau-thumbs-up.png"; img.alt = ""; hang.appendChild(img);
+    const ul = tao("ul"); B.baiHoc.forEach(function (b) { ul.appendChild(tao("li", "", b)); }); hang.appendChild(ul); sec.appendChild(hang);
+    if (B.viecTot) {
+      const v = tao("div", "bh-viec"); const p = tao("p"); const st = tao("strong", "", "Việc tốt tuần này: "); p.appendChild(st); p.appendChild(document.createTextNode(B.viecTot)); v.appendChild(p);
+      const ng = tao("div", "bh-ngay");
+      ["Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu"].forEach(function (n, i) {
+        const b = tao("button", "", n); b.type = "button"; b.setAttribute("aria-pressed", duLieu.ngay.indexOf(i) >= 0 ? "true" : "false");
+        b.addEventListener("click", function () {
+          const k = duLieu.ngay.indexOf(i); if (k >= 0) duLieu.ngay.splice(k, 1); else duLieu.ngay.push(i);
+          b.setAttribute("aria-pressed", k >= 0 ? "false" : "true"); luu(); if (duLieu.ngay.length >= 3) datSao("viec");
+        });
+        ng.appendChild(b);
+      });
+      v.appendChild(ng); sec.appendChild(v); coSao("viec", "Làm việc tốt 3 ngày");
+    }
+  } else thieu.push("Bài học cuộc sống và việc tốt tuần này");
+
+  /* ---------- Phần đang soạn ---------- */
+  if (thieu.length) {
+    const sec = tao("section", "ttv-the bh-sap-co");
+    sec.appendChild(tao("h2", "ttv-tieu-de", "Sắp có ở khổ này")).style.cssText = "font-size:1.2rem;margin:0 0 10px";
+    const ul = tao("ul"); thieu.forEach(function (t) { ul.appendChild(tao("li", "", t)); }); sec.appendChild(ul); khung.appendChild(sec);
+  }
+
+  /* ---------- Tổng sao + chuyển khổ ---------- */
+  const tong = tao("section", "ttv-the bh-tong");
+  tong.appendChild(tao("h2", "ttv-tieu-de", "Sao của em ở khổ này")).style.fontSize = "1.3rem";
+  const oSao = tao("div"); const chuSao = tao("p"); tong.appendChild(oSao); tong.appendChild(chuSao); khung.appendChild(tong);
+  function veSao() {
+    oSao.textContent = ""; let co = 0;
+    SAO.forEach(function (s) {
+      const ok = !!duLieu.sao[s.id]; if (ok) co++;
+      const el = tao("span", ok ? "ttv-sao" : "ttv-sao ttv-sao-tat"); el.title = s.ten; el.setAttribute("role", "img"); el.setAttribute("aria-label", s.ten + (ok ? ": đã có sao" : ": chưa có sao"));
+      oSao.appendChild(el);
+    });
+    chuSao.textContent = co === SAO.length ? "Giỏi quá! Em đã có đủ " + co + " sao." : "Em đã có " + co + "/" + SAO.length + " sao.";
+    const xong = co === SAO.length && !thieu.length;
+    if (xong !== !!duLieu.xong) { duLieu.xong = xong; luu(); }
+  }
+  veSao();
+
+  const chuyen = tao("nav", "bh-chuyen"); chuyen.setAttribute("aria-label", "Chuyển khổ");
+  if (B.kho > 1) { const a = tao("a", "ttv-nut-phu", "← Khổ " + (B.kho - 1)); a.href = "kho.html#" + BAI + "-" + (B.kho - 1); chuyen.appendChild(a); } else chuyen.appendChild(tao("span"));
+  if (B.kho < DS_BAI[BAI].tong) { const a = tao("a", "ttv-nut", "Khổ " + (B.kho + 1) + " →"); a.href = "kho.html#" + BAI + "-" + (B.kho + 1); chuyen.appendChild(a); }
+  khung.appendChild(chuyen);
+  khung.appendChild(tao("p", "bh-nguon", B.nguon));
+}
+</script>
+</body>
+</html>
