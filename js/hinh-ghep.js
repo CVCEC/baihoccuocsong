@@ -330,6 +330,17 @@
       return { svg: '<ellipse cx="-16" cy="-12" rx="14" ry="9" class="f-son"/><path d="M-30,-14 q-8,-10 -2,-16 M-2,-14 q8,-10 2,-16" class="s-son" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="-34" cy="-30" r="4" class="f-son"/><circle cx="2" cy="-30" r="4" class="f-son"/><circle cx="-20" cy="-16" r="1.6" class="f-muc"/><circle cx="-12" cy="-16" r="1.6" class="f-muc"/>' +
         '<path d="M14,-10 q10,-18 26,-10 q-6,6 -4,12 q-12,6 -22,-2 Z" class="f-cam"/><path d="M36,-20 l6,-10 M38,-18 l8,-6" class="s-cam" stroke-width="1.5"/><circle cx="34" cy="-17" r="1.4" class="f-muc"/>', rong: 84, cao: 40 };
     },
+    "ao-quan": function () { // bộ quần áo gấp gọn
+      var s = '<path d="M-44,-60 l14,-8 h12 q6,8 12,0 h12 l14,8 l-8,14 l-8,-4 v34 h-32 v-34 l-8,4z" class="f-troi"/><path d="M-20,-68 q6,8 12,0" class="s-muc" stroke-width="1.5" fill="none"/>';
+      s += '<path d="M10,-56 h32 v8 l-4,44 h-10 l-2,-36 l-2,36 h-10 l-4,-44z" class="f-troi-dam"/><path d="M10,-50 h32" class="s-muc" stroke-width="1.2"/>';
+      return { svg: s, rong: 92, cao: 72 };
+    },
+    "co-xuan": function () { // khóm cỏ non mùa xuân
+      var s = '<ellipse cx="0" cy="-3" rx="40" ry="5" class="f-dat"/>';
+      [-30, -20, -10, 0, 10, 20, 30].forEach(function (x, i) { var h = 26 + (i % 3) * 8; s += '<path d="M' + (x - 4) + ',-4 Q' + (x + (i % 2 ? 6 : -6)) + ',' + (-h / 2) + ' ' + (x + (i % 2 ? 4 : -4)) + ',' + (-h) + ' Q' + (x + 2) + ',' + (-h / 2) + ' ' + (x + 4) + ',-4z" class="f-lua"/>'; });
+      s += '<circle cx="-16" cy="-24" r="4" class="f-sao"/><circle cx="18" cy="-30" r="4" class="f-son-nhat"/>';
+      return { svg: s, rong: 84, cao: 46 };
+    },
     "to-chim": function () { // tổ chim có chim non đang mọc cánh
       var s = '<path d="M-6,0 V-30" class="s-goc-dam" stroke-width="5"/><path d="M-40,-30 H40" class="s-goc-dam" stroke-width="5" stroke-linecap="round"/>';
       s += '<path d="M-30,-34 q30,22 60,0 q-4,-10 -30,-10 q-26,0 -30,10z" class="f-nau"/>';

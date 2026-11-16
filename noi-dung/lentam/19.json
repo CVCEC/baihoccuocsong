@@ -1,0 +1,44 @@
+{
+ "tieuDeEn": "Put yourself in your parents' place: take care of your clothes, don't wander too far with friends, don't climb high or play too long in the hot sun – our body is a gift from our parents, so we must look after it.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Hãy nghĩ đến lòng cha mẹ như lòng mình. Quần áo đang mặc phải biết giữ gìn; vui chơi với bạn thì đừng đi quá xa.", "en": "Think of your parents' feelings as if they were your own. Take care of the clothes you wear; when playing with friends, don't go too far."},
+  {"nhom": 1, "vi": "Trèo cao dễ bị ngã đau, bị cảm nắng thì thường ốm lâu. Thân thể chúng mình là của cha mẹ cho, nên phải luôn cẩn thận giữ gìn.", "en": "Climbing high can lead to painful falls; sunstroke often means a long illness. Our body is a gift from our parents, so we must always be careful with it."}
+ ],
+ "tuKho": [
+  {"tu": "suy", "nghia": "nghĩ, đặt mình vào chỗ người khác để hiểu", "en": "to think, to put yourself in someone's place"},
+  {"tu": "tiếc", "nghia": "(ở đây) quý, giữ gìn, không phí phạm", "en": "(here) to value and take care of"},
+  {"tu": "cảm nắng", "nghia": "bị ốm vì ở ngoài nắng quá lâu", "en": "sunstroke"},
+  {"tu": "lo âu", "nghia": "(ở đây) cẩn thận, để ý giữ gìn", "en": "(here) to be careful"}
+ ],
+ "cauHoi": [
+  {"hoi": "“Ta xem lòng mẹ cha, ta suy làm lòng ta” nghĩa là gì?", "chon": [["Đặt mình vào chỗ cha mẹ để hiểu cha mẹ", "be:hoi|bo|me"], ["Chỉ nghĩ đến mình", "be:phung"], ["Không cần nghĩ gì", "be|giuong:ngu"]], "dung": 0, "giai": "Hiểu lòng cha mẹ như hiểu lòng mình."},
+  {"hoi": "Quần áo cha mẹ mua cho, em nên thế nào?", "chon": [["Bôi bẩn, làm rách", "ao-quan|be:gian"], ["Giữ gìn sạch sẽ, cẩn thận", "ao-quan|be:cuoi|v"], ["Vứt lung tung", "ao-quan|be:mo"]], "dung": 1, "giai": "“Quần áo mặc nên tiếc.”"},
+  {"hoi": "Khi đi chơi với bạn, em cần nhớ điều gì?", "chon": [["Đi thật xa cho vui", "nui|be:vui"], ["Không cần xin phép", "be|ban"], ["Không đi quá xa để bố mẹ khỏi lo", "be:vui|ban:vui|nha"]], "dung": 2, "giai": "“Vui bạn đừng chơi xa.”"},
+  {"hoi": "Trèo cây cao có thể gây ra điều gì?", "chon": [["Bị ngã đau", "be:khoc|cay"], ["Được điểm cao", "sao"], ["Được ăn kẹo", "keo"]], "dung": 0, "giai": "“Trèo cao hay ngã đau.”"},
+  {"hoi": "Vì sao chúng mình phải giữ gìn thân thể?", "chon": [["Vì để khoe với bạn", "ban|be:mo"], ["Vì thân ta là của cha mẹ cho, con đau cha mẹ cũng đau", "be|me:buon|trai-tim"], ["Vì không ai quan tâm", "be:buon"]], "dung": 1, "giai": "“Thân ta của cha mẹ, ta phải thường lo âu.”"}
+ ],
+ "keBoMe": ["Có lần nào con bị ngã hay bị ốm làm bố mẹ lo lắng không? Con kể lại nhé.", "Con giữ gìn quần áo, giày dép của mình như thế nào?", "Hỏi bố mẹ: khi con đi chơi với bạn, bố mẹ muốn con nhớ những điều gì?"],
+ "viet": {
+  "mam": {"cau": "Quần áo mặc nên [tiếc]. Vui bạn đừng chơi [xa]. Trèo cao hay ngã [đau]. Thân ta của cha [mẹ].", "them": ["gần", "vui"]},
+  "choi": [
+   {"mo": "Em giữ gìn quần áo bằng cách", "vd": "…không lau tay bẩn vào áo và gấp gọn sau khi thay."},
+   {"mo": "Khi chơi ngoài trời nắng, em", "vd": "…đội mũ và uống đủ nước."},
+   {"mo": "Em không trèo cao vì", "vd": "…có thể bị ngã đau và bố mẹ sẽ lo."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu: Giữ gìn thân thể cũng là hiếu thảo.",
+   "goiY": ["Vì sao cần hiểu lòng cha mẹ?", "Em giữ gìn quần áo, đồ dùng thế nào?", "Những việc nguy hiểm nào em cần tránh?", "Vì sao giữ gìn sức khỏe là cách hiếu thảo với cha mẹ?"],
+   "tu": ["lòng cha mẹ", "quần áo", "giữ gìn", "chơi xa", "trèo cao", "cảm nắng", "thân thể", "an toàn", "lo lắng"]
+  }
+ },
+ "baiHoc": ["Đặt mình vào chỗ cha mẹ để hiểu cha mẹ.", "Giữ gìn quần áo; chơi với bạn đừng đi xa.", "Không trèo cao, không phơi nắng lâu – giữ thân thể là hiếu thảo."],
+ "baiHocEn": "Put yourself in your parents' place. Take care of your clothes and don't wander far. Don't climb high or stay in the hot sun – looking after yourself is part of filial love.",
+ "viecTot": "Tuần này, em tự gấp quần áo của mình, đội mũ khi ra nắng và luôn nói với bố mẹ khi đi chơi ở đâu.",
+ "en": [
+  "Cô Hà welcomes you to lesson nineteen of “Lên Tám”. Last time she taught you to show love when your parents are worried and not to bother Mum when she's sad. Today the poet Tản Đà shows very practical everyday ways to be filial, from caring for your clothes to protecting your own health. Listen carefully.",
+  "We look at our parents' hearts and think of them as our own; take care of the clothes we wear; when playing with friends, don't go far.",
+  "Climbing high often means painful falls; sunstroke often means a long illness; our body belongs to our parents, so we must always take care.",
+  "The poem gives wise advice: put yourself in your parents' place to understand them. The clothes you wear were bought with their hard work, so keep them clean and don't tear them. When you play with friends, don't go too far – faraway, empty places can be dangerous and make your parents at home very worried.",
+  "Next, the poem names some common bad habits: climbing trees and walls can cause accidents, and playing too long in strong sun can make you sick for a long time. It states a sacred truth: your body was given and raised by your parents – when you hurt a little, they hurt ten times more. So protecting your health and keeping yourself safe is a way of being filial to your parents."
+ ]
+}

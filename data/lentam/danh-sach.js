@@ -180,7 +180,7 @@ window.DANH_SACH_LENTAM = [
    "Cơm áo cha mẹ lo",
    "Bút giấy cha mẹ cho."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 14,
@@ -194,7 +194,7 @@ window.DANH_SACH_LENTAM = [
    "Sâu thẳm bể đại dương",
    "Xa thẳm con đường trường"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 15,
@@ -208,7 +208,7 @@ window.DANH_SACH_LENTAM = [
    "Chữ hiếu đạo làm con",
    "Cha mẹ ta biết ơn"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 16,
@@ -222,7 +222,7 @@ window.DANH_SACH_LENTAM = [
    "Bể rộng non thời cao",
    "Ơn ấy biết nhường bao"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 17,
@@ -236,7 +236,7 @@ window.DANH_SACH_LENTAM = [
    "Ở nhà cùng hai thân,",
    "Ra vào quanh dưới chân."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 18,
@@ -250,7 +250,7 @@ window.DANH_SACH_LENTAM = [
    "Ta nay như cỏ xuân,",
    "Ngày ngày chơi trước sân."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 19,
@@ -264,7 +264,7 @@ window.DANH_SACH_LENTAM = [
    "Ta xem lòng mẹ cha",
    "Ta suy làm lòng ta."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 20,
@@ -278,7 +278,7 @@ window.DANH_SACH_LENTAM = [
    "Ta nay còn trẻ thơ,",
    "Chưa cho cha mẹ nhờ."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 21,
@@ -292,7 +292,7 @@ window.DANH_SACH_LENTAM = [
    "Suy lòng hiếu mẹ cha",
    "Ở với anh em ta"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 22,

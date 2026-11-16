@@ -1,0 +1,45 @@
+{
+ "tieuDeEn": "Our parents' kindness is as wide as the sea and as high as the mountains – so how can a young child repay it? Filial love takes a whole life, and for now we begin by following our teachers' good advice.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Biển thì rộng, núi thì cao, ơn cha mẹ lớn biết bao nhiêu. Làm tròn chữ hiếu thật khó – vậy báo hiếu thế nào đây?", "en": "The sea is wide, the mountains are high, and our parents' kindness is just as great. Being truly filial is hard – so how should we repay them?"},
+  {"nhom": 1, "vi": "Đạo hiếu rộng như biển, cả đời người con cũng chưa dễ làm trọn. Chúng mình còn nhỏ, nên hãy làm theo lời thầy cô dạy bảo – điều đó thật hay.", "en": "Filial love is as wide as the sea; even a whole life is not enough to fulfil it. We are still young, so let's follow our teachers' advice – how wise it is."}
+ ],
+ "tuKho": [
+  {"tu": "nhường bao", "nghia": "biết bao nhiêu, rất nhiều", "en": "so much"},
+  {"tu": "đạo hiếu", "nghia": "bổn phận yêu thương, kính trọng cha mẹ", "en": "the duty of filial love"},
+  {"tu": "báo hiếu", "nghia": "đền đáp công ơn cha mẹ", "en": "to repay your parents"},
+  {"tu": "chửa dễ", "nghia": "chưa dễ, không dễ", "en": "not easy yet"},
+  {"tu": "trẻ thơ", "nghia": "còn nhỏ tuổi", "en": "young children"}
+ ],
+ "cauHoi": [
+  {"hoi": "Bạn nhỏ trong bài thơ băn khoăn điều gì?", "chon": [["Hôm nay ăn gì", "bat-com"], ["Đi chơi ở đâu", "bong"], ["Báo hiếu cha mẹ thế nào", "em:hoi|bo|me"]], "dung": 2, "giai": "“Khó thay một đạo hiếu, báo hiếu nên làm sao?”"},
+  {"hoi": "Vì sao báo hiếu là việc khó?", "chon": [["Vì ơn cha mẹ lớn như biển, như núi", "bien|nui"], ["Vì cha mẹ không cần", "bo:gian"], ["Vì không có thời gian", "dong-ho"]], "dung": 0, "giai": "“Bể rộng non thời cao, ơn ấy biết nhường bao.”"},
+  {"hoi": "“Một đời con chửa dễ” nghĩa là gì?", "chon": [["Làm một ngày là xong", "be:vui"], ["Phải hiếu thảo suốt cả cuộc đời", "be:cuoi|ba:vui|dong-ho"], ["Không cần hiếu thảo", "be:phung"]], "dung": 1, "giai": "Đạo hiếu là việc cả đời, không phải ngày một ngày hai."},
+  {"hoi": "Khi còn nhỏ, các bạn báo hiếu bắt đầu bằng cách nào?", "chon": [["Nghe lời thầy cô, chăm ngoan học giỏi", "thay:cuoi|be:vui:gio-tay|bang:a b c"], ["Đi làm kiếm tiền", "tien"], ["Không làm gì", "be|giuong:ngu"]], "dung": 0, "giai": "“Chúng ta còn trẻ thơ, thầy bảo sao hay thế.”"},
+  {"hoi": "Bạn nhỏ nào đang làm theo lời cô dạy?", "chon": [["Nói chuyện riêng trong giờ học", "be:mo|ban:mo"], ["Bỏ dở bài tập", "be:buon|vo-but"], ["Lễ phép chào cô, làm bài cẩn thận", "be::cui|co:cuoi|vo-but"]], "dung": 2, "giai": "Làm theo lời thầy cô để thành con ngoan trò giỏi là bước đầu của báo hiếu."}
+ ],
+ "keBoMe": ["Theo con, một bạn nhỏ tám tuổi có thể báo hiếu cha mẹ bằng những việc gì?", "Thầy cô đã dạy con điều hay nào mà con thấy giúp con ngoan hơn ở nhà?", "Hỏi bố mẹ: điều gì làm bố mẹ vui nhất khi đi họp phụ huynh hoặc nghe thầy cô kể về con?"],
+ "viet": {
+  "mam": {"cau": "Bể rộng non thời [cao]. Ơn ấy biết nhường [bao]. Đạo hiếu rộng như [bể]. Chúng ta còn trẻ [thơ].", "them": ["thấp", "vui"]},
+  "choi": [
+   {"mo": "Em báo hiếu cha mẹ bằng cách", "vd": "…chăm học và vâng lời."},
+   {"mo": "Lời dạy của thầy cô mà em nhớ nhất là", "vd": "…đi thưa về gửi."},
+   {"mo": "Khi lớn lên, em sẽ", "vd": "…chăm sóc bố mẹ khi bố mẹ già."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu: Báo hiếu khi em còn nhỏ.",
+   "goiY": ["Vì sao báo hiếu là việc khó?", "Vì sao đạo hiếu là việc của cả cuộc đời?", "Thầy cô đã dạy em những điều gì?", "Những việc nhỏ nào em làm được ngay hôm nay?"],
+   "tu": ["báo hiếu", "đạo hiếu", "biển rộng", "núi cao", "trẻ thơ", "thầy cô", "dạy bảo", "vâng lời", "con ngoan trò giỏi"]
+  }
+ },
+ "baiHoc": ["Ơn cha mẹ rộng như biển, cao như núi.", "Đạo hiếu là việc của cả cuộc đời.", "Còn nhỏ, báo hiếu bằng cách nghe lời thầy cô, chăm ngoan."],
+ "baiHocEn": "Our parents' kindness is as wide as the sea and as high as the mountains. Filial love is a lifelong duty. While young, we repay it by listening to our teachers and being good.",
+ "viecTot": "Tuần này, mỗi ngày đi học về em kể cho bố mẹ nghe một điều hay thầy cô đã dạy.",
+ "en": [
+  "Cô Hà welcomes you to lesson sixteen of “Lên Tám” by the poet Tản Đà. Last time we thought about our parents' kindness, as high as the mountains and as wide as the sea. Today we'll look for the answer to a question every child wonders about: how can an eight-year-old repay such great kindness? Sit up nicely and listen to today's two verses.",
+  "The sea is wide, the mountains high – how great that kindness is! How hard it is to be filial – how should we repay them?",
+  "Filial love is as wide as the sea – not easy even in a whole life; we are still young children – how wise the teacher's words are.",
+  "The poem stresses again that our parents' love and sacrifice have no limit. Facing such great kindness, the child in the poem asks: how can I repay them? You can't earn money yet or carry heavy loads for your parents, so how can you fulfil your duty? This question shows the precious worry of a good child who always thinks of their parents.",
+  "The next verse shows a very simple path. Fulfilling filial love takes a whole life, not a day or two. Because you are still young and can't understand everything on your own, the first key is to listen to your teachers. They guide you from the smallest things: listening, answering politely, studying hard. When you follow their teaching and become a good child and a good student, that is the best possible start to repaying your parents."
+ ]
+}
