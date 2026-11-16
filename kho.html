@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="css/bai.css">
 <script src="https://mau.cvcec.org/v1/cvcec-chung.js" defer></script>
 <script src="js/hinh.js"></script>
+<script src="js/canh-tap-the.js" defer></script>
 </head>
 <body class="ttv-trang">
 
@@ -47,6 +48,12 @@ const m = (location.hash || "").match(/^#([a-z]+)-(\d+)$/);
 const BAI = m && DS_BAI[m[1]] ? m[1] : "lensau";
 const SO = m ? Math.min(Math.max(1, +m[2]), DS_BAI[BAI].tong) : 1;
 window.addEventListener("hashchange", function () { location.reload(); });
+/* Học thử qua cổng: khách chỉ được học bài "lensau-1". Cổng trả lời sau khi trang đã chạy,
+   nên kiểm tra lại vài lần cho tới khi bộ mẫu biết chế độ học (TTV.cheDoHoc()). */
+(function kiemTraHocThu(lan) {
+  if (window.TTV && TTV.cheDoHoc && TTV.cheDoHoc() !== null) { if (TTV.choPhepBai) TTV.choPhepBai(BAI + "-" + SO); return; }
+  if (lan < 24) setTimeout(function () { kiemTraHocThu(lan + 1); }, 250);
+})(0);
 
 function $(id) { return document.getElementById(id); }
 function tao(the, lop, chu) { const el = document.createElement(the); if (lop) el.className = lop; if (chu != null) el.textContent = chu; return el; }

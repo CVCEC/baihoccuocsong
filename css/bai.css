@@ -1,11 +1,61 @@
 
   /* Màu góc "Bài học cuộc sống" – TẠM cho bản xem thử.
      Khi duyệt, chuyển vào TTV_DANH_SACH (v1/cvcec-chung.js) và xoá khối này. */
-  html:root { --ttv-goc: #C08552; --ttv-goc-dam: #7A4A22; --ttv-goc-nhat: #F6EBDD; }
+  /* Màu góc lấy từ TTV_DANH_SACH (id "cuocsong") của bộ mẫu. */
+
+  /* ---------- Banner khu tập thể (js/canh-tap-the.js) ---------- */
+  .bh-dau .ttv-canh-trang-tri .ttv-ruong { display: none; }
+  .bh-dau .ttv-canh-trang-tri .ttv-may-2 { display: none; }
+  /* Thẻ nội dung đè lên đáy banner 86px: cảnh khu tập thể đặt ngay trên mép thẻ, phần dưới là sân */
+  .ttv-canh.bh-dau > .bh-tap-the { position: absolute; left: 0; right: 0; bottom: 86px; height: 200px; z-index: 0; pointer-events: none; }
+  .ttv-canh.bh-dau > .bh-tap-the-san { position: absolute; left: 0; right: 0; bottom: 0; height: 87px; z-index: 0; background: color-mix(in srgb, var(--ttv-kem-rom) 65%, var(--ttv-nen)); }
+  .bh-tap-the-svg { display: block; width: 100%; height: 100%; }
+  .bh-tap-the-svg.hep { display: none; }
+  .bh-dau-chu { max-width: 500px; }
+  .bh-dau .bh-phu, .bh-dau h1 { text-shadow: 0 0 6px var(--ttv-troi), 0 0 3px var(--ttv-troi), 0 0 1px var(--ttv-troi); }
+  @media (max-width: 600px) { .bh-tap-the-svg.rong { display: none; } .bh-tap-the-svg.hep { display: block; } }
+  .ttv-canh.bh-dau > .bh-tap-the-ten { position: absolute; right: 12px; bottom: 8px; z-index: 1; margin: 0; padding: 2px 10px;
+    border-radius: var(--ttv-bo-nut); background: var(--ttv-the); color: var(--ttv-chu); font-weight: 800; font-size: 12px; }
+  .ttv-canh.bh-dau > .bh-tap-the-ten { bottom: 94px; }
+  @media (max-width: 600px) { .ttv-canh.bh-dau > .bh-tap-the { height: 140px; } .ttv-canh.bh-dau { padding-bottom: 215px; } }
+  .bh-tap-the .tuong-a { fill: var(--ttv-kem-rom); }
+  .bh-tap-the .tuong-b { fill: color-mix(in srgb, var(--ttv-kem-rom) 72%, var(--ttv-sao)); }
+  .bh-tap-the .mai-nha, .bh-tap-the .cot-dien { fill: color-mix(in srgb, var(--ttv-chu-mo) 55%, var(--ttv-kem-rom)); }
+  .bh-tap-the .vien-tang { fill: color-mix(in srgb, var(--ttv-chu-mo) 30%, var(--ttv-kem-rom)); }
+  .bh-tap-the .bon-nuoc, .bh-tap-the .ghe-da { fill: color-mix(in srgb, var(--ttv-chu-mo) 40%, var(--ttv-the)); }
+  .bh-tap-the .cua-so { fill: color-mix(in srgb, var(--ttv-troi) 78%, var(--ttv-chu)); }
+  .bh-tap-the .khung-cua { stroke: var(--ttv-kem-rom); stroke-width: 2; fill: none; }
+  .bh-tap-the .cua-toi { fill: color-mix(in srgb, var(--ttv-chu) 55%, var(--ttv-kem-rom)); }
+  .bh-tap-the .chuong-cop { fill: none; stroke: var(--ttv-dung); stroke-width: 1.8; }
+  .bh-tap-the .la-cay, .bh-tap-the .tan-cay { fill: var(--ttv-lua-dam); }
+  .bh-tap-the .tan-cay-sang { fill: var(--ttv-lua-sang); }
+  .bh-tap-the .chau, .bh-tap-the .mai { fill: var(--ttv-chinh); }
+  .bh-tap-the .vang, .bh-tap-the .ga-con, .bh-tap-the .mo-ga { fill: var(--ttv-sao); }
+  .bh-tap-the .troi { fill: color-mix(in srgb, var(--ttv-troi) 55%, var(--ttv-chu)); }
+  .bh-tap-the .day-phoi { fill: none; stroke: var(--ttv-chu-mo); stroke-width: 1.2; }
+  .bh-tap-the .day-dien { fill: none; stroke: var(--ttv-chu); stroke-width: 1.4; opacity: .7; }
+  .bh-tap-the .su { fill: var(--ttv-the); }
+  .bh-tap-the .nha-xa { fill: color-mix(in srgb, var(--ttv-troi) 55%, var(--ttv-kem-rom)); }
+  .bh-tap-the .cua-xa { fill: color-mix(in srgb, var(--ttv-troi) 60%, var(--ttv-chu-mo)); opacity: .55; }
+  .bh-tap-the .san { fill: color-mix(in srgb, var(--ttv-kem-rom) 65%, var(--ttv-nen)); }
+  .bh-tap-the .co { fill: var(--ttv-lua); }
+  .bh-tap-the .than-cay, .bh-tap-the .tai-cho, .bh-tap-the .duoi-ga, .bh-tap-the .duoi-chim { fill: var(--ttv-chinh-dam); }
+  .bh-tap-the .mat { fill: var(--ttv-chu); }
+  .bh-tap-the .mui, .bh-tap-the .mao-ga { fill: var(--ttv-la-phong); }
+  .bh-tap-the .long-meo { fill: color-mix(in srgb, var(--ttv-sao) 70%, var(--ttv-chinh)); }
+  .bh-tap-the .duoi { fill: none; stroke: color-mix(in srgb, var(--ttv-sao) 70%, var(--ttv-chinh)); stroke-width: 4; stroke-linecap: round; }
+  .bh-tap-the .long-cho { fill: color-mix(in srgb, var(--ttv-kem-rom) 60%, var(--ttv-chinh-dam)); }
+  .bh-tap-the .duoi-cho { fill: none; stroke: color-mix(in srgb, var(--ttv-kem-rom) 60%, var(--ttv-chinh-dam)); stroke-width: 5; stroke-linecap: round; }
+  .bh-tap-the .mom-cho { fill: var(--ttv-kem-rom); }
+  .bh-tap-the .long-ga { fill: var(--ttv-the); stroke: color-mix(in srgb, var(--ttv-chu-mo) 40%, var(--ttv-the)); stroke-width: 1; }
+  .bh-tap-the .chan { fill: none; stroke: var(--ttv-sao); stroke-width: 2; }
+  .bh-tap-the .long-chim { fill: color-mix(in srgb, var(--ttv-chinh-dam) 55%, var(--ttv-kem-rom)); }
+  .bh-tap-the .long-bo-cau { fill: color-mix(in srgb, var(--ttv-chu-mo) 40%, var(--ttv-the)); }
+  .bh-tap-the .co-bo-cau { fill: color-mix(in srgb, var(--ttv-dung) 55%, var(--ttv-troi)); }
 
   * { box-sizing: border-box; }
   body { margin: 0; }
-  .bh-dau { padding: 28px 20px 150px; text-align: center; }
+  .bh-dau { padding: 28px 20px 170px; text-align: center; }
   .bh-dau-trong { max-width: 860px; margin: 0 auto; display: flex; align-items: center; gap: 22px; justify-content: center; }
   .bh-dau img { height: 150px; width: auto; flex: 0 0 auto; }
   .bh-dau-chu { text-align: left; }
