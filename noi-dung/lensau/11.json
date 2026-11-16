@@ -1,0 +1,52 @@
+{
+ "tieuDeEn": "These verses give tips for studying well: study hard even though play is fun, focus while reading, don't give up, learn with friends and respect your teacher.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Trẻ nhỏ thì hay ham chơi. Nhưng muốn lớn lên thành người giỏi giang, có ích thì phải chăm học.", "en": "Little children love to play. But to grow up into capable, useful people, we must study hard."},
+  {"nhom": 1, "vi": "Khi đọc bài thì nhìn vào sách, đừng liếc ngang liếc dọc. Bài học còn dở dang thì đừng chán nản mà bỏ cuộc.", "en": "When you read, keep your eyes on the book and don't look around. If a lesson isn't finished yet, don't get bored and give up."},
+  {"nhom": 2, "vi": "Học cùng bạn bè thì dễ hiểu, dễ học điều hay. Yêu mến, kính trọng thầy cô thì học mau biết.", "en": "Learning with friends makes it easier to understand and to learn good things from each other. Loving and respecting your teacher helps you learn faster."}
+ ],
+ "tuKho": [
+  {"tu": "bé dại", "nghia": "còn nhỏ, chưa hiểu biết nhiều", "en": "young and not yet wise"},
+  {"tu": "ra người", "nghia": "lớn lên thành người giỏi giang, có ích", "en": "to grow into a capable, useful person"},
+  {"tu": "trông ngang", "nghia": "nhìn ngang nhìn dọc, không tập trung", "en": "to look around instead of focusing"},
+  {"tu": "dở dang", "nghia": "đang làm, chưa xong", "en": "unfinished"},
+  {"tu": "chóng biết", "nghia": "mau hiểu, mau giỏi", "en": "to learn quickly"}
+ ],
+ "cauHoi": [
+  {"hoi": "“Muốn ra người, phải” làm gì?", "chon": [["Chơi cả ngày", "be:vui|bong|tivi"], ["Chăm học", "be:cuoi|ban-hoc"], ["Ngủ thật nhiều", "giuong:ngu"]], "dung": 1, "giai": "“Muốn ra người, phải chăm học.”"},
+  {"hoi": "Khi đang đọc bài, bạn nhỏ nên làm gì?", "chon": [["Nhìn vào sách, tập trung", "be:mo|sach"], ["Ngó ra cửa sổ, xem ti vi", "be|tivi"], ["Nói chuyện với bạn", "be:mo|ban:mo"]], "dung": 0, "giai": "“Miệng đang đọc, đừng trông ngang”: mắt nhìn sách, đầu óc tập trung."},
+  {"hoi": "Gặp bài khó, chưa làm xong, bạn nhỏ nên làm gì?", "chon": [["Vứt bút, bỏ đi chơi", "be:gian|bong"], ["Khóc rồi thôi không học", "be:khoc|vo-but"], ["Kiên trì làm tiếp", "be:cuoi|vo-but"]], "dung": 2, "giai": "“Học dở dang, đừng có chán”: kiên nhẫn, làm tiếp đến khi xong."},
+  {"hoi": "Vì sao “học có bạn” thì dễ hay?", "chon": [["Vì bạn làm bài hộ mình", "ban|vo-but"], ["Vì cùng giúp nhau, học điều hay của bạn", "be:vui|ban:vui|sach"], ["Vì có người nói chuyện riêng", "be:mo|ban:mo"]], "dung": 1, "giai": "Học cùng bạn: thảo luận, giúp đỡ nhau, học cái hay của bạn."},
+  {"hoi": "Làm sao để “học chóng biết”?", "chon": [["Yêu mến, kính trọng thầy cô, chăm chú nghe giảng", "co:cuoi|bang:a b c|be::gio-tay"], ["Ngủ gật trong lớp", "be:ngu|bang"], ["Chỉ chơi điện thoại", "dien-thoai"]], "dung": 0, "giai": "“Mến trọng thầy, học chóng biết.”"}
+ ],
+ "viet": {
+  "mam": {"cau": "Em còn bé nên hay mải [chơi]. Muốn ra người, em phải chăm [học]. Đang đọc, em không trông [ngang]. Học dở dang, em không [chán].", "them": ["ngủ", "khóc"]},
+  "choi": [
+   {"mo": "Khi ngồi học, em", "vd": "…cất đồ chơi đi và nhìn vào sách."},
+   {"mo": "Gặp bài khó, em", "vd": "…đọc lại thật chậm và không bỏ cuộc."},
+   {"mo": "Em kính trọng thầy cô nên", "vd": "…chăm chú nghe giảng và chào cô khi ra về."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu: Bí quyết học tốt của em.",
+   "goiY": ["Em hay mải chơi điều gì? Em sắp xếp giờ chơi, giờ học thế nào?", "Làm sao để em tập trung khi đọc bài?", "Kể một lần em gặp bài khó nhưng không bỏ cuộc.", "Bạn bè và thầy cô giúp em học tốt hơn như thế nào?"],
+   "tu": ["chăm học", "tập trung", "kiên trì", "không bỏ cuộc", "bạn bè", "thầy cô", "kính trọng", "tiến bộ", "ra người"]
+  }
+ },
+ "baiHoc": ["Muốn thành người giỏi thì phải chăm học.", "Đọc bài phải tập trung; học dở dang đừng chán.", "Học cùng bạn, kính trọng thầy thì mau tiến bộ."],
+ "baiHocEn": "To grow into a capable person, study hard. Focus when you read, and don't give up halfway. Learn with friends and respect your teacher, and you'll improve quickly.",
+ "viecTot": "Mỗi ngày tuần này, em đọc sách 10 phút thật tập trung: tắt ti vi, cất điện thoại, chỉ nhìn vào trang sách.",
+ "en": [
+  "Cô Hà welcomes you. These verses are like a good friend: they understand that you love to play, and they share great tips to help you learn better.",
+  "Listen to the first four lines.",
+  "Little ones are busy playing; to grow into a real person, you must study hard.",
+  "Liking to run, play with toys and watch cartoons is natural at six. But the poem reminds us of a big truth: to grow into a wise, useful adult, you can't play all day – you need time to study every day.",
+  "How can you study well? The next lines teach focus and patience.",
+  "While you read aloud, don't look around; when a lesson is half done, don't get bored.",
+  "Some first-graders read with their mouths while their eyes wander. Keep your eyes on the page and don't get distracted. When a sum is hard or your writing isn't neat, don't give up halfway – keep going. Patience is the key to getting through challenges.",
+  "The last four lines give two great helpers that make learning easier and more fun.",
+  "Learning with friends helps you do well; loving and respecting your teacher helps you learn fast.",
+  "At school you don't learn alone. With friends you can find good things to learn from each other, and help and discuss hard work together.",
+  "Teachers quietly pass their knowledge to you. When you love and respect them, you listen closely, and you learn quickly and deeply.",
+  "Cô Hà hopes you'll keep this focus and patience in every lesson. Thank you for learning these two verses with her."
+ ]
+}

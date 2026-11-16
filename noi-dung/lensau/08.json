@@ -1,0 +1,51 @@
+{
+ "tieuDeEn": "These verses are about our wider family – uncles and aunts on both sides – and how to greet and respect older people and be kind to younger ones.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Bác, chú, cô, dì đều là họ hàng ruột thịt của chúng mình, cùng chung ông bà tổ tiên.", "en": "Our uncles and aunts are all our relatives, sharing the same grandparents and ancestors."},
+  {"nhom": 1, "vi": "Với người lớn tuổi phải kính trọng. Kính người già, và biết nhường nhịn các em nhỏ.", "en": "We must respect people older than us. Respect the elderly, and be kind and give way to younger children."},
+  {"nhom": 2, "vi": "Gặp người lớn thì khoanh tay chào hỏi. Nói năng biết dạ, biết thưa, biết kính trên nhường dưới.", "en": "When we meet adults, we fold our arms and greet them. We answer politely with “dạ” and “thưa”, respect those older and give way to those younger."}
+ ],
+ "tuKho": [
+  {"tu": "họ hàng", "nghia": "những người thân trong gia đình lớn: bên nội và bên ngoại", "en": "relatives on both sides of the family"},
+  {"tu": "bác, chú, cô", "nghia": "anh chị em của bố (bác là anh chị của bố, chú là em trai bố, cô là chị em gái của bố)", "en": "your father's brothers and sisters"},
+  {"tu": "bác, cậu, dì", "nghia": "anh chị em của mẹ (cậu là anh em trai của mẹ, dì là chị em gái của mẹ)", "en": "your mother's brothers and sisters"},
+  {"tu": "bề trên", "nghia": "người lớn tuổi hơn, vai trên trong gia đình", "en": "people older or senior to you"},
+  {"tu": "dạ thưa", "nghia": "lời lễ phép khi trả lời, nói chuyện với người lớn", "en": "polite words used when speaking to adults"}
+ ],
+ "cauHoi": [
+  {"hoi": "Bác, chú, cô, dì là ai của chúng mình?", "chon": [["Người lạ", "bo:hoi|me:hoi"], ["Họ hàng ruột thịt", "bo:vui|me:vui|be:vui|trai-tim"], ["Bạn của các bạn nhỏ", "ban|be"]], "dung": 1, "giai": "“Đều họ hàng, là ruột thịt.”"},
+  {"hoi": "Với người lớn tuổi, chúng mình cần làm gì?", "chon": [["Kính trọng, lễ phép", "be::cui|ong|ba"], ["Nói leo, ngắt lời", "noi:Sai rồi!|be:phung|ong"], ["Làm như không thấy", "be|ba:buon"]], "dung": 0, "giai": "“Người bề trên, phải kính trọng.”"},
+  {"hoi": "“Nhường người nhỏ” – khi chơi với em họ, em nên làm gì?", "chon": [["Giành hết đồ chơi", "be:gian|em:khoc|bong"], ["Không cho em chơi cùng", "be|em:buon"], ["Nhường em, chơi cùng em", "be:vui:dua|em:vui|bong"]], "dung": 2, "giai": "Biết nhường nhịn, làm gương cho các em nhỏ."},
+  {"hoi": "Gặp bác đến nhà chơi, bạn nhỏ nên làm gì?", "chon": [["Chạy đi chỗ khác", "be:mo|nha"], ["Khoanh tay chào: “Con chào bác ạ!”", "noi:Con chào bác ạ!|be::khoanh|bo"], ["Vẫn ngồi xem ti vi", "be|tivi"]], "dung": 1, "giai": "“Gặp người lớn, phải chào thưa.”"},
+  {"hoi": "Khi người lớn gọi, bạn nhỏ trả lời thế nào cho lễ phép?", "chon": [["“Dạ, con đây ạ!”", "noi:Dạ, con đây ạ!|be:vui|ba"], ["“Gì thế?”", "noi:Gì thế?|be:phung|ba"], ["Im lặng không trả lời", "be|ba:hoi"]], "dung": 0, "giai": "“Biết dạ thưa”: trả lời người lớn phải có “dạ”, “ạ”."}
+ ],
+ "viet": {
+  "mam": {"cau": "Bác, chú, cô, dì đều là [họ] hàng. Người bề trên, em phải kính [trọng]. Gặp người lớn, em phải [chào] thưa. Em biết [nhường] các em nhỏ.", "them": ["chạy", "giành"]},
+  "choi": [
+   {"mo": "Khi họ hàng đến chơi, em", "vd": "…khoanh tay chào thật to: “Con chào cô ạ!”"},
+   {"mo": "Khi người lớn gọi, em trả lời", "vd": "…“Dạ, con đây ạ!”"},
+   {"mo": "Với các em họ nhỏ, em sẽ", "vd": "…nhường đồ chơi và trông em giúp mẹ."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu kể về một người họ hàng mà em quý mến.",
+   "goiY": ["Người đó là ai: bác, chú, cô, cậu hay dì? Ở bên nội hay bên ngoại?", "Khi gặp người đó, em chào hỏi thế nào?", "Người đó thường làm gì cho em?", "Em sẽ làm gì để thể hiện sự kính trọng?"],
+   "tu": ["họ hàng", "bên nội", "bên ngoại", "kính trọng", "chào hỏi", "dạ thưa", "khoanh tay", "nhường nhịn", "lễ phép"]
+  }
+ },
+ "baiHoc": ["Bác, chú, cô, dì đều là họ hàng ruột thịt.", "Kính người lớn, nhường người nhỏ.", "Gặp người lớn phải chào, biết dạ thưa."],
+ "baiHocEn": "Our uncles and aunts are family. Respect older people and give way to younger ones. Greet adults and answer them politely.",
+ "viecTot": "Tuần này, em gọi điện hoặc gặp một người họ hàng và chào hỏi thật lễ phép: “Con chào … ạ!”",
+ "en": [
+  "Cô Hà welcomes you. Last time we learned brothers and sisters are as close as hands and feet. Today the poem takes us into a bigger world of people close to us: our relatives on both sides of the family.",
+  "Listen to the first four lines.",
+  "Uncles and aunts are all relatives – our own family by blood.",
+  "Besides parents and siblings, you have uncles and aunts on your father's side and your mother's side. They may not live with you, but you share the same roots and grandparents. They love you and watch you grow up every day.",
+  "How should a six-year-old behave towards older relatives? The poem teaches us.",
+  "People older than us must be respected. Respect the elderly; give way to the young.",
+  "Uncles and aunts are older and have more life experience. Respect means greeting them politely, listening to their advice, not interrupting and not being rude. The poem also says to give way to younger cousins: don't fight over toys, be patient and set a good example.",
+  "The last four lines show exactly how to be polite every day.",
+  "When you meet adults, greet them; know how to say “dạ”, “thưa”, and how to respect others.",
+  "Learning letters goes together with learning manners. Whether at home or outside, when relatives visit, a good child folds their arms, bows and greets them clearly, and uses polite words like “dạ” and “thưa”. Children who greet and share are loved and praised by the whole family.",
+  "Cô Hà hopes you will always greet people politely. Thank you for learning these two verses with her."
+ ]
+}

@@ -255,6 +255,67 @@
     "chim": function () {
       return { svg: '<path d="M-30,-40 q15,-14 30,0 q15,-14 30,0" class="s-muc" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M-10,-62 q8,-8 16,0 q8,-8 16,0" class="s-muc" stroke-width="3" fill="none" stroke-linecap="round"/>', rong: 64, cao: 66 };
     },
+    "huou": function () { // hươu sao
+      var s = '<rect x="-24" y="-46" width="44" height="22" rx="11" class="f-nau"/>';
+      [-20, -10, 6, 14].forEach(function (x) { s += '<rect x="' + x + '" y="-28" width="5" height="28" rx="2" class="f-nau"/>'; });
+      s += '<path d="M14,-40 L22,-66 L32,-64 L26,-38 Z" class="f-nau"/><ellipse cx="30" cy="-68" rx="10" ry="7" class="f-nau"/><path d="M24,-74 l-6,-14 M22,-82 l-6,-2 M30,-74 l4,-14 M32,-82 l6,-2" class="s-goc-dam" stroke-width="2.5" stroke-linecap="round"/>';
+      [[-14, -40], [-4, -36], [6, -42], [-10, -32]].forEach(function (p) { s += '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="2.4" class="f-trang"/>'; });
+      return { svg: s + '<circle cx="33" cy="-70" r="1.8" class="f-muc"/><path d="M-24,-40 q-8,-2 -8,-8" class="s-nau" stroke-width="4" stroke-linecap="round" fill="none"/>', rong: 76, cao: 90 };
+    },
+    "ba-ba": function () { // ba ba bò bên bờ nước
+      return { svg: '<path d="M-56,0 q14,-5 28,0 t28,0 t28,0 t28,0" class="s-troi-dam" stroke-width="3" fill="none"/>' +
+        '<ellipse cx="0" cy="-16" rx="30" ry="15" class="f-lua-dam"/><ellipse cx="0" cy="-18" rx="20" ry="9" class="f-lua"/><circle cx="34" cy="-14" r="7" class="f-lua-dam"/><path d="M38,-14 l6,-1" class="s-muc" stroke-width="2"/>' +
+        '<circle cx="36" cy="-16" r="1.6" class="f-muc"/><ellipse cx="-20" cy="-4" rx="7" ry="4" class="f-lua-dam"/><ellipse cx="18" cy="-4" rx="7" ry="4" class="f-lua-dam"/>', rong: 96, cao: 34 };
+    },
+    "bo-cau": function () {
+      return { svg: '<ellipse cx="0" cy="-16" rx="22" ry="14" class="f-xam-nhat"/><circle cx="18" cy="-32" r="10" class="f-xam-nhat"/><path d="M12,-26 q6,6 12,0 v6 q-6,4 -12,0 Z" class="f-dung"/>' +
+        '<path d="M-20,-18 l-14,-4 l4,12 Z" class="f-xam"/><path d="M-6,-24 q10,-14 22,-4 q-12,2 -22,4z" class="f-xam"/><path d="M27,-33 l6,2 l-6,2 Z" class="f-sao"/><circle cx="20" cy="-34" r="1.8" class="f-muc"/><path d="M-4,-2 v4 M6,-2 v4" class="s-son" stroke-width="2.5"/>', rong: 66, cao: 44 };
+    },
+    "ca": function () {
+      return { svg: '<path d="M-56,0 q14,-5 28,0 t28,0 t28,0 t28,0" class="s-troi-dam" stroke-width="3" fill="none"/><ellipse cx="0" cy="-24" rx="24" ry="12" class="f-sao"/><path d="M-22,-24 l-14,-10 v20 Z" class="f-sao"/><circle cx="12" cy="-27" r="2.4" class="f-muc"/><path d="M-4,-34 q6,10 0,20" class="s-goc-dam" stroke-width="2" fill="none"/>', rong: 96, cao: 40 };
+    },
+    "cay-mit": function () { // cây thân gỗ nhiều cành, có quả mít
+      var s = '<path d="M-6,0 V-40 L-26,-60 M-4,-42 L4,-70 M2,-40 L26,-58" class="s-goc-dam" stroke-width="7" stroke-linecap="round" fill="none"/><rect x="-7" y="-44" width="14" height="44" rx="4" class="f-goc-dam"/>';
+      [[-28, -66, 16], [4, -78, 18], [28, -64, 16], [-12, -58, 12], [16, -54, 12]].forEach(function (c) { s += '<circle cx="' + c[0] + '" cy="' + c[1] + '" r="' + c[2] + '" class="f-lua-dam"/>'; });
+      s += '<ellipse cx="-2" cy="-34" rx="6" ry="9" class="f-lua-sang"/><ellipse cx="10" cy="-26" rx="5" ry="8" class="f-lua-sang"/>';
+      return { svg: s, rong: 76, cao: 96 };
+    },
+    "co-gianh": function () { // cỏ, thân có đốt
+      var s = "";
+      [-18, -6, 6, 18].forEach(function (x, i) {
+        var h = 54 + (i % 2) * 14;
+        s += '<path d="M' + x + ',0 V' + (-h) + '" class="s-dung" stroke-width="4"/>';
+        for (var k = 1; k < 4; k++) s += '<rect x="' + (x - 3.5) + '" y="' + (-k * h / 4 - 1.5) + '" width="7" height="3" rx="1" class="f-lua-dam"/>';
+        s += '<path d="M' + x + ',' + (-h * .6) + ' q' + (i % 2 ? 14 : -14) + ',-8 ' + (i % 2 ? 18 : -18) + ',-26" class="s-dung" stroke-width="2.5" fill="none"/>';
+      });
+      return { svg: s, rong: 56, cao: 70 };
+    },
+    "da": function () { // hòn đá, đá cuội bên bờ sông
+      return { svg: '<path d="M-56,0 q14,-5 28,0 t28,0 t28,0 t28,0" class="s-troi-dam" stroke-width="3" fill="none"/>' +
+        '<ellipse cx="-14" cy="-16" rx="22" ry="15" class="f-da-xam"/><ellipse cx="16" cy="-10" rx="15" ry="10" class="f-xam-nhat"/><ellipse cx="-30" cy="-6" rx="9" ry="6" class="f-xam-nhat"/><ellipse cx="32" cy="-5" rx="7" ry="5" class="f-da-xam"/>' +
+        '<path d="M-24,-22 q6,-4 12,-2" class="s-trang" stroke-width="2.5" fill="none" opacity=".7"/>', rong: 96, cao: 34 };
+    },
+    "chum": function () { // chum, vại đất nung
+      return { svg: '<path d="M-14,-62 h28 v6 q20,8 18,30 q-2,22 -20,26 h-24 q-18,-4 -20,-26 q-2,-22 18,-30 Z" class="f-dat-nung"/><rect x="-16" y="-66" width="32" height="7" rx="3" class="f-dat-nung-dam"/><path d="M-22,-36 h44" class="s-dat-nung-dam" stroke-width="2.5"/>', rong: 52, cao: 68 };
+    },
+    "manh-sanh": function () {
+      return { svg: '<path d="M-34,-4 l10,-20 l14,6 l-4,14 Z" class="f-dat-nung"/><path d="M-4,-2 l6,-24 l18,4 l2,18 Z" class="f-dat-nung-dam"/><path d="M22,-2 l8,-14 l10,10 l-4,4 Z" class="f-dat-nung"/>', rong: 80, cao: 30 };
+    },
+    "cuoc": function () { // đồ dùng bằng sắt: cuốc, dao
+      return { svg: '<path d="M-30,-4 L4,-60" class="s-goc-dam" stroke-width="6" stroke-linecap="round"/><path d="M-6,-62 h22 l-2,14 h-18 Z" class="f-sat"/>' +
+        '<g transform="rotate(-20 24 -20)"><rect x="14" y="-30" width="8" height="22" rx="3" class="f-goc-dam"/><path d="M14,-30 h8 l10,-34 q-12,4 -18,34 Z" class="f-sat"/></g>', rong: 72, cao: 66 };
+    },
+    "noi-dong": function () {
+      return { svg: '<path d="M-28,-34 h56 q-2,30 -28,32 q-26,-2 -28,-32 Z" class="f-dong"/><rect x="-32" y="-40" width="64" height="7" rx="3" class="f-dong-dam"/><path d="M-32,-36 q-10,0 -10,8 M32,-36 q10,0 10,8" class="s-dong-dam" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M-16,-24 q6,-4 10,0" class="s-trang" stroke-width="2.5" fill="none" opacity=".6"/>', rong: 88, cao: 42 };
+    },
+    "vang": function () { // vàng thỏi, bạc nén
+      return { svg: '<path d="M-36,0 l6,-16 h26 l6,16 Z" class="f-sao s-goc-dam" stroke-width="1.5"/><path d="M-30,-16 l5,-12 h18 l5,12 Z" class="f-sao s-goc-dam" stroke-width="1.5"/><path d="M6,0 l6,-16 h22 l6,16 Z" class="f-bac s-xam" stroke-width="1.5"/>' +
+        '<path d="M-22,-24 l4,-4 M30,-22 l4,-4" class="s-trang" stroke-width="2.5" stroke-linecap="round"/>' + ngoiSao(-6, -38, 6) + ngoiSao(26, -30, 5), rong: 80, cao: 46 };
+    },
+    "ban-hang": function () { // quầy hàng – mua bán
+      return { svg: '<rect x="-44" y="-30" width="88" height="30" class="f-goc"/><rect x="-44" y="-36" width="88" height="8" class="f-goc-dam"/><path d="M-48,-60 h96 l-6,-14 h-84 Z" class="f-son"/><path d="M-40,-60 v24 M40,-60 v24" class="s-goc-dam" stroke-width="3"/>' +
+        '<circle cx="-24" cy="-42" r="7" class="f-son"/><circle cx="-12" cy="-42" r="7" class="f-sao"/><circle cx="10" cy="-42" r="7" class="f-lua"/><circle cx="22" cy="-42" r="7" class="f-son"/>', rong: 96, cao: 74 };
+    },
     "bo-rom": function () {
       var s = "";
       for (var i = 0; i < 6; i++) {

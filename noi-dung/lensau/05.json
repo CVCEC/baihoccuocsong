@@ -1,0 +1,51 @@
+{
+ "tieuDeEn": "These verses teach how to behave well: don't whine or be spoiled at home, and be good at school so your parents are happy.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Chúng mình còn nhỏ, có cha mẹ chăm lo, nên ở nhà hay đi đâu cũng được vui vẻ.", "en": "We are still little and our parents take care of us, so we can be happy at home and wherever we go."},
+  {"nhom": 1, "vi": "Vì chúng mình còn bé nên mẹ hay chiều. Thấy mẹ thương mình, chúng mình đừng làm nũng, mè nheo hay đòi hỏi.", "en": "Because we are small, Mum often spoils us. Knowing she loves us, we shouldn't whine, sulk or demand things."},
+  {"nhom": 2, "vi": "Đã đi học thì phải ngoan: nghe lời thầy cô, chăm học, hoà thuận với bạn. Nghịch ngợm, quấy phá làm cha mẹ buồn là không hiếu thảo.", "en": "Now that we go to school, we must behave: listen to the teacher, study and get along with friends. Making trouble upsets our parents, and that is not being a good child."}
+ ],
+ "tuKho": [
+  {"tu": "vào ra", "nghia": "lúc ở nhà, lúc đi đâu đó – mọi lúc trong ngày", "en": "coming and going – all through the day"},
+  {"tu": "chiều", "nghia": "chiều chuộng, làm theo ý con", "en": "to spoil, to give a child what they want"},
+  {"tu": "làm nũng", "nghia": "mè nheo, hờn dỗi để được chiều", "en": "to whine or sulk to get your way"},
+  {"tu": "quấy càn", "nghia": "nghịch ngợm, phá phách, làm phiền người khác", "en": "to misbehave and make trouble"},
+  {"tu": "chẳng hiếu", "nghia": "không hiếu thảo, làm cha mẹ buồn lòng", "en": "not being a good child to your parents"}
+ ],
+ "cauHoi": [
+  {"hoi": "Vì sao lúc còn nhỏ, chúng mình “được vui vẻ”?", "chon": [["Vì có cha mẹ yêu thương, chăm lo", "bo:vui|be:vui|me:vui"], ["Vì có nhiều kẹo", "keo"], ["Vì không phải đi học", "giuong:ngu"]], "dung": 0, "giai": "“Con còn nhỏ, có mẹ cha”: có cha mẹ chăm lo nên con được vui vẻ."},
+  {"hoi": "“Làm nũng” là như thế nào?", "chon": [["Tự đi giày, mặc áo", "be:vui:gio-tay"], ["Mè nheo, khóc đòi mua đồ chơi", "noi:Mua cho con!|be:khoc|me"], ["Giúp mẹ tưới cây", "be:vui|hoa"]], "dung": 1, "giai": "Làm nũng là mè nheo, hờn dỗi, đòi mẹ chiều theo ý mình."},
+  {"hoi": "Thấy mẹ thương mình, chúng mình nên làm gì?", "chon": [["Bắt mẹ dọn đồ chơi hộ", "be:phung|me|bong"], ["Hờn dỗi khi không được mua đồ", "be:gian|me"], ["Tự làm việc của mình, không mè nheo", "be:vui:dua|chong-sach"]], "dung": 2, "giai": "“Thấy mẹ yêu, chớ làm nũng”: thương mẹ thì tự làm việc của mình."},
+  {"hoi": "Ở trường, bạn nhỏ nào đang ngoan?", "chon": [["Giơ tay phát biểu, nghe cô giảng", "be::gio-tay|bang:a b c"], ["Nói chuyện riêng trong giờ học", "be:mo|ban:mo"], ["Trêu bạn cho bạn khóc", "be:gian|ban:khoc"]], "dung": 0, "giai": "“Đã đi học, phải cho ngoan”: trật tự, chăm chú, hoà thuận với bạn."},
+  {"hoi": "Vì sao “quấy càn” ở trường là “chẳng hiếu”?", "chon": [["Vì làm cha mẹ buồn và lo lắng", "me:buon|bo:buon"], ["Vì làm bạn vui", "ban:vui"], ["Vì được thêm điểm", "sao"]], "dung": 0, "giai": "Con quấy phá thì thầy cô phiền lòng, cha mẹ buồn và lo – như thế là chưa hiếu thảo."}
+ ],
+ "viet": {
+  "mam": {"cau": "Em còn nhỏ, có mẹ [cha] chăm lo. Thấy mẹ yêu, em không làm [nũng]. Đã đi học, em phải [ngoan]. Em không quấy [càn].", "them": ["ngủ", "khóc"]},
+  "choi": [
+   {"mo": "Em không làm nũng nữa, em sẽ", "vd": "…tự mặc áo và dọn đồ chơi."},
+   {"mo": "Ở lớp, em", "vd": "…ngồi ngay ngắn và lắng nghe cô giáo."},
+   {"mo": "Khi em ngoan, cha mẹ", "vd": "…rất vui và yên tâm."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu: Em là con ngoan ở nhà, trò ngoan ở trường.",
+   "goiY": ["Ở nhà, em đã tự làm được những việc gì?", "Có lần nào em làm nũng không? Bây giờ em sửa thế nào?", "Ở trường, em ngoan như thế nào?", "Cha mẹ và thầy cô cảm thấy thế nào khi em ngoan?"],
+   "tu": ["ngoan ngoãn", "tự lập", "làm nũng", "mè nheo", "trật tự", "lắng nghe", "hoà đồng", "vui lòng", "hiếu thảo"]
+  }
+ },
+ "baiHoc": ["Có cha mẹ chăm lo là niềm vui lớn.", "Mẹ thương mình thì chớ làm nũng.", "Đi học phải ngoan, không quấy càn."],
+ "baiHocEn": "Having parents who care for us is a great joy. Mum loves us, so we shouldn't whine. At school, behave well and don't make trouble.",
+ "viecTot": "Tuần này, em tự mặc quần áo, tự đi giày và cất đồ chơi gọn gàng, không cần mẹ nhắc.",
+ "en": [
+  "Cô Hà welcomes you. Today the poem gives practical advice on how a good child behaves – at home with parents, and at school with teachers and friends.",
+  "Listen to the first four lines.",
+  "You are still little and have your mother and father, so coming and going, you are happy.",
+  "Being six is a wonderful time. You are little and live in your parents' loving arms. Thanks to their care, at home, at meals, at play or at school, you can be cheerful and carefree. Having your parents near is the greatest happiness of childhood.",
+  "You know your parents love you – but do you accept that love in a good way? The poem points out something many children do.",
+  "You are small, and Mum often spoils you. Seeing that she loves you, don't whine and sulk.",
+  "Mum always wants the best for you. But don't take advantage: “làm nũng” means whining, crying to get a toy, sulking, or making Mum do things you can do yourself, like putting on your shoes or tidying your toys. The older you get, the more you should understand.",
+  "The last four lines move to school, where your learning begins.",
+  "Now that you go to school, you must behave. Making trouble means you are not being good to your parents.",
+  "At school you are a student now, not a baby. Behaving well means listening to the teacher, being quiet in class, and sharing with friends. Children who make trouble, chat in class, are lazy or fight upset their teachers – and their parents worry and feel sad. Making your parents sad is not “hiếu”.",
+  "Cô Hà hopes you will be a good child at home and a good student at school, so your parents are happy. Thank you for learning these two verses with her."
+ ]
+}

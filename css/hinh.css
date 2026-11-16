@@ -42,3 +42,12 @@
 .hinh .f-dat { fill: color-mix(in srgb, var(--ttv-kem-rom) 55%, #fff); }
 .hinh .s-goc-dam { stroke: var(--ttv-goc-dam); }
 .hinh .f-son-nhat { fill: color-mix(in srgb, var(--ttv-chinh) 45%, #fff); }
+.hinh .f-da-xam { fill: color-mix(in srgb, var(--ttv-chu-mo) 55%, #fff); }
+.hinh .f-dat-nung { fill: color-mix(in srgb, var(--ttv-chinh) 55%, var(--ttv-kem-rom)); }
+.hinh .f-dat-nung-dam { fill: color-mix(in srgb, var(--ttv-chinh-dam) 75%, var(--ttv-kem-rom)); }
+.hinh .s-dat-nung-dam { stroke: color-mix(in srgb, var(--ttv-chinh-dam) 75%, var(--ttv-kem-rom)); fill: none; }
+.hinh .f-sat { fill: color-mix(in srgb, var(--ttv-chu) 55%, var(--ttv-chu-mo)); }
+.hinh .f-dong { fill: color-mix(in srgb, var(--ttv-sao) 55%, var(--ttv-chinh-dam)); }
+.hinh .f-dong-dam { fill: color-mix(in srgb, var(--ttv-sao) 30%, var(--ttv-chinh-dam)); }
+.hinh .s-dong-dam { stroke: color-mix(in srgb, var(--ttv-sao) 30%, var(--ttv-chinh-dam)); fill: none; }
+.hinh .f-bac { fill: color-mix(in srgb, var(--ttv-chu-mo) 25%, #fff); }

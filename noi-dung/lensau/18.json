@@ -1,0 +1,53 @@
+{
+ "tieuDeEn": "The last verses of “Lên Sáu” sum up why we study: to open our minds, work hard, avoid idleness, become useful to ourselves and our country, and never give up.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Chữ của nước mình, chúng mình phải học để trí óc ngày càng mở mang. Muốn được vẻ vang, phải chăm chỉ làm việc.", "en": "We must learn our own language so our minds grow every day. To do well and make others proud, we must work hard."},
+  {"nhom": 1, "vi": "Đừng lười biếng, chơi bời lêu lổng mà thành người hư. Đất nước đang cần những người tài giỏi.", "en": "Don't be lazy and idle, or you'll go astray. Our country needs talented, capable people."},
+  {"nhom": 2, "vi": "Hãy cố gắng học hỏi để tiến bộ nhanh, vừa có ích cho bản thân, vừa có ích cho đất nước. Gặp khó khăn mà lùi bước là hèn nhát.", "en": "Try hard to learn and improve quickly – good for yourself and good for your country. Backing away from difficulties is giving up."}
+ ],
+ "tuKho": [
+  {"tu": "mở mang", "nghia": "làm cho hiểu biết rộng ra, sáng ra", "en": "to open up, to broaden the mind"},
+  {"tu": "vẻ vang", "nghia": "được mọi người khen, làm gia đình tự hào", "en": "honour, making others proud"},
+  {"tu": "làm lụng", "nghia": "chăm chỉ làm việc", "en": "to work hard"},
+  {"tu": "lêu lổng", "nghia": "lười biếng, chơi bời, không chịu học, không chịu làm", "en": "idle, wasting time"},
+  {"tu": "hư thân", "nghia": "trở thành người hư, không tốt", "en": "to go astray, to become a bad person"},
+  {"tu": "ích mình, lợi nước", "nghia": "có ích cho mình và cho đất nước", "en": "good for yourself and for your country"}
+ ],
+ "cauHoi": [
+  {"hoi": "Học chữ nước ta giúp trí óc chúng mình thế nào?", "chon": [["Ngày càng mở mang", "be:vui|sach|sao"], ["Mệt mỏi, buồn ngủ", "giuong:ngu"], ["Không thay đổi gì", "be:buon"]], "dung": 0, "giai": "“Chữ nước ta, ta phải học, cho trí óc, ngày mở mang.”"},
+  {"hoi": "“Muốn vẻ vang” thì phải làm gì?", "chon": [["Ngồi chơi cả ngày", "be|tivi"], ["Đòi người khác làm hộ", "noi:Làm hộ con!|be:phung|me"], ["Chăm chỉ làm lụng", "be:cuoi:dua|hoa"]], "dung": 2, "giai": "“Muốn vẻ vang, phải làm lụng.” Không thành công nào tự nhiên mà có."},
+  {"hoi": "“Lêu lổng” là như thế nào?", "chon": [["Đọc sách chăm chỉ", "be:cuoi|sach"], ["Lười học, chơi bời suốt ngày", "be:mo|bong|dien-thoai"], ["Giúp bố mẹ việc nhà", "be:vui:dua|mam-com"]], "dung": 1, "giai": "Lêu lổng là lười biếng, trốn học đi chơi. “Đừng lêu lổng, mà hư thân.”"},
+  {"hoi": "Học giỏi thì có ích cho ai?", "chon": [["Cho mình và cho đất nước", "be:vui|nha|nui"], ["Không có ích cho ai", "be:buon"], ["Chỉ để khoe với bạn", "be:phung|ban"]], "dung": 0, "giai": "“Vừa ích mình, vừa lợi nước.”"},
+  {"hoi": "Gặp bài khó, bạn nhỏ nên làm gì?", "chon": [["Bỏ cuộc ngay", "be:khoc|vo-but"], ["Không cố gắng, lùi bước", "be:buon|giuong"], ["Cố gắng, không lùi bước", "be:cuoi:gio-tay|vo-but"]], "dung": 2, "giai": "“Chớ lùi bước, là kẻ hèn”: gặp khó khăn thì cố gắng, không bỏ cuộc."}
+ ],
+ "viet": {
+  "mam": {"cau": "Chữ nước ta, ta phải [học]. Muốn vẻ vang, phải làm [lụng]. Đừng lêu [lổng] mà hư thân. Em cố học hỏi, vừa ích mình, vừa lợi [nước].", "them": ["ngủ", "chơi"]},
+  "choi": [
+   {"mo": "Em học tiếng Việt để", "vd": "…hiểu thêm về quê hương và nói chuyện với ông bà."},
+   {"mo": "Lớn lên, em muốn làm", "vd": "…bác sĩ để chữa bệnh cho mọi người."},
+   {"mo": "Khi gặp bài khó, em sẽ không", "vd": "…bỏ cuộc mà sẽ hỏi thầy cô và thử lại."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu: Ước mơ của em và em sẽ học tập thế nào để đạt được ước mơ ấy.",
+   "goiY": ["Lớn lên, em muốn trở thành người như thế nào?", "Ước mơ đó có ích cho em và cho mọi người ra sao?", "Bây giờ em cần chăm học, chăm làm những gì?", "Khi gặp khó khăn, em sẽ làm gì để không lùi bước?"],
+   "tu": ["ước mơ", "mở mang", "chăm chỉ", "làm lụng", "vẻ vang", "tài giỏi", "ích mình, lợi nước", "cố gắng", "không lùi bước"]
+  }
+ },
+ "baiHoc": ["Học chữ nước ta để trí óc mở mang.", "Muốn vẻ vang phải chăm làm, đừng lêu lổng.", "Học vừa ích mình, vừa lợi nước; chớ lùi bước."],
+ "baiHocEn": "Learn our language so your mind grows. To succeed, work hard and don't be idle. Learning is good for you and your country – never give up.",
+ "viecTot": "Tuần này, em viết ước mơ của mình ra một tờ giấy, dán ở góc học tập, và mỗi ngày làm một việc nhỏ hướng tới ước mơ ấy.",
+ "en": [
+  "Cô Hà welcomes you to the very last lesson of “Lên Sáu”. After a long journey through family manners, animals and plants, and our country's history, the poem now sums up the biggest question: why do we learn and grow up?",
+  "Listen to the first six lines of the last verse.",
+  "Our language we must learn, so our minds open up day by day; to earn honour, we must work hard.",
+  "The poem returns to its first reminder: we must learn our language. It's not just a duty – it opens our minds and helps us think clearly. And with knowledge comes a truth: to succeed and make your family proud, you must work hard, starting with small jobs suited to your age. No success comes by itself.",
+  "To become useful, the poem names the wrong way to live and the great responsibility we have to our country.",
+  "Don't be idle and go astray; the country needs talented people.",
+  "“Lêu lổng” means being lazy, skipping school to play around and not listening to parents. That kind of life spoils your future and your character. Our country needs clever, talented and good young people to grow strong. Studying today prepares you to build the country tomorrow.",
+  "The last six lines ring out like a call to action for every young learner.",
+  "Try hard to learn and progress fast – good for yourself and good for the country. Backing away is cowardly.",
+  "Always try to learn and improve, without delay or laziness. The purpose of learning is in eight golden words: “good for yourself, good for your country”. Learning helps you build a good life, and your knowledge helps your homeland grow.",
+  "And the final, firm advice: there will be hard sums, tiring days and moments you want to quit. Don't surrender – turning away from difficulties is giving up too easily.",
+  "The whole poem ends with a beautiful ideal for life. Cô Hà hopes Tản Đà's words will travel with you always. Thank you for learning these last verses of “Lên Sáu” with her."
+ ]
+}

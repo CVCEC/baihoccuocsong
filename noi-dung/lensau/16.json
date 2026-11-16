@@ -1,0 +1,51 @@
+{
+ "tieuDeEn": "These verses are about metals from the ground – iron and copper for tools, gold and silver for money – and what it means to be rich.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Kim loại được tìm thấy trong lòng đất. Quan trọng nhất là sắt, thứ hai là đồng. Người ta dùng chúng làm đồ dùng khắp nơi trong nước.", "en": "Metals are found in the ground. The most important is iron, then copper. People use them to make tools and things used all over the country."},
+  {"nhom": 1, "vi": "Vàng và bạc còn quý hơn nữa. Ngày xưa người ta đúc vàng bạc thành tiền để mua bán.", "en": "Gold and silver are even more precious. Long ago, people made them into coins for buying and selling."},
+  {"nhom": 2, "vi": "Ai có nhiều tiền của thì là người giàu.", "en": "Whoever has a great deal of money and wealth is rich."}
+ ],
+ "tuKho": [
+  {"tu": "loài kim", "nghia": "(cách gọi xưa) kim loại và khoáng vật trong lòng đất", "en": "(old term) metals and minerals from the ground"},
+  {"tu": "sắt", "nghia": "kim loại rất cứng, làm dao, cuốc, cày", "en": "iron"},
+  {"tu": "đồng", "nghia": "kim loại màu vàng đỏ, bền, làm nồi, mâm", "en": "copper (bronze)"},
+  {"tu": "đúc", "nghia": "nấu chảy kim loại rồi đổ vào khuôn", "en": "to cast metal in a mould"},
+  {"tu": "vạn", "nghia": "mười nghìn; ý nói rất nhiều", "en": "ten thousand – a very large amount"}
+ ],
+ "cauHoi": [
+  {"hoi": "Các loài kim (kim loại) được tìm thấy ở đâu?", "chon": [["Trên cây", "cay"], ["Trong lòng đất", "nui|cuoc"], ["Trên mây", "mua"]], "dung": 1, "giai": "“Các loài kim, tìm ở đất.”"},
+  {"hoi": "Theo bài thơ, kim loại nào quan trọng nhất để làm đồ dùng?", "chon": [["Sắt", "cuoc"], ["Nhựa", "bong"], ["Gỗ", "cay"]], "dung": 0, "giai": "“Nhất là sắt, nhì là đồng.”"},
+  {"hoi": "Đồ vật nào thường làm bằng đồng?", "chon": [["Quyển vở", "vo-but"], ["Cái áo", "be:cuoi"], ["Cái nồi đồng", "noi-dong"]], "dung": 2, "giai": "Đồng bền, dẻo, ngày xưa làm nồi, mâm, chiêng, trống."},
+  {"hoi": "Ngày xưa, vàng bạc được đúc làm gì?", "chon": [["Làm tiền để mua bán", "vang|tien|ban-hang"], ["Làm đồ chơi", "bong"], ["Làm thức ăn", "bat-com"]], "dung": 0, "giai": "“Như vàng bạc, càng quý hơn, đúc làm tiền, để mua bán.”"},
+  {"hoi": "Muốn sau này có cuộc sống đầy đủ, ngay từ bây giờ em nên làm gì?", "chon": [["Đòi bố mẹ cho thật nhiều tiền", "noi:Cho con tiền!|be:phung|bo"], ["Chăm học, chăm làm, biết tiết kiệm", "be:cuoi|ban-hoc|tien"], ["Không làm gì cả", "be|giuong:ngu"]], "dung": 1, "giai": "Muốn ấm no, giàu có thì phải chăm học, chăm làm và biết tiết kiệm."}
+ ],
+ "viet": {
+  "mam": {"cau": "Các loài kim tìm ở [đất]. Nhất là sắt, nhì là [đồng]. Vàng bạc càng [quý] hơn. Người xưa đúc vàng bạc làm [tiền].", "them": ["mây", "lá"]},
+  "choi": [
+   {"mo": "Trong nhà em có đồ dùng bằng sắt như", "vd": "…con dao, cái kéo, cái nồi."},
+   {"mo": "Người ta dùng tiền để", "vd": "…mua gạo, mua sách vở."},
+   {"mo": "Em tiết kiệm bằng cách", "vd": "…bỏ tiền mừng tuổi vào ống heo."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu: Những đồ dùng bằng kim loại trong nhà em.",
+   "goiY": ["Kể tên vài đồ dùng làm bằng sắt, thép, đồng trong nhà em.", "Mỗi đồ dùng giúp gia đình em làm việc gì?", "Theo em, vì sao vàng bạc lại quý?", "Em sẽ dùng tiền và giữ gìn đồ dùng thế nào cho tiết kiệm?"],
+   "tu": ["kim loại", "sắt", "đồng", "vàng", "bạc", "đồ dùng", "tiền", "mua bán", "tiết kiệm"]
+  }
+ },
+ "baiHoc": ["Kim loại tìm thấy trong lòng đất.", "Sắt, đồng làm đồ dùng; vàng bạc quý, xưa đúc làm tiền.", "Muốn đủ đầy thì chăm học, chăm làm, biết tiết kiệm."],
+ "baiHocEn": "Metals come from the ground. Iron and copper make tools; precious gold and silver were once made into money. To live comfortably, study hard, work hard and save.",
+ "viecTot": "Tuần này, em có một ống tiết kiệm nhỏ và giữ gìn cẩn thận đồ dùng học tập của mình.",
+ "en": [
+  "Cô Hà welcomes you. Last time we met non-living things from “loài kim” like earth, stone and pottery. Today we go deeper into the world of precious metals and see what people found underground for everyday life.",
+  "Listen to the first six lines.",
+  "Metals are found in the earth: first iron, then copper, made into tools used all over the country.",
+  "To get iron and copper, people dig deep mines. The two most common and important are iron – very hard – and copper – flexible and long-lasting. From them come so many tools: the farmer's hoe and plough, Mum's kitchen knife and scissors, copper pots and trays. All from the non-living earth.",
+  "Besides metals for tools, the ground also gives shining metals worth much more.",
+  "Like gold and silver, even more precious, cast into money for buying and selling.",
+  "If iron and copper stand for hard work, gold and silver stand for value and wealth. They are rare and sparkle, so they are more precious. Long ago, people cast them into coins and bars to buy and sell goods – rice, clothes, books. This is a first lesson about the value of money and how people trade.",
+  "The last two lines give a simple old idea of what it means to be well-off.",
+  "Whoever has ten thousand is a rich person.",
+  "“Vạn” means a very large amount – of coins, silver or stored rice. People who work hard, save and gather wealth become rich. But the poem also quietly reminds us: wealth and comfort start with hard work, knowing how to use tools, and above all, studying well.",
+  "Cô Hà hopes you will always try hard to gather knowledge. Thank you for learning these two verses with her."
+ ]
+}

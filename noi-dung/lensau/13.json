@@ -1,0 +1,55 @@
+{
+ "tieuDeEn": "These verses introduce the animal world: deer in the forest, dogs that guard the house, cold-blooded turtles, winged pigeons – and caterpillars we must not touch.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Có rất nhiều loài vật. Con hươu sống ở rừng, ở đồng cỏ. Con chó được nuôi trong nhà để giữ nhà.", "en": "There are so many kinds of animals. Deer live in forests and meadows. Dogs live with families and guard the house."},
+  {"nhom": 1, "vi": "Con ba ba là loài máu lạnh: thân nhiệt thay đổi theo nước và không khí xung quanh. Loài có cánh biết bay thì như chim bồ câu.", "en": "The soft-shell turtle is cold-blooded: its body temperature changes with the water and air around it. Animals with wings, like pigeons, can fly."},
+  {"nhom": 2, "vi": "Còn có loài sâu, như con bọ róm (sâu róm) có lông độc. Không được chạm tay vào.", "en": "There are also caterpillars, like the hairy caterpillar, whose hairs sting. Never touch it."}
+ ],
+ "tuKho": [
+  {"tu": "giống vật", "nghia": "các loài động vật", "en": "animals"},
+  {"tu": "con hươu", "nghia": "con vật bốn chân hiền lành, sống ở rừng, đồng cỏ", "en": "deer"},
+  {"tu": "con ba ba", "nghia": "con vật giống rùa, mai mềm, sống dưới nước", "en": "soft-shell turtle"},
+  {"tu": "máu lạnh", "nghia": "thân nhiệt thay đổi theo nhiệt độ bên ngoài, không tự giữ ấm được", "en": "cold-blooded"},
+  {"tu": "chim câu", "nghia": "chim bồ câu", "en": "pigeon, dove"},
+  {"tu": "bọ róm", "nghia": "sâu róm: con sâu nhiều lông, chạm vào bị ngứa rát", "en": "hairy caterpillar (its hairs sting)"}
+ ],
+ "cauHoi": [
+  {"hoi": "Theo bài thơ, con hươu sống ở đâu?", "chon": [["Trong nhà", "nha|huou"], ["Ở rừng, đồng cỏ", "cay|huou|cay"], ["Dưới nước", "ca"]], "dung": 1, "giai": "“Như con hươu, ở rừng cỏ.”"},
+  {"hoi": "Con vật nào được nuôi để giữ nhà?", "chon": [["Con chó", "cho|nha"], ["Con hươu", "huou"], ["Con cá", "ca"]], "dung": 0, "giai": "“Như con chó, nuôi giữ nhà”: chó trung thành, canh giữ nhà."},
+  {"hoi": "Con vật nào là “loài máu lạnh”?", "chon": [["Con mèo", "meo"], ["Con bồ câu", "bo-cau"], ["Con ba ba", "ba-ba"]], "dung": 2, "giai": "“Con ba ba, loài máu lạnh”: thân nhiệt thay đổi theo môi trường."},
+  {"hoi": "Con vật nào thuộc “loài có cánh”?", "chon": [["Con chó", "cho"], ["Chim bồ câu", "bo-cau"], ["Con ba ba", "ba-ba"]], "dung": 1, "giai": "“Loài có cánh, như chim câu”: chim có cánh, biết bay."},
+  {"hoi": "Thấy con bọ róm trên lá, bạn nhỏ nên làm gì?", "chon": [["Không chạm vào, gọi người lớn", "be:hoi|bo-rom|me"], ["Cầm lên chơi", "be:vui:dua|bo-rom"], ["Bỏ vào túi áo", "be:cuoi|bo-rom"]], "dung": 0, "giai": "Lông bọ róm có độc, chạm vào bị ngứa rát, sưng đỏ. Đừng chạm vào nhé!"}
+ ],
+ "viet": {
+  "mam": {"cau": "Các giống vật thật là [nhiều]. Con hươu ở rừng [cỏ]. Con chó nuôi giữ [nhà]. Chim câu là loài có [cánh].", "them": ["sách", "bàn"]},
+  "choi": [
+   {"mo": "Con vật em thích nhất là", "vd": "…con chó, vì nó trung thành và đáng yêu."},
+   {"mo": "Con vật đó sống ở", "vd": "…trong nhà em, ngủ ở góc hiên."},
+   {"mo": "Khi thấy sâu róm, em", "vd": "…không chạm vào và báo cho người lớn."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu giới thiệu một con vật em biết.",
+   "goiY": ["Đó là con vật gì? Nó sống ở đâu: trong nhà, trong rừng, dưới nước hay trên trời?", "Nó trông như thế nào: có lông, có vảy, có mai hay có cánh?", "Nó ăn gì, làm gì?", "Em cần chú ý điều gì khi gặp con vật đó?"],
+   "tu": ["con vật", "rừng cỏ", "nuôi", "giữ nhà", "máu lạnh", "có cánh", "biết bay", "lông độc", "cẩn thận"]
+  }
+ },
+ "baiHoc": ["Có rất nhiều loài vật, mỗi loài sống một nơi.", "Có loài máu lạnh, có loài có cánh biết bay.", "Thấy sâu róm thì đừng chạm vào."],
+ "baiHocEn": "There are many kinds of animals, each living in its own place. Some are cold-blooded, some have wings and fly. Never touch a hairy caterpillar.",
+ "viecTot": "Tuần này, em cùng bố mẹ quan sát một con vật quanh nhà (chim, mèo, chó, sóc…) và kể cho bố mẹ nghe nó trông thế nào, sống ở đâu.",
+ "en": [
+  "Cô Hà welcomes you. Today we leave rules and hygiene for a fun adventure into the natural world. At six, learning about animals is one of the first steps to understanding the world.",
+  "Listen to the first six lines.",
+  "Animals are so many: like the deer that lives in forests and meadows, like the dog kept to guard the house.",
+  "The poem starts excitedly: there are so many animals! First come two four-legged animals that live in very different places.",
+  "The deer is a gentle wild animal that lives in forests and wide meadows.",
+  "The dog is a loyal pet that lives with the family and guards the house, keeping everyone safe.",
+  "Next, the poem introduces two groups of animals with special body features.",
+  "The soft-shell turtle is cold-blooded; animals with wings are like the pigeon.",
+  "The soft-shell turtle lives in water and is a reptile. “Máu lạnh” (cold-blooded) means its body temperature changes with the water and air around it – it can't keep itself warm like we do.",
+  "Look up at the sky and you'll see birds with wings. The poem's example is the pigeon or dove – gentle, lovely, a symbol of peace, flying freely.",
+  "The last two lines remind us about a tiny creature we must be careful with.",
+  "And there are caterpillars, like the hairy caterpillar.",
+  "Besides big animals, nature also has insects and caterpillars. The hairy caterpillar often sits on leaves and has stinging hairs. Never touch one – it can make your skin itchy, burning and swollen!",
+  "That's all for today. Thank you for learning these two verses of “Lên Sáu” with cô Hà."
+ ]
+}

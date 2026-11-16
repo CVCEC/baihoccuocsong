@@ -1,0 +1,54 @@
+{
+ "tieuDeEn": "These verses explain why we need to learn: we are born knowing very little, and learning helps us grow into good people.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Trong trời đất rộng lớn, con người là quý nhất. Con người hơn các loài vật vì biết suy nghĩ, biết yêu thương và có chữ viết.", "en": "In the whole wide world, people are the most precious. We are different from animals because we can think, love each other and write."},
+  {"nhom": 1, "vi": "Lúc còn bé, chúng mình chưa biết gì, giống như một tờ giấy trắng. Vì thế chúng mình cần cha mẹ, thầy cô dạy bảo.", "en": "When we are little, we don't know much yet – like a blank sheet of paper. That is why we need our parents and teachers to teach us."},
+  {"nhom": 2, "vi": "Được dạy bảo, chúng mình biết đạo làm người: hiếu thảo, lễ phép, biết nhường nhịn. Như thế mới thành người tốt. Lớn dần lên, chúng mình sẽ ngày càng giỏi.", "en": "Being taught, we learn how to be good people: loving our parents, being polite and sharing. As we grow up, we get better and better."}
+ ],
+ "tuKho": [
+  {"tu": "trời đất", "nghia": "cả thế giới quanh ta: bầu trời, mặt đất, cây cỏ, muông thú", "en": "the whole world around us"},
+  {"tu": "giống vật", "nghia": "các loài vật, con vật", "en": "animals"},
+  {"tu": "ngu si", "nghia": "(từ xưa) còn non nớt, chưa hiểu biết", "en": "(old word) young and not knowing much yet"},
+  {"tu": "dạy bảo", "nghia": "chỉ cho biết điều hay, lẽ phải", "en": "to teach and guide"},
+  {"tu": "biết đạo", "nghia": "biết đạo làm người: hiếu thảo, lễ phép, tử tế", "en": "knowing how to be a good person"},
+  {"tu": "nên thân", "nghia": "trở thành người tốt, được mọi người quý mến", "en": "to grow into a good person"}
+ ],
+ "cauHoi": [
+  {"hoi": "Theo bài thơ, trong trời đất, ai là quý nhất?", "chon": [["Con mèo", "meo"], ["Con người", "me:cuoi|be:vui"], ["Cái cây", "cay"]], "dung": 1, "giai": "“Trong trời đất, nhất là người”: con người là quý nhất."},
+  {"hoi": "Con người hơn loài vật ở điểm nào?", "chon": [["Ăn được nhiều hơn", "bat-com"], ["Ngủ được lâu hơn", "giuong:ngu"], ["Biết đọc, biết viết, biết yêu thương", "be:vui|sach"]], "dung": 2, "giai": "Con người biết suy nghĩ, có chữ viết và biết yêu thương nhau."},
+  {"hoi": "Vì sao các bạn nhỏ cần được dạy bảo?", "chon": [["Vì còn bé, chưa biết gì", "em:hoi|hoi"], ["Vì muốn được ăn kẹo", "keo"], ["Vì thích xem ti vi", "tivi"]], "dung": 0, "giai": "“Con bé thật, chưa biết gì”: còn nhỏ nên cần cha mẹ, thầy cô dạy bảo."},
+  {"hoi": "Ai dạy bảo các bạn nhỏ hằng ngày?", "chon": [["Cái điện thoại", "dien-thoai"], ["Cha mẹ ở nhà, thầy cô ở trường", "me|be:vui|co"], ["Không ai cả", "be:buon"]], "dung": 1, "giai": "Cha mẹ dạy bảo ở nhà, thầy cô dạy bảo ở trường."},
+  {"hoi": "Bạn nhỏ nào đang “biết đạo” làm người?", "chon": [["Giành đồ chơi của em", "be:gian|em:khoc|bong"], ["Nói trống không với bà", "noi:Không!|be:phung|ba"], ["Lễ phép chào ông bà", "noi:Con chào ông bà ạ!|be::cui|ong|ba"]], "dung": 2, "giai": "Biết đạo là biết lễ phép, hiếu thảo và nhường nhịn em nhỏ."}
+ ],
+ "viet": {
+  "mam": {"cau": "Trong trời đất, con [người] là quý nhất. Khi còn bé, em cần cha mẹ và thầy cô [dạy] bảo. Em học để biết [đạo] làm người. Lớn dần lên, em sẽ [khá].", "them": ["chơi", "ngủ"]},
+  "choi": [
+   {"mo": "Con người hơn loài vật vì", "vd": "…biết đọc, biết viết và biết yêu thương."},
+   {"mo": "Ở nhà, bố mẹ dạy em", "vd": "…chào hỏi lễ phép."},
+   {"mo": "Lớn lên, em muốn", "vd": "…học giỏi và giúp đỡ mọi người."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu: Vì sao em cần đi học?",
+   "goiY": ["Hồi còn bé, em chưa biết làm những gì?", "Ai đã dạy bảo em? Họ dạy em điều gì?", "Bây giờ em đã biết làm gì rồi?", "Lớn lên, em muốn trở thành người như thế nào?"],
+   "tu": ["dạy bảo", "biết đạo", "nên thân", "lễ phép", "hiếu thảo", "cha mẹ", "thầy cô", "tiến bộ", "chăm chỉ"]
+  }
+ },
+ "baiHoc": ["Con người là quý nhất trong trời đất.", "Còn bé thì cần được dạy bảo.", "Học để biết đạo làm người, lớn lên sẽ khá."],
+ "baiHocEn": "People are the most precious in the world. Little ones need to be taught. We learn to become good people, and we get better as we grow.",
+ "viecTot": "Hôm nay, em hỏi bố mẹ một điều em chưa biết, lắng nghe thật kỹ rồi nói lời cảm ơn.",
+ "en": [
+  "Cô Hà welcomes you back. Yesterday you learned that six-year-olds should study our language. Today the poem answers a big question: why do people need to learn?",
+  "Listen as cô Hà reads the first four lines.",
+  "In the whole world, people come first; in this life, we are above the animals.",
+  "The world is huge: sky, land, plants and animals. But people are the most special. We can think, build cars and houses, love and share, and talk and write with words. Be proud to be a person.",
+  "So how does a little child grow into such a special person? The next lines tell us.",
+  "A little child truly knows nothing yet. Still young and unlearned, they must be taught.",
+  "This describes you now: at six you are like a blank sheet of paper. You can't read everything yet, or always tell right from wrong. “Ngu si” is an old word – here it simply means young and still learning.",
+  "Nobody is born knowing everything. Because you are little, you need to be taught – by your parents at home and your teachers at school. Learning is how we grow wiser.",
+  "What is all this teaching for? The last four lines answer.",
+  "Learn the right way, and you become a good person. As you grow, you will do well.",
+  "“Biết đạo” means knowing how to be a good person: loving your parents, respecting teachers, being polite to adults and kind to younger children. Being good is the root, even more than book knowledge.",
+  "Don't worry if your handwriting isn't neat yet or you read slowly. Keep learning a little every day and listen to your parents and teachers – you will keep getting better.",
+  "Remember: we learn so we know the right way and become good people. Cô Hà thanks you for learning these two verses with her."
+ ]
+}

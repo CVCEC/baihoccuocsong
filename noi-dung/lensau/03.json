@@ -1,0 +1,53 @@
+{
+ "tieuDeEn": "These verses are about our parents: they gave birth to us, carried us, loved us, and work hard every day to keep us warm and fed.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Ai đã sinh ra chúng mình? Đó là cha và mẹ. Từ khi chúng mình còn là em bé, cha mẹ đã bồng bế, ru ngủ và thương yêu chúng mình hết lòng.", "en": "Who gave birth to us? Our father and mother. Since we were babies, they have carried us, rocked us to sleep and loved us with all their hearts."},
+  {"nhom": 1, "vi": "Công ơn ấy lớn biết bao, chúng mình phải nghĩ cho thật kỹ: chiếc áo ấm chúng mình mặc là mẹ chăm lo, bát cơm no chúng mình ăn là cha vất vả làm ra.", "en": "Their kindness is so great – think about it carefully. The warm clothes we wear come from Mum's care, and the food that fills us comes from Dad's hard work."},
+  {"nhom": 2, "vi": "Cha mẹ là “hai thân”: hai người thân thiết, ruột thịt và quan trọng nhất của mỗi chúng mình.", "en": "Our parents are our “hai thân” – the two closest, dearest people in our lives."}
+ ],
+ "tuKho": [
+  {"tu": "bồng bế", "nghia": "ẵm, bế em bé trên tay", "en": "to carry a baby in your arms"},
+  {"tu": "ơn", "nghia": "điều tốt người khác đã làm cho mình, mình phải nhớ và biết ơn", "en": "a kindness someone has done for you"},
+  {"tu": "ngẫm", "nghia": "suy nghĩ thật kỹ, thật sâu", "en": "to think about something deeply"},
+  {"tu": "kiếm", "nghia": "làm việc để có (tiền, gạo, đồ ăn)", "en": "to work to earn (money, food)"},
+  {"tu": "hai thân", "nghia": "cha và mẹ, hai người thân nhất", "en": "father and mother, our two dearest people"},
+  {"tu": "sinh thành, dưỡng dục", "nghia": "sinh ra và nuôi nấng, dạy dỗ", "en": "giving birth to and raising a child"}
+ ],
+ "cauHoi": [
+  {"hoi": "“Ai đẻ ta?” – Ai đã sinh ra chúng mình?", "chon": [["Cha và mẹ", "bo:cuoi|me:cuoi"], ["Bạn cùng lớp", "be|ban"], ["Cô bán hàng", "co|qua"]], "dung": 0, "giai": "“Ai đẻ ta? Cha cùng mẹ.” Cha mẹ đã sinh ra chúng mình."},
+  {"hoi": "Khi chúng mình còn bé, cha mẹ đã làm gì?", "chon": [["Để em bé ngủ một mình cả ngày", "giuong:khoc"], ["Bồng bế, thương yêu", "me:vui:om|em:vui|trai-tim"], ["Chỉ xem ti vi", "tivi"]], "dung": 1, "giai": "“Bồng lại bế, thương và yêu”: cha mẹ ẵm bồng, chăm sóc chúng mình."},
+  {"hoi": "Theo bài thơ, chiếc áo ấm chúng mình mặc là do ai lo?", "chon": [["Mẹ", "me:cuoi|be:vui"], ["Con mèo", "meo"], ["Tự nhiên mà có", "be:hoi|hoi"]], "dung": 0, "giai": "“Áo mặc ấm, mẹ may cho.”"},
+  {"hoi": "Bát cơm no chúng mình ăn là do ai vất vả làm ra?", "chon": [["Bạn cùng bàn", "ban:cuoi"], ["Cái ti vi", "tivi"], ["Cha", "bo:cuoi|bat-com"]], "dung": 2, "giai": "“Cơm ăn no, cha kiếm hộ.” Cha làm việc vất vả để nuôi cả nhà."},
+  {"hoi": "“Hai thân” là ai?", "chon": [["Hai người bạn thân", "be|ban"], ["Cha và mẹ", "bo:vui|me:vui|trai-tim"], ["Ông và bà hàng xóm", "ong|ba"]], "dung": 1, "giai": "Người Việt gọi cha mẹ là “hai thân” – hai người thân nhất."}
+ ],
+ "viet": {
+  "mam": {"cau": "Cha [mẹ] đã sinh ra em. Khi em còn bé, cha mẹ [bồng] bế em. Áo mặc ấm, mẹ [may] cho. Cơm ăn no, [cha] kiếm hộ.", "them": ["bạn", "chơi"]},
+  "choi": [
+   {"mo": "Khi em còn bé, mẹ em", "vd": "…bế em và hát ru em ngủ."},
+   {"mo": "Mỗi ngày, bố em", "vd": "…đi làm vất vả để nuôi cả nhà."},
+   {"mo": "Để cảm ơn cha mẹ, em sẽ", "vd": "…tự xếp quần áo và học bài chăm chỉ."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu kể về công ơn của cha mẹ em.",
+   "goiY": ["Hồi em còn bé, cha mẹ đã chăm sóc em thế nào?", "Mẹ em làm gì để em được mặc ấm, đi học sạch sẽ?", "Bố em làm gì để cả nhà có bữa cơm ngon?", "Em sẽ làm gì để cha mẹ vui lòng?"],
+   "tu": ["bồng bế", "thương yêu", "vất vả", "áo ấm", "cơm no", "biết ơn", "hai thân", "chăm ngoan", "ghi nhớ"]
+  }
+ },
+ "baiHoc": ["Cha mẹ sinh ra và yêu thương chúng mình.", "Áo ấm, cơm no đều từ công sức của cha mẹ.", "Biết ơn cha mẹ – “hai thân” của mình."],
+ "baiHocEn": "Our parents gave birth to us and love us. Our warm clothes and our food come from their hard work. Be thankful to them – they are our dearest people.",
+ "viecTot": "Hôm nay, sau bữa cơm, em nói “Con cảm ơn bố mẹ” và giúp dọn bát đũa.",
+ "en": [
+  "Cô Hà welcomes you back. Last time we learned that we need to be taught the right way. The first and most important lesson is “đạo hiếu” – loving, thanking and respecting our parents.",
+  "Listen to the first four lines, warm like a whisper.",
+  "Who gave birth to us? Father and mother. They carried us in their arms and loved us.",
+  "The poem asks a simple question – “Who gave birth to us?” – and the answer is our father and mother. From before we were born, through all the nights of rocking, feeding and caring for a tiny baby, our parents did everything out of endless love.",
+  "How hard did our parents work so that we could grow up healthy and learn Vietnamese today? The next lines remind us.",
+  "Their kindness is so great – think about it: the warm clothes you wear, Mum made for you; the food that fills you, Dad worked for.",
+  "“Phải ngẫm” means stop and think deeply, with your mind and your heart. Our parents' care is in small everyday things: Mum prepares and washes the clothes you wear, Dad works hard so the family has meals. Together they are the strong support of your childhood.",
+  "The last two lines are a lesson to keep in your heart.",
+  "Father and mother – they are our “hai thân”.",
+  "Vietnamese people call parents “hai thân”: the two closest, most important people in our lives. Without them, we would not be here. So the biggest first lesson at six is to love, remember and thank our parents for giving us life and raising us.",
+  "Every time you eat a full bowl of rice or wear a warm coat, remember how hard your parents work, and try to be good and study well.",
+  "Cô Hà thanks you for learning these two verses of “Lên Sáu” with her."
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "tieuDeEn": "These verses teach “chữ Hiếu” – loving and respecting our parents – the first lesson a child should learn.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Cha mẹ là hai người thân nhất của chúng mình. Trong cả trời đất, không ai thương chúng mình hơn cha mẹ.", "en": "Our parents are our two closest people. In the whole world, nobody loves us more than they do."},
+  {"nhom": 1, "vi": "Biết ơn cha mẹ thì phải hiếu thảo. Hiếu thảo là đạo làm con: vâng lời, lễ phép, chăm học và giúp đỡ cha mẹ.", "en": "If we are thankful to our parents, we must be good to them. That is how a child should live: listen, be polite, study hard and help at home."},
+  {"nhom": 2, "vi": "Chúng mình còn nhỏ nên phải học chữ Hiếu trước tiên. Đi đâu, làm gì cũng nhớ đến cha mẹ, để cha mẹ không phải lo lắng.", "en": "We are still young, so we learn this first. Wherever we go and whatever we do, we remember our parents and try not to worry them."}
+ ],
+ "tuKho": [
+  {"tu": "thân nhất", "nghia": "gần gũi, ruột thịt nhất", "en": "closest, dearest"},
+  {"tu": "hiếu", "nghia": "yêu thương, kính trọng, vâng lời cha mẹ", "en": "loving and respecting your parents"},
+  {"tu": "đạo làm con", "nghia": "những điều một người con phải làm với cha mẹ", "en": "how a child should treat their parents"},
+  {"tu": "còn non", "nghia": "còn nhỏ, chưa biết nhiều", "en": "still young, not knowing much"},
+  {"tu": "đấng sinh thành", "nghia": "cách nói kính trọng để chỉ cha mẹ", "en": "a respectful way to say “parents”"}
+ ],
+ "cauHoi": [
+  {"hoi": "Theo bài thơ, ai là người thân nhất của chúng mình?", "chon": [["Cha mẹ", "bo:vui|be:vui|me:vui"], ["Con chó nhà hàng xóm", "cho"], ["Bạn mới quen", "ban:cuoi"]], "dung": 0, "giai": "“Hai thân là, là thân nhất”: cha mẹ là người thân nhất."},
+  {"hoi": "Biết ơn cha mẹ thì chúng mình phải làm gì?", "chon": [["Đòi mua đồ chơi", "noi:Mua cho con!|be:phung|me"], ["Hiếu thảo với cha mẹ", "be:vui:dua|nuoc|ba"], ["Không nói chuyện với cha mẹ", "be:buon"]], "dung": 1, "giai": "“Con biết ơn, nên phải hiếu”: biết ơn thì phải hiếu thảo."},
+  {"hoi": "Bạn nhỏ nào đang làm đúng “đạo làm con”?", "chon": [["Vứt đồ chơi bừa bãi", "be:gian|bong"], ["Cãi lại mẹ", "noi:Không thích!|be:phung|me"], ["Giúp mẹ dọn bát đũa", "be:vui:dua|mam-com|me"]], "dung": 2, "giai": "Hiếu thảo là vâng lời, lễ phép và đỡ đần cha mẹ những việc nhỏ."},
+  {"hoi": "“Con còn non” nghĩa là gì?", "chon": [["Còn nhỏ, chưa biết nhiều", "em:hoi|hoi"], ["Rất cao lớn", "bo"], ["Thích ăn rau non", "bat-com"]], "dung": 0, "giai": "“Còn non” là còn nhỏ dại, nên phải học chữ Hiếu trước."},
+  {"hoi": "“Đi một bước, nhớ hai thân” – khi đi chơi, bạn nhỏ nên làm gì?", "chon": [["Đi đâu cũng không báo cha mẹ", "be:vui|nha"], ["Xin phép, chào cha mẹ trước khi đi", "noi:Con đi học ạ!|be::cui|me"], ["Về nhà thật muộn", "trang|be"]], "dung": 1, "giai": "Đi đâu cũng nhớ cha mẹ: xin phép, chào hỏi, đừng để cha mẹ lo."}
+ ],
+ "viet": {
+  "mam": {"cau": "Cha mẹ là người [thân] nhất. Em biết ơn nên phải [hiếu] thảo. Hiếu là đạo làm [con]. Đi một bước, em nhớ [hai] thân.", "them": ["bạn", "chạy"]},
+  "choi": [
+   {"mo": "Cha mẹ là người thân nhất vì", "vd": "…cha mẹ thương em hơn ai hết."},
+   {"mo": "Em hiếu thảo bằng cách", "vd": "…vâng lời và giúp mẹ tưới cây."},
+   {"mo": "Trước khi ra khỏi nhà, em", "vd": "…chào bố mẹ và nói em đi đâu."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu: Em đã làm gì để hiếu thảo với cha mẹ?",
+   "goiY": ["Vì sao cha mẹ là người thân nhất của em?", "Ở nhà, em đã giúp cha mẹ những việc gì?", "Khi đi học hay đi chơi, em nhớ đến cha mẹ thế nào?", "Lúc em ngoan, cha mẹ cảm thấy thế nào?"],
+   "tu": ["hiếu thảo", "biết ơn", "vâng lời", "lễ phép", "thân nhất", "đỡ đần", "xin phép", "an tâm", "đạo làm con"]
+  }
+ },
+ "baiHoc": ["Cha mẹ là người thân nhất, không ai hơn.", "Biết ơn thì phải hiếu thảo – đó là đạo làm con.", "Đi đâu, làm gì cũng nhớ đến cha mẹ."],
+ "baiHocEn": "Our parents are our dearest people. Being thankful means being good to them – that is how a child should live. Wherever we go, we remember our parents.",
+ "viecTot": "Mỗi lần ra khỏi nhà và khi về, em chào bố mẹ thật lễ phép.",
+ "en": [
+  "Cô Hà welcomes you back. Last time we thought about our parents' care in every warm coat and bowl of rice. These verses show again that parents have a special place nobody can replace, and teach us “chữ Hiếu”.",
+  "Listen to the first four lines.",
+  "Our two parents are the closest to us; in the whole world, nobody is above them.",
+  "Father and mother are the dearest people in our lives. You will meet many people – friends, teachers, neighbours – but nobody is above your parents, because their love has no conditions. They are the greatest treasure you have.",
+  "Knowing this great love, what should a good six-year-old do? The poem tells us.",
+  "Being thankful, a child must be “hiếu” – good to their parents. That is the meaning of “hiếu”: how a child should live.",
+  "Thankfulness must become actions every day. A good child listens to their parents, studies hard, helps with small jobs and is always polite. However clever someone is, without “Hiếu” they cannot be a truly good person.",
+  "The last four lines give practical advice for six-year-olds.",
+  "You are still young, so learn this first. With every step you take, remember your parents.",
+  "Because you are still young, “Hiếu” is the first lesson, before everything in books. The easiest way to practise it: wherever you go – to school or to play – remember your parents, and don't do anything that makes them worry.",
+  "Keep “Hiếu” in your heart and show it with polite actions every day. Cô Hà thanks you for learning these two verses of “Lên Sáu” with her."
+ ]
+}

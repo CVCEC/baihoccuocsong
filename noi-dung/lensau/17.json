@@ -1,0 +1,52 @@
+{
+ "tieuDeEn": "These verses teach about our roots and our country: descendants of “Hồng Lạc”, a land called Việt Nam with a long history, North and South as one, and our neighbours Laos and Cambodia.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Từ xa xưa, người Việt là con cháu nhà Hồng Lạc – theo truyền thuyết là con cháu Lạc Long Quân và Âu Cơ. Ngày nay, tên nước ta là Việt Nam.", "en": "Long ago, the Vietnamese were the descendants of “Hồng Lạc” – in legend, the children of Lạc Long Quân and Âu Cơ. Today our country is called Việt Nam."},
+  {"nhom": 1, "vi": "Đất nước ta có lịch sử khoảng bốn nghìn năm, ngày càng mở rộng. Miền Bắc và miền Nam tuy có tên gọi khác nhau nhưng vẫn là một đất nước.", "en": "Our country has a history of about four thousand years and grew larger over time. The North and the South have different names, but they are one country."},
+  {"nhom": 2, "vi": "Lào, Miên (Campuchia) và Việt Nam là ba nước láng giềng, ngày xưa được gọi chung là Đông Dương.", "en": "Laos, Cambodia and Việt Nam are neighbours; long ago, together they were called “Đông Dương” (Indochina)."}
+ ],
+ "tuKho": [
+  {"tu": "Hồng Lạc", "nghia": "dòng dõi người Việt; theo truyền thuyết, con cháu Lạc Long Quân và Âu Cơ (“con Rồng cháu Tiên”)", "en": "the ancestors of the Vietnamese people in legend"},
+  {"tu": "bốn nghìn năm", "nghia": "cách nói về lịch sử rất lâu đời của đất nước", "en": "four thousand years – a very long history"},
+  {"tu": "mở rộng", "nghia": "làm cho rộng lớn hơn", "en": "to grow larger"},
+  {"tu": "miền", "nghia": "một vùng lớn của đất nước: miền Bắc, miền Trung, miền Nam", "en": "a region (North, Centre, South)"},
+  {"tu": "Miên", "nghia": "tên gọi ngày xưa của nước Campuchia", "en": "an old name for Cambodia"},
+  {"tu": "Đông Dương", "nghia": "tên gọi ngày xưa của vùng gồm ba nước Lào, Campuchia, Việt Nam", "en": "Indochina – the old name for the region of Laos, Cambodia and Việt Nam"}
+ ],
+ "cauHoi": [
+  {"hoi": "Theo bài thơ, người Việt xưa là con cháu nhà nào?", "chon": [["Nhà trường", "truong"], ["Nhà Hồng Lạc", "chu:Hồng Lạc"], ["Nhà hàng xóm", "nha"]], "dung": 1, "giai": "“Vốn xưa là nhà Hồng Lạc” – con Rồng cháu Tiên."},
+  {"hoi": "Tên nước ta ngày nay là gì?", "chon": [["Đông Dương", "chu:Đông Dương"], ["Hồng Lạc", "chu:Hồng Lạc"], ["Việt Nam", "chu:Việt Nam"]], "dung": 2, "giai": "“Nay tên nước, gọi Việt Nam.”"},
+  {"hoi": "“Bốn nghìn năm” nói về điều gì?", "chon": [["Lịch sử rất lâu đời của đất nước", "ban-tho|chong-sach"], ["Tuổi của một cái cây", "cay"], ["Số học sinh trong lớp", "be|ban|em"]], "dung": 0, "giai": "Đất nước ta có lịch sử khoảng bốn nghìn năm, rất lâu đời."},
+  {"hoi": "“Tuy khác tên, đất vẫn một” nghĩa là gì?", "chon": [["Miền Bắc và miền Nam là hai nước", "chu:Hai nước"], ["Bắc – Nam khác tên nhưng vẫn là một đất nước", "nui|cay-lua"], ["Đất có nhiều màu", "da"]], "dung": 1, "giai": "Nam và Bắc tuy gọi khác tên nhưng vẫn là một đất nước Việt Nam."},
+  {"hoi": "Ba nước nào ngày xưa được gọi chung là Đông Dương?", "chon": [["Bắc, Trung, Nam", "chu:Bắc – Trung – Nam"], ["Việt Nam, Canada, Pháp", "chu:Việt – Canada – Pháp"], ["Lào, Miên (Campuchia), Việt Nam", "chu:Lào – Miên – Việt"]], "dung": 2, "giai": "“Lào, Miên, Việt, là Đông Dương.” Miên là tên xưa của Campuchia."}
+ ],
+ "viet": {
+  "mam": {"cau": "Người Việt vốn là nhà Hồng [Lạc]. Tên nước ta là Việt [Nam]. Đất nước có bốn nghìn [năm]. Nam và Bắc, đất vẫn [một].", "them": ["hai", "ngày"]},
+  "choi": [
+   {"mo": "Em là người Việt, quê em ở", "vd": "…Hà Nội (hoặc quê nội, quê ngoại của em)."},
+   {"mo": "Em tự hào về đất nước Việt Nam vì", "vd": "…có lịch sử lâu đời và nhiều cảnh đẹp."},
+   {"mo": "Nước láng giềng của Việt Nam là", "vd": "…Lào và Campuchia."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu giới thiệu về đất nước Việt Nam với một người bạn.",
+   "goiY": ["Người Việt có nguồn gốc từ đâu theo truyền thuyết?", "Đất nước Việt Nam có lịch sử bao lâu?", "Việt Nam có những miền nào? Quê em (hoặc quê bố mẹ) ở miền nào?", "Em yêu điều gì nhất ở Việt Nam?"],
+   "tu": ["Việt Nam", "Hồng Lạc", "con Rồng cháu Tiên", "lịch sử", "miền Bắc", "miền Nam", "quê hương", "láng giềng", "tự hào"]
+  }
+ },
+ "baiHoc": ["Người Việt chung một cội nguồn: nhà Hồng Lạc.", "Việt Nam có lịch sử lâu đời; Nam – Bắc là một.", "Lào, Campuchia là những nước láng giềng gần gũi."],
+ "baiHocEn": "Vietnamese people share the same roots: “Hồng Lạc”. Việt Nam has a long history, and North and South are one country. Laos and Cambodia are our close neighbours.",
+ "viecTot": "Tuần này, em cùng bố mẹ tìm Việt Nam trên bản đồ thế giới và hỏi bố mẹ: quê nội, quê ngoại của em ở miền nào?",
+ "en": [
+  "Cô Hà welcomes you to a proud and special lesson. After manners, nature and everyday life, the poem now opens up the history and geography of our homeland – to grow love for our country in every child's heart.",
+  "Listen to the first four lines.",
+  "From long ago we were the house of Hồng Lạc; today our country is called Việt Nam.",
+  "Who are we? The poem says we come from “Hồng Lạc”, the line of Lạc Long Quân and Âu Cơ – the legendary ancestors of the Vietnamese. It reminds us that all the people of the country share the same roots, like one big family. Today our country's name is Việt Nam, the S-shaped land.",
+  "How old is our country, and what is it like? Listen to the next six lines.",
+  "For four thousand years it has grown wider. North and South are two regions; though their names differ, the land is one.",
+  "Our country has a very long history of building and protecting the nation. Over many generations its land grew and became strong. On the map there were two big regions, North and South (in the poet's time the land was often called by its regions). The message: though the regions have different names and are far apart, the land is one, and its people are brothers and sisters.",
+  "The last two lines widen our view to our neighbours.",
+  "Laos, Cambodia and Việt Nam – that is Indochina.",
+  "Next to Việt Nam are two close neighbours: Laos and “Miên” (the old name for Cambodia). The three countries lie side by side and were once called “Đông Dương” (Indochina). This helps you understand where our country is in the world and value peace and friendship with our neighbours.",
+  "Cô Hà hopes you'll always be proud of your roots and your country's long history. Thank you for learning these two verses with her."
+ ]
+}

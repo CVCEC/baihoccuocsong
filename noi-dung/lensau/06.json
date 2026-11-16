@@ -1,0 +1,51 @@
+{
+ "tieuDeEn": "These verses show how Mum worries about what we eat and cares for us when we are sick – so we should eat sensibly and stay healthy.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Chúng mình còn bé nên mẹ hay lo. Mẹ muốn cho mình ăn ngon, nhưng lại sợ đồ ăn không sạch làm mình đau bụng.", "en": "Because we are little, Mum worries a lot. She wants to give us tasty food, but she is afraid unclean food will make us sick."},
+  {"nhom": 1, "vi": "Khi chúng mình ốm mệt, mẹ thương lắm. Mẹ đi tìm thuốc, đắp chăn, che nắng che gió cho mình mau khỏi.", "en": "When we are ill, Mum is full of worry and love. She finds medicine and keeps us warm and sheltered so we get better soon."},
+  {"nhom": 2, "vi": "Nghĩ đến tình thương ấy, chúng mình phải ngoan: ăn uống sạch sẽ, đúng giờ, nghe lời mẹ. Ăn uống bừa bãi để bị ốm, làm mẹ lo, là không hiếu thảo.", "en": "Thinking of that love, we should be good: eat clean food at the right times and listen to Mum. Eating carelessly and getting sick makes Mum worry – that is not being a good child."}
+ ],
+ "tuKho": [
+  {"tu": "độc", "nghia": "có hại cho sức khoẻ, ăn vào dễ bị ốm", "en": "harmful, bad for your health"},
+  {"tu": "ốm nhọc", "nghia": "bị ốm, mệt mỏi", "en": "sick and tired"},
+  {"tu": "thuốc thang", "nghia": "thuốc để chữa bệnh", "en": "medicine"},
+  {"tu": "che nắng gió", "nghia": "giữ cho con không bị nắng, bị gió lạnh", "en": "to shelter from sun and wind"},
+  {"tu": "ăn càn", "nghia": "ăn uống bừa bãi, không sạch, không đúng giờ", "en": "eating carelessly"}
+ ],
+ "cauHoi": [
+  {"hoi": "Vì sao mẹ “ăn muốn cho, lại sợ độc”?", "chon": [["Vì mẹ không thích con ăn", "me:gian"], ["Vì mẹ muốn con ăn ngon nhưng sợ đồ ăn bẩn làm con ốm", "me:hoi|bat-com"], ["Vì mẹ muốn ăn một mình", "me|keo"]], "dung": 1, "giai": "Mẹ muốn con ăn ngon, nhưng lo đồ ăn không sạch làm con đau bụng."},
+  {"hoi": "Khi con ốm, mẹ làm gì?", "chon": [["Tìm thuốc, chăm sóc con", "giuong:om|me|thuoc"], ["Đi chơi xa", "me|o"], ["Không để ý đến con", "me|tivi"]], "dung": 0, "giai": "“Tìm thuốc thang, che nắng gió”: mẹ chăm con từng chút."},
+  {"hoi": "Bữa ăn nào giúp chúng mình khoẻ mạnh?", "chon": [["Ăn thật nhiều kẹo", "keo"], ["Đồ ăn không rõ sạch hay bẩn", "be:hoi|qua"], ["Cơm nhà sạch sẽ, đúng giờ", "be:vui|mam-com|dong-ho"]], "dung": 2, "giai": "Ăn cơm nhà, sạch sẽ, đúng giờ thì khoẻ, mẹ yên lòng."},
+  {"hoi": "“Ăn càn” nghĩa là gì?", "chon": [["Ăn uống bừa bãi, không nghe lời mẹ", "be:mo|keo|qua"], ["Ăn chậm, nhai kỹ", "be:vui|bat-com"], ["Rửa tay trước khi ăn", "be|xa-phong"]], "dung": 0, "giai": "Ăn càn là ăn bừa bãi, ăn đồ không sạch, ăn quá nhiều đồ ngọt."},
+  {"hoi": "Trước khi ăn, bạn nhỏ hiếu thảo nên làm gì?", "chon": [["Đòi ăn kẹo trước bữa cơm", "noi:Con ăn kẹo cơ!|be:phung|keo"], ["Rửa tay sạch sẽ", "be:vui|xa-phong"], ["Vừa ăn vừa xem ti vi", "be|tivi"]], "dung": 1, "giai": "Rửa tay, ăn sạch uống sạch là tự giữ sức khoẻ để mẹ không phải lo."}
+ ],
+ "viet": {
+  "mam": {"cau": "Em còn bé nên mẹ hay [lo]. Khi em ốm, mẹ tìm [thuốc] cho em. Em không ăn [càn]. Em rửa [tay] trước khi ăn.", "them": ["chạy", "kẹo"]},
+  "choi": [
+   {"mo": "Khi em bị ốm, mẹ em", "vd": "…thức đêm chăm em và cho em uống thuốc."},
+   {"mo": "Để khoẻ mạnh, em sẽ", "vd": "…ăn rau, uống nước và ngủ đúng giờ."},
+   {"mo": "Em không ăn càn vì", "vd": "…em không muốn mẹ phải lo lắng."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu kể về một lần em bị ốm và được mẹ chăm sóc.",
+   "goiY": ["Em bị ốm lúc nào? Em thấy trong người thế nào?", "Mẹ (hoặc bố) đã chăm sóc em ra sao?", "Khi khỏi bệnh, em cảm thấy thế nào?", "Em sẽ làm gì để giữ gìn sức khoẻ?"],
+   "tu": ["ốm nhọc", "thuốc thang", "lo lắng", "chăm sóc", "sạch sẽ", "đúng giờ", "khoẻ mạnh", "nghe lời", "hiếu thảo"]
+  }
+ },
+ "baiHoc": ["Mẹ luôn lo cho từng bữa ăn của con.", "Khi con ốm, mẹ vất vả chăm sóc.", "Ăn uống sạch sẽ, giữ sức khoẻ là hiếu thảo."],
+ "baiHocEn": "Mum worries about every meal we eat and works hard when we are sick. Eating clean food and staying healthy is a way to love her back.",
+ "viecTot": "Tuần này, em rửa tay trước mỗi bữa ăn và không đòi ăn kẹo trước bữa cơm.",
+ "en": [
+  "Cô Hà welcomes you. Today the poem shows us a mother's love through her worries – about every meal and every night's sleep of her little child.",
+  "Listen to the first four lines.",
+  "You are little, so Mum often worries: she wants to give you food, yet fears it may be harmful.",
+  "To your mother you are always small and need protecting. She worries about what you eat. When you want something, she wants you to enjoy it – but then she fears it isn't clean, or that street food will upset your tummy and make you ill. Every bite comes with her care.",
+  "Her worry grows much bigger when her child gets sick.",
+  "When you are ill, Mum worries with love; she finds medicine and shelters you from sun and wind.",
+  "Have you ever had a fever? When you are sick, the one who worries most is Mum. She stays up all night to cool you down, rushes to find medicine, and keeps you warm and safe. She would bear any hardship to see you well again.",
+  "Understanding that great love, the poem asks you to think, and gives a lesson.",
+  "Think about it and be good: eating carelessly is not being a good child.",
+  "“Ăn càn” means eating carelessly: unclean street food, too many sweets, spicy or harmful food Mum has said no to, or eating at odd times. That makes you sick easily – and then Mum has to worry and work hard again. Looking after your health and listening to Mum about food is a way to show “hiếu”.",
+  "Cô Hà hopes you will listen to your parents and stay healthy. Thank you for learning these two verses of “Lên Sáu” with her."
+ ]
+}

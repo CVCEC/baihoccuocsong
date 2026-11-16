@@ -96,7 +96,7 @@ window.DANH_SACH_KHO = [
    "Anh em ruột,",
    "Một mẹ cha,"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 8,
@@ -110,7 +110,7 @@ window.DANH_SACH_KHO = [
    "Bác cùng chú,",
    "Cô cùng dì."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 9,
@@ -124,7 +124,7 @@ window.DANH_SACH_KHO = [
    "Người trong họ,",
    "Tổ sinh ra,"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 10,
@@ -138,7 +138,7 @@ window.DANH_SACH_KHO = [
    "Người trong họ,",
    "Có bề trên,"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 11,
@@ -152,7 +152,7 @@ window.DANH_SACH_KHO = [
    "Con bé dại,",
    "Mải vui chơi."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 12,
@@ -166,7 +166,7 @@ window.DANH_SACH_KHO = [
    "Dạy con biết,",
    "Phép vệ sinh:"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 13,
@@ -180,7 +180,7 @@ window.DANH_SACH_KHO = [
    "Các giống vật,",
    "Thật là nhiều:"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 14,
@@ -194,7 +194,7 @@ window.DANH_SACH_KHO = [
    "Cây và cỏ,",
    "Có khác loài,"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 15,
@@ -208,7 +208,7 @@ window.DANH_SACH_KHO = [
    "Đá bờ sông,",
    "Không sống chết,"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 16,
@@ -222,7 +222,7 @@ window.DANH_SACH_KHO = [
    "Các loài kim,",
    "Tìm ở đất."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 17,
@@ -236,7 +236,7 @@ window.DANH_SACH_KHO = [
    "Vốn xưa là,",
    "Nhà Hồng Lạc,"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 18,
@@ -250,6 +250,6 @@ window.DANH_SACH_KHO = [
    "Chữ nước ta,",
    "Ta phải học,"
   ],
-  "du": false
+  "du": true
  }
 ];

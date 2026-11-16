@@ -1,0 +1,55 @@
+{
+ "tieuDeEn": "These verses teach hygiene: don't eat unripe fruit or drink unboiled water, change your clothes, wash your face – and be extra careful in summer.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Phải biết giữ vệ sinh. Ăn quả còn xanh thì khó tiêu, dễ đau bụng. Uống nước lã chưa đun sôi thì có nhiều vi khuẩn.", "en": "We must know how to stay clean and healthy. Unripe fruit is hard to digest and can hurt your tummy. Water that hasn't been made safe can be full of germs."},
+  {"nhom": 1, "vi": "Áo mặc lâu không giặt thì sinh ngứa ngáy, ghẻ lở. Không rửa mặt thì người mệt mỏi, uể oải, khó tập trung.", "en": "Clothes worn too long without washing cause itchy skin and rashes. Not washing your face makes you feel tired and sluggish."},
+  {"nhom": 2, "vi": "Mùa hè trời nóng, đồ ăn dễ hỏng, ruồi muỗi nhiều, nên càng phải giữ vệ sinh kỹ hơn.", "en": "In hot summer weather food spoils quickly and there are more flies and mosquitoes, so we must be even more careful to stay clean."}
+ ],
+ "tuKho": [
+  {"tu": "vệ sinh", "nghia": "giữ cho cơ thể, đồ ăn, nhà cửa sạch sẽ để khỏi ốm", "en": "hygiene – keeping clean to stay healthy"},
+  {"tu": "quả xanh", "nghia": "quả chưa chín", "en": "unripe fruit"},
+  {"tu": "nước lã", "nghia": "nước chưa đun sôi, chưa được làm sạch. Ngày nay nước máy ở nhiều nơi (như Canada) đã sạch, uống được; nhưng nước ao, hồ, sông, suối thì không được uống", "en": "untreated water. Tap water in many places, like Canada, is safe; water from lakes and rivers is not"},
+  {"tu": "sâu", "nghia": "(từ xưa) vi khuẩn, giun sán nhỏ li ti", "en": "(old word) germs and tiny worms"},
+  {"tu": "ghẻ lở", "nghia": "bệnh ngoài da, ngứa, nổi mụn", "en": "itchy skin rashes"},
+  {"tu": "u mê", "nghia": "mệt mỏi, buồn ngủ, không tỉnh táo", "en": "drowsy and dull"}
+ ],
+ "cauHoi": [
+  {"hoi": "Vì sao không nên ăn quả xanh?", "chon": [["Vì khó tiêu, dễ đau bụng", "be:om|qua"], ["Vì quả xanh rất ngọt", "be:vui|qua"], ["Vì quả xanh không có màu", "cay"]], "dung": 0, "giai": "“Ăn quả xanh, khó tiêu hoá.” Quả chưa chín dễ làm đau bụng."},
+  {"hoi": "Nước nào KHÔNG được uống?", "chon": [["Nước đun sôi để nguội", "nuoc"], ["Nước ở ao, hồ, sông, suối", "nui|thuyen"], ["Nước sạch trong cốc của em", "be:vui|nuoc"]], "dung": 1, "giai": "Nước chưa được làm sạch có nhiều vi khuẩn (“sâu”). Nhớ: ăn chín, uống sôi."},
+  {"hoi": "Áo mặc lâu không thay sẽ thế nào?", "chon": [["Thơm tho hơn", "be:vui|hoa"], ["Không sao cả", "be:cuoi"], ["Ngứa ngáy, ghẻ lở", "be:buon|hoi"]], "dung": 2, "giai": "“Áo mặc lâu, sinh ghẻ lở.” Nhớ thay quần áo sạch mỗi ngày."},
+  {"hoi": "Buổi sáng thức dậy, bạn nhỏ nên làm gì đầu tiên?", "chon": [["Đánh răng, rửa mặt", "be:vui|ban-chai|xa-phong"], ["Xem ti vi ngay", "be|tivi"], ["Ngủ tiếp", "giuong:ngu"]], "dung": 0, "giai": "“Mặt không rửa, sinh u mê.” Rửa mặt xong thấy tỉnh táo, sảng khoái."},
+  {"hoi": "Vì sao mùa hè càng phải giữ vệ sinh?", "chon": [["Vì mùa hè được nghỉ học", "be:vui|bong"], ["Vì trời nóng, đồ ăn dễ hỏng, nhiều ruồi muỗi", "mat-troi|bat-com|hoi"], ["Vì mùa hè trời mưa nhiều", "mua"]], "dung": 1, "giai": "Mùa hè nóng, ra nhiều mồ hôi, đồ ăn dễ ôi thiu nên càng phải giữ."}
+ ],
+ "viet": {
+  "mam": {"cau": "Em giữ phép vệ [sinh]. Em không ăn quả [xanh]. Em chỉ uống nước [sạch]. Sáng dậy, em rửa [mặt] và đánh răng.", "them": ["kẹo", "bẩn"]},
+  "choi": [
+   {"mo": "Mỗi sáng, em", "vd": "…đánh răng, rửa mặt rồi mới ăn sáng."},
+   {"mo": "Em không uống nước lã vì", "vd": "…nước chưa sạch có nhiều vi khuẩn."},
+   {"mo": "Mùa hè, em", "vd": "…tắm rửa, thay quần áo sạch mỗi ngày."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu: Em giữ vệ sinh hằng ngày như thế nào?",
+   "goiY": ["Buổi sáng em làm những việc gì để sạch sẽ?", "Em ăn uống thế nào cho sạch: ăn chín, uống sôi?", "Em thay quần áo, tắm rửa khi nào?", "Giữ vệ sinh giúp em thế nào?"],
+   "tu": ["vệ sinh", "sạch sẽ", "rửa mặt", "đánh răng", "nước sạch", "ăn chín", "uống sôi", "thay quần áo", "khoẻ mạnh"]
+  }
+ },
+ "baiHoc": ["Ăn chín, uống sôi; không ăn quả xanh.", "Thay áo sạch, rửa mặt mỗi ngày.", "Mùa hè càng phải giữ vệ sinh."],
+ "baiHocEn": "Eat cooked food and drink safe water; don't eat unripe fruit. Change into clean clothes and wash your face every day. Be extra careful in summer.",
+ "viecTot": "Tuần này, sáng nào em cũng tự đánh răng, rửa mặt, và rửa tay bằng xà phòng trước mỗi bữa ăn.",
+ "en": [
+  "Cô Hà welcomes you. Today's lesson is very practical. Besides letters and manners, the poet kindly teaches us how to protect our health with scientific rules called “phép vệ sinh” – hygiene.",
+  "Listen to the first six lines.",
+  "Let me teach you the rules of hygiene: unripe fruit is hard to digest; unboiled water has many germs.",
+  "The poem begins warmly, to show how important keeping clean is. The first two lessons are about what we put into our bodies every day.",
+  "Unripe fruit is often sour and hard, and can give you a tummy ache or make you feel sick.",
+  "“Nước lã” is water that hasn't been boiled or treated. Long ago, people called tiny germs and worms “sâu”. Drinking unsafe water can make you ill. The rule is: eat cooked food, drink safe water. (Today, tap water in places like Canada is treated and safe, but water from lakes and rivers is not.)",
+  "The poem also shows what happens if we're too lazy to wash.",
+  "Clothes worn too long cause rashes; a face not washed makes you dull and drowsy.",
+  "Clothes worn all day collect sweat and dirt. Wearing the same clothes for days lets germs grow and causes itchy rashes.",
+  "“U mê” means feeling tired, sleepy and not alert. If you don't wash your face in the morning, you feel heavy and can't focus. A clean face makes you feel fresh and bright.",
+  "The last two lines give a special reminder about the weather.",
+  "In summer, take even more care.",
+  "Summer is hot and we sweat more. Food spoils quickly, and flies, mosquitoes and germs multiply fast. Keeping clean is the best shield for your health in summer.",
+  "Cô Hà hopes you'll build good hygiene habits. Thank you for learning these two verses with her."
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "tieuDeEn": "These verses are about brothers and sisters: we are as close as hands and feet, so we love each other, don't get jealous, and treat older siblings kindly and politely.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Anh chị em ruột là những người cùng một cha một mẹ sinh ra, người ra đời trước, người ra đời sau.", "en": "Brothers and sisters have the same mother and father; some were born earlier, some later."},
+  {"nhom": 1, "vi": "Anh em cùng một dòng máu, gắn bó như tay với chân. Vì thế phải thương yêu nhau, đừng ganh tị.", "en": "Siblings share the same blood and are as close as hands and feet. So love each other and don't be jealous."},
+  {"nhom": 2, "vi": "Em đối với chị cũng như với anh: trước hết là thương yêu, sau đó là lễ phép.", "en": "Treat your older sister just like your older brother: first with love, then with good manners."}
+ ],
+ "tuKho": [
+  {"tu": "anh em ruột", "nghia": "anh chị em cùng cha mẹ sinh ra", "en": "brothers and sisters with the same parents"},
+  {"tu": "máu mủ", "nghia": "cùng một dòng máu, ruột thịt", "en": "related by blood"},
+  {"tu": "như tay chân", "nghia": "gắn bó, giúp đỡ nhau như tay và chân trên một cơ thể", "en": "as close as hands and feet"},
+  {"tu": "ganh tị", "nghia": "tị nạnh, khó chịu vì nghĩ người khác được hơn mình", "en": "to be jealous"},
+  {"tu": "lễ", "nghia": "phép lịch sự: biết thưa gửi, kính trên nhường dưới", "en": "good manners and respect"}
+ ],
+ "cauHoi": [
+  {"hoi": "“Anh em ruột” là những ai?", "chon": [["Các bạn cùng lớp", "be|ban|ban"], ["Anh chị em cùng cha mẹ sinh ra", "anh:vui|be:vui|em:vui"], ["Những người hàng xóm", "ong|nha"]], "dung": 1, "giai": "“Anh em ruột, một mẹ cha”: cùng một cha mẹ sinh ra."},
+  {"hoi": "Nhà thơ so sánh anh em giống như cái gì?", "chon": [["Như tay với chân", "anh::om|em:vui"], ["Như mèo với chó", "meo|cho"], ["Như mưa với nắng", "mua|mat-troi"]], "dung": 0, "giai": "“Cùng máu mủ, như tay chân”: gắn bó, luôn giúp đỡ nhau."},
+  {"hoi": "Bạn nhỏ nào đang “ganh tị”?", "chon": [["Chia bánh cho em", "be:vui:dua|em:vui|qua"], ["Cùng anh xếp sách", "anh|be|chong-sach"], ["Hờn dỗi vì em có đồ chơi mới", "be:gian|em:vui|bong"]], "dung": 2, "giai": "Ganh tị là tị nạnh, hờn dỗi vì nghĩ người khác được hơn mình."},
+  {"hoi": "“Trước là tình” – với anh chị, em nên làm gì?", "chon": [["Thương yêu, chia sẻ với anh chị", "chi:vui|be:vui|trai-tim"], ["Giành đồ chơi của chị", "chi:khoc|be:gian|bong"], ["Không chơi với anh", "anh:buon|be"]], "dung": 0, "giai": "Tình là thương yêu, quan tâm, chia sẻ với anh chị em."},
+  {"hoi": "“Sau có lễ” – khi nói với anh chị, em nên nói thế nào?", "chon": [["“Không! Kệ em!”", "noi:Kệ em!|be:phung|anh"], ["“Dạ, em cảm ơn anh ạ!”", "noi:Dạ, em cảm ơn anh!|be:vui|anh:vui"], ["Không trả lời", "be:buon|anh:hoi"]], "dung": 1, "giai": "Lễ là biết dạ thưa, nói lễ phép, không cãi lại anh chị."}
+ ],
+ "viet": {
+  "mam": {"cau": "Anh em [ruột] cùng một mẹ cha. Anh em gắn bó như tay [chân]. Em không [ganh] tị. Với anh chị, trước là tình, sau có [lễ].", "them": ["chơi", "bạn"]},
+  "choi": [
+   {"mo": "Anh em giống như tay chân vì", "vd": "…luôn giúp đỡ và bảo vệ nhau."},
+   {"mo": "Khi có bánh ngon, em", "vd": "…chia cho anh chị em cùng ăn."},
+   {"mo": "Khi anh chị giúp em, em nói", "vd": "…“Em cảm ơn anh ạ!”"}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu kể về anh, chị hoặc em của em (hoặc một người anh em họ).",
+   "goiY": ["Người đó tên là gì, bao nhiêu tuổi?", "Hai anh em thường cùng làm những gì?", "Có lần nào em ganh tị không? Em đã sửa thế nào?", "Em sẽ làm gì để anh em luôn vui vẻ, hoà thuận?"],
+   "tu": ["anh em ruột", "như tay chân", "thương yêu", "nhường nhịn", "chia sẻ", "ganh tị", "lễ phép", "hoà thuận", "giúp đỡ"]
+  }
+ },
+ "baiHoc": ["Anh em ruột gắn bó như tay với chân.", "Thương yêu nhau, chớ ganh tị.", "Với anh chị: trước là tình, sau có lễ."],
+ "baiHocEn": "Brothers and sisters are as close as hands and feet. Love each other and don't be jealous. With older siblings, show love first, then good manners.",
+ "viecTot": "Hôm nay, em chia đồ ăn hoặc đồ chơi cho anh chị em (hoặc bạn) và nói lời cảm ơn khi được giúp.",
+ "en": [
+  "Cô Hà welcomes you. After learning about “hiếu” towards parents, today the poem talks about another very close bond: brothers and sisters under one roof.",
+  "Listen to the first four lines.",
+  "Brothers and sisters have the same mother and father; Mum gave birth to them, one earlier, one later.",
+  "The brothers and sisters you live with are “anh em ruột” because you share the same blood and the same parents. Whether born first or later, you are all your parents' treasures, joined by a bond that cannot be broken.",
+  "To help you picture this bond, the poet uses a special comparison.",
+  "Sharing the same blood, you are like hands and feet; so love each other and don't be jealous.",
+  "Look at your hands and feet: when your hand hurts, your feet go to find medicine; when your feet are tired, your hands rub them. They help each other and never fight. Siblings are the same. Being jealous over toys or snacks, or thinking parents love someone else more, hurts the family and makes parents sad.",
+  "The last four lines teach younger children how to treat their older siblings.",
+  "Treat your older sister just like your older brother: love comes first, then good manners.",
+  "Respect your older sister as you do your older brother. “Tình” is real love – caring and sharing. “Lễ” is good manners – speaking politely and not arguing back. With both love and respect, the family is full of happiness.",
+  "Cô Hà hopes brothers and sisters in your home will treat each other as the poem teaches. Thank you for learning these two verses with her."
+ ]
+}
