@@ -1,7 +1,11 @@
-/* Danh sách 18 khổ Lên Sáu – dùng cho trang chủ góc học */
+/* Danh sách 18 bài Lên Sáu (mỗi bài 2 khổ) – dùng cho trang chủ góc học */
 window.DANH_SACH_KHO = [
  {
   "kho": 1,
+  "khoTho": [
+   1,
+   2
+  ],
   "tieuDe": "Học chữ nước ta",
   "chuDe": "Học tập",
   "cauDau": [
@@ -12,6 +16,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 2,
+  "khoTho": [
+   3,
+   4
+  ],
   "tieuDe": "Vì sao con người cần phải học?",
   "chuDe": "Học tập",
   "cauDau": [
@@ -22,6 +30,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 3,
+  "khoTho": [
+   5,
+   6
+  ],
   "tieuDe": "Công ơn sinh thành và dưỡng dục của cha mẹ",
   "chuDe": "Cha mẹ và chữ Hiếu",
   "cauDau": [
@@ -32,6 +44,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 4,
+  "khoTho": [
+   7,
+   8
+  ],
   "tieuDe": "Đạo làm con và chữ Hiếu vỡ lòng",
   "chuDe": "Cha mẹ và chữ Hiếu",
   "cauDau": [
@@ -42,6 +58,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 5,
+  "khoTho": [
+   9,
+   10
+  ],
   "tieuDe": "Phép cư xử ngoan ngoãn ở nhà và ở trường",
   "chuDe": "Cha mẹ và chữ Hiếu",
   "cauDau": [
@@ -52,6 +72,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 6,
+  "khoTho": [
+   11,
+   12
+  ],
   "tieuDe": "Biết thương nỗi lo của mẹ và giữ gìn sức khỏe",
   "chuDe": "Cha mẹ và chữ Hiếu",
   "cauDau": [
@@ -62,6 +86,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 7,
+  "khoTho": [
+   13,
+   14
+  ],
   "tieuDe": "Tình anh em ruột thịt “như tay chân”",
   "chuDe": "Anh em, họ hàng, lễ phép",
   "cauDau": [
@@ -72,6 +100,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 8,
+  "khoTho": [
+   15,
+   16
+  ],
   "tieuDe": "Phép tắc ứng xử với họ hàng bề trên",
   "chuDe": "Anh em, họ hàng, lễ phép",
   "cauDau": [
@@ -82,6 +114,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 9,
+  "khoTho": [
+   17,
+   18
+  ],
   "tieuDe": "Bản đồ gia đình thu nhỏ nội – ngoại",
   "chuDe": "Anh em, họ hàng, lễ phép",
   "cauDau": [
@@ -92,6 +128,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 10,
+  "khoTho": [
+   19,
+   20
+  ],
   "tieuDe": "Phép lịch sự khi nhà có khách",
   "chuDe": "Anh em, họ hàng, lễ phép",
   "cauDau": [
@@ -102,6 +142,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 11,
+  "khoTho": [
+   21,
+   22
+  ],
   "tieuDe": "Bí kíp tập trung và chăm chỉ học tập",
   "chuDe": "Học tập",
   "cauDau": [
@@ -112,6 +156,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 12,
+  "khoTho": [
+   23,
+   24
+  ],
   "tieuDe": "Bài học thiết thực về “phép vệ sinh”",
   "chuDe": "Giữ gìn sức khỏe",
   "cauDau": [
@@ -122,6 +170,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 13,
+  "khoTho": [
+   25,
+   26
+  ],
   "tieuDe": "Khám phá thế giới các giống vật",
   "chuDe": "Thế giới quanh em",
   "cauDau": [
@@ -132,6 +184,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 14,
+  "khoTho": [
+   27,
+   28
+  ],
   "tieuDe": "Bài học quan sát về “cây và cỏ”",
   "chuDe": "Thế giới quanh em",
   "cauDau": [
@@ -142,6 +198,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 15,
+  "khoTho": [
+   29,
+   30
+  ],
   "tieuDe": "Thế giới của các vật vô tri và khoáng vật",
   "chuDe": "Thế giới quanh em",
   "cauDau": [
@@ -152,6 +212,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 16,
+  "khoTho": [
+   31,
+   32
+  ],
   "tieuDe": "Bài học về kim loại và giá trị của lao động",
   "chuDe": "Thế giới quanh em",
   "cauDau": [
@@ -162,6 +226,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 17,
+  "khoTho": [
+   33,
+   34
+  ],
   "tieuDe": "Niềm tự hào non sông Việt Nam",
   "chuDe": "Quê hương",
   "cauDau": [
@@ -172,6 +240,10 @@ window.DANH_SACH_KHO = [
  },
  {
   "kho": 18,
+  "khoTho": [
+   35,
+   36
+  ],
   "tieuDe": "Lý tưởng học tập “ích mình, lợi nước”",
   "chuDe": "Học tập",
   "cauDau": [

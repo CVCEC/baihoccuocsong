@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/bai.css">
 <script src="https://mau.cvcec.org/v1/cvcec-chung.js" defer></script>
 <script src="data/lensau/danh-sach.js"></script>
+<script src="data/lentam/danh-sach.js"></script>
 <style>
   .gt { margin-top: -86px; position: relative; z-index: 2; }
   .gt h2 { font-family: var(--ttv-phong-tieu-de); font-size: 1.35rem; margin: 0 0 8px; }
@@ -22,6 +23,7 @@
   .the-kho .so { display: inline-flex; width: 40px; height: 40px; border-radius: 50%; background: var(--ttv-goc-dam); color: #fff;
     align-items: center; justify-content: center; font-weight: 800; font-size: 1.1rem; flex: 0 0 auto; }
   .the-kho .chu-de { font-size: .85rem; font-weight: 800; background: var(--ttv-goc-nhat); color: var(--ttv-goc-dam); border-radius: 999px; padding: 2px 10px; }
+  .the-kho .nhan-kho { font-size: .9rem; font-weight: 800; color: var(--ttv-goc-dam); }
   .the-kho .ten { font-family: var(--ttv-phong-tieu-de); font-weight: 800; font-size: 1.12rem; line-height: 1.3; }
   .the-kho .tho { font-family: var(--ttv-phong-tap-doc); color: var(--ttv-chu-phu); line-height: 1.45; }
   .the-kho .tho span { display: block; }
@@ -29,6 +31,10 @@
   .the-kho .nhan-du { background: var(--ttv-dung-nen); color: var(--ttv-dung); border-radius: 999px; padding: 2px 10px; }
   .the-kho .nhan-khung { background: var(--ttv-nen); border: 1px dashed var(--ttv-vien); border-radius: 999px; padding: 1px 10px; }
   .the-kho .nhan-xong { color: var(--ttv-chu); }
+  .chon-bai { display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 16px; }
+  .chon-bai button { min-height: 48px; padding: 8px 22px; border-radius: 999px; border: 2px solid var(--ttv-goc); background: var(--ttv-the);
+    color: var(--ttv-goc-dam); font: inherit; font-weight: 800; font-size: 1.1rem; cursor: pointer; }
+  .chon-bai button[aria-selected="true"] { background: var(--ttv-goc-dam); border-color: var(--ttv-goc-dam); color: #fff; }
   .sap { display: flex; align-items: center; gap: 16px; }
   .sap img { height: 90px; width: auto; }
   @media (max-width: 600px) { .sap { flex-direction: column; text-align: center; } }
@@ -50,30 +56,34 @@
 <main data-ttv-nen="don-gian">
   <div class="bh-khung">
     <section class="ttv-the gt" aria-labelledby="t-gt">
+      <div class="chon-bai" role="tablist" aria-label="Chọn bài thơ">
+        <button type="button" role="tab" data-bai="lensau" aria-selected="true">Lên Sáu</button>
+        <button type="button" role="tab" data-bai="lentam" aria-selected="false">Lên Tám</button>
+      </div>
       <div class="bh-the-dau">
-        <h2 id="t-gt">Bài thơ “Lên Sáu”</h2>
+        <h2 id="t-gt"></h2>
         <button class="bh-en" type="button" id="nut-en" aria-expanded="false" lang="en">EN</button>
       </div>
-      <p class="bh-giai-en" id="en-gt" lang="en">“Lên Sáu” (Turning Six) is a poem the poet Tản Đà wrote in 1919 for six-year-olds starting school. Each verse teaches a life lesson: loving your language, thanking your parents, being polite, keeping healthy and exploring the world. Choose a verse to listen to cô Hà, follow her words and answer the questions.</p>
-      <p>Nhà thơ Tản Đà viết bài thơ “Lên Sáu” năm 1919 cho các bạn nhỏ sáu tuổi mới đi học. Mỗi khổ thơ là một bài học cuộc sống: yêu chữ nước mình, biết ơn cha mẹ, lễ phép, giữ gìn sức khỏe và tìm hiểu thế giới quanh em.</p>
-      <p>Ở mỗi khổ, các bạn:</p>
+      <p class="bh-giai-en" id="en-gt" lang="en"></p>
+      <p id="vi-gt"></p>
+      <p>Mỗi bài có hai khổ thơ. Ở mỗi bài, các bạn:</p>
       <ul>
         <li>nghe cô Hà đọc thơ và đọc theo,</li>
         <li>nghe cô Hà giảng, chữ sáng theo giọng cô,</li>
-        <li>xem Trâu Con kể, trả lời câu hỏi và viết vài câu.</li>
+        <li>xem Trâu Con kể, trả lời câu hỏi và viết vài câu (ở các bài đã soạn đủ).</li>
       </ul>
     </section>
 
     <section class="ttv-the" aria-labelledby="t-ds">
-      <h2 id="t-ds" class="ttv-tieu-de" style="font-size:1.35rem;margin:0 0 14px">Chọn khổ thơ</h2>
+      <h2 id="t-ds" class="ttv-tieu-de" style="font-size:1.35rem;margin:0 0 14px">Chọn bài</h2>
       <ol class="ds-kho" id="ds-kho"></ol>
     </section>
 
-    <section class="ttv-the sap" aria-label="Sắp có">
+    <section class="ttv-the sap" id="sap-co" aria-label="Sắp có" hidden>
       <img src="assets/trau-reading.png" alt="">
       <div>
-        <h2 class="ttv-tieu-de" style="font-size:1.25rem;margin:0 0 4px">Sắp có: bài thơ “Lên Tám”</h2>
-        <p style="margin:0;color:var(--ttv-chu-phu)">Bài thơ tiếp theo của Tản Đà, dành cho các bạn lớn hơn.</p>
+        <h2 class="ttv-tieu-de" style="font-size:1.25rem;margin:0 0 4px">Sắp có: các bài tiếp theo của “Lên Tám”</h2>
+        <p style="margin:0;color:var(--ttv-chu-phu)">Cô Hà đang thu âm các bài từ khổ 65 trở đi. Các bạn quay lại sau nhé!</p>
       </div>
     </section>
   </div>
@@ -84,26 +94,60 @@
 <script>
 function tao(the, lop, chu) { const el = document.createElement(the); if (lop) el.className = lop; if (chu != null) el.textContent = chu; return el; }
 function docLuu(k) { try { const s = localStorage.getItem(k); return s ? JSON.parse(s) : null; } catch (e) { return null; } }
+/* Khoá lưu sao: Lên Sáu giữ nguyên "cuocsong:lensau:khoN" (không đổi tên). */
+function khoaKho(b, n) { return "cuocsong:" + b + (b === "lensau" ? ":kho" : ":bai") + n; }
+const THO = {
+  lensau: {
+    ten: "Lên Sáu", ds: window.DANH_SACH_KHO || [],
+    vi: "Nhà thơ Tản Đà viết bài thơ “Lên Sáu” năm 1919 cho các bạn nhỏ sáu tuổi mới đi học. Mỗi khổ thơ là một bài học cuộc sống: yêu chữ nước mình, biết ơn cha mẹ, lễ phép, giữ gìn sức khỏe và tìm hiểu thế giới quanh em.",
+    en: "“Lên Sáu” (Turning Six) is a poem the poet Tản Đà wrote in 1919 for six-year-olds starting school. Each lesson teaches a life lesson: loving your language, thanking your parents, being polite, keeping healthy and exploring the world. Choose a lesson to listen to cô Hà, follow her words and answer the questions."
+  },
+  lentam: {
+    ten: "Lên Tám", ds: window.DANH_SACH_LENTAM || [],
+    vi: "“Lên Tám” là bài thơ tiếp theo nhà thơ Tản Đà viết cho các bạn nhỏ, dành cho các bạn lớn hơn. Bài thơ dạy về con người và sự học, lòng biết ơn ông cha và cha mẹ, chữ Hiếu, tình anh em, họ hàng và việc chăm chỉ học hành.",
+    en: "“Lên Tám” (Turning Eight) is the next poem Tản Đà wrote for children, for slightly older learners. It talks about people and learning, thanking our ancestors and parents, love for your parents, brothers and sisters, family, and studying hard. In each lesson, cô Hà reads and explains two verses."
+  }
+};
+let BAI = (location.hash || "").replace("#", "");
+if (!THO[BAI]) BAI = "lensau";
 document.getElementById("nut-en").addEventListener("click", function () {
   const p = document.getElementById("en-gt"); const mo = !p.classList.contains("mo");
   p.classList.toggle("mo", mo); this.setAttribute("aria-expanded", mo ? "true" : "false");
 });
-(window.DANH_SACH_KHO || []).forEach(function (k) {
-  const li = tao("li");
-  const a = tao("a", "the-kho"); a.href = "kho.html#lensau-" + k.kho;
-  const dau = tao("div", "dau"); dau.appendChild(tao("span", "so", String(k.kho))); dau.appendChild(tao("span", "chu-de", k.chuDe)); a.appendChild(dau);
-  a.appendChild(tao("span", "ten", k.tieuDe));
-  const tho = tao("span", "tho"); k.cauDau.forEach(function (c) { tho.appendChild(tao("span", "", c)); }); tho.appendChild(tao("span", "", "…")); a.appendChild(tho);
-  const tt = tao("span", "tinh-trang");
-  tt.appendChild(tao("span", k.du ? "nhan-du" : "nhan-khung", k.du ? "Đủ bài" : "Đang soạn thêm"));
-  const luu = docLuu("cuocsong:lensau:kho" + k.kho);
-  const soSao = luu && luu.sao ? Object.keys(luu.sao).length : 0;
-  if (luu && luu.xong) tt.appendChild(tao("span", "nhan-xong", "★ Đã xong"));
-  else if (soSao) tt.appendChild(tao("span", "nhan-xong", "★ " + soSao + " sao"));
-  a.appendChild(tt);
-  li.appendChild(a);
-  document.getElementById("ds-kho").appendChild(li);
+document.querySelectorAll(".chon-bai button").forEach(function (b) {
+  b.addEventListener("click", function () {
+    BAI = b.dataset.bai;
+    try { history.replaceState(null, "", "#" + BAI); } catch (e) {}
+    ve();
+  });
 });
+function ve() {
+  const T = THO[BAI];
+  document.querySelectorAll(".chon-bai button").forEach(function (b) { b.setAttribute("aria-selected", b.dataset.bai === BAI ? "true" : "false"); });
+  document.getElementById("t-gt").textContent = "Bài thơ “" + T.ten + "”";
+  document.getElementById("vi-gt").textContent = T.vi;
+  document.getElementById("en-gt").textContent = T.en;
+  document.getElementById("sap-co").hidden = BAI !== "lentam";
+  const ol = document.getElementById("ds-kho"); ol.textContent = "";
+  T.ds.forEach(function (k) {
+    const li = tao("li");
+    const a = tao("a", "the-kho"); a.href = "kho.html#" + BAI + "-" + k.kho;
+    const dau = tao("div", "dau"); dau.appendChild(tao("span", "so", String(k.kho))); dau.appendChild(tao("span", "chu-de", k.chuDe)); a.appendChild(dau);
+    const kt = k.khoTho || [2 * k.kho - 1, 2 * k.kho];
+    a.appendChild(tao("span", "nhan-kho", "Bài " + k.kho + " · Khổ " + kt[0] + "–" + kt[1]));
+    a.appendChild(tao("span", "ten", k.tieuDe));
+    const tho = tao("span", "tho"); k.cauDau.forEach(function (c) { tho.appendChild(tao("span", "", c)); }); tho.appendChild(tao("span", "", "…")); a.appendChild(tho);
+    const tt = tao("span", "tinh-trang");
+    tt.appendChild(tao("span", k.du ? "nhan-du" : "nhan-khung", k.du ? "Đủ bài" : "Đang soạn thêm"));
+    const luu = docLuu(khoaKho(BAI, k.kho));
+    const soSao = luu && luu.sao ? Object.keys(luu.sao).length : 0;
+    if (luu && luu.xong) tt.appendChild(tao("span", "nhan-xong", "★ Đã xong"));
+    else if (soSao) tt.appendChild(tao("span", "nhan-xong", "★ " + soSao + " sao"));
+    a.appendChild(tt);
+    li.appendChild(a); ol.appendChild(li);
+  });
+}
+ve();
 </script>
 </body>
 </html>

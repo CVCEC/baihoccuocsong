@@ -26,7 +26,7 @@
 <main data-ttv-nen="don-gian">
   <div class="bh-khung" id="khung">
     <section class="ttv-the bh-kho" aria-labelledby="t-kho">
-      <a class="bh-ve" href="index.html">← Danh sách các khổ</a>
+      <a class="bh-ve" id="ve-ds" href="index.html">← Danh sách các bài</a>
       <h2 id="t-kho"></h2>
       <ol id="ds-kho"></ol>
     </section>
@@ -37,10 +37,12 @@
 
 <script>
 /* =====================================================================
-   Trang bài dùng chung cho mọi khổ. Dữ liệu từng khổ ở data/<bài>/khoNN.js
-   (mỗi tệp đặt window.BAI_HOC). Địa chỉ: kho.html#lensau-1 … #lensau-18
+   Trang bài dùng chung. Mỗi trang là một "bài" gồm 2 khổ thơ.
+   Lên Sáu: data/lensau/khoNN.js – kho.html#lensau-1 … #lensau-18
+   Lên Tám: data/lentam/baiNN.js – kho.html#lentam-1 … #lentam-32
+   (mỗi tệp đặt window.BAI_HOC; B.kho là số bài, B.khoTho là [khổ đầu, khổ cuối])
    ===================================================================== */
-const DS_BAI = { lensau: { ten: "Lên Sáu", tong: 18 } };
+const DS_BAI = { lensau: { ten: "Lên Sáu", tong: 18, tep: "kho" }, lentam: { ten: "Lên Tám", tong: 32, tep: "bai" } };
 const m = (location.hash || "").match(/^#([a-z]+)-(\d+)$/);
 const BAI = m && DS_BAI[m[1]] ? m[1] : "lensau";
 const SO = m ? Math.min(Math.max(1, +m[2]), DS_BAI[BAI].tong) : 1;
@@ -50,19 +52,23 @@ function $(id) { return document.getElementById(id); }
 function tao(the, lop, chu) { const el = document.createElement(the); if (lop) el.className = lop; if (chu != null) el.textContent = chu; return el; }
 function nfc(s) { return (s || "").normalize("NFC"); }
 function so2(n) { return String(n).padStart(2, "0"); }
-function khoaKho(b, n) { return "cuocsong:" + b + ":kho" + n; }
+/* Khoá lưu sao: Lên Sáu giữ nguyên "cuocsong:lensau:khoN" (không đổi tên). */
+function khoaKho(b, n) { return "cuocsong:" + b + (b === "lensau" ? ":kho" : ":bai") + n; }
 function docLuu(k) { try { const s = localStorage.getItem(k); return s ? JSON.parse(s) : null; } catch (e) { return null; } }
 
 (function () {
   const sc = document.createElement("script");
-  sc.src = "data/" + BAI + "/kho" + so2(SO) + ".js";
+  sc.src = "data/" + BAI + "/" + DS_BAI[BAI].tep + so2(SO) + ".js";
   sc.onload = function () { veTrang(window.BAI_HOC); };
-  sc.onerror = function () { $("khung").appendChild(tao("p", "ttv-the", "Chưa tải được khổ này. Các bạn thử lại sau nhé.")); };
+  sc.onerror = function () { $("khung").appendChild(tao("p", "ttv-the", "Chưa tải được bài này. Các bạn thử lại sau nhé.")); };
   document.head.appendChild(sc);
 })();
 
 function veTrang(B) {
-  document.title = "Bài học cuộc sống · " + DS_BAI[BAI].ten + " – Khổ " + B.kho;
+  const KT = B.khoTho || [2 * B.kho - 1, 2 * B.kho];
+  const NHAN_KHO = "Khổ " + KT[0] + "–" + KT[1];
+  document.title = "Bài học cuộc sống · " + DS_BAI[BAI].ten + " – Bài " + B.kho + " (" + NHAN_KHO.toLowerCase() + ")";
+  $("ve-ds").href = "index.html#" + BAI;
   const KHOA = khoaKho(BAI, B.kho);
   let duLieu = Object.assign({ sao: {}, viet: {}, ngay: [] }, docLuu(KHOA) || {});
   function luu() { try { localStorage.setItem(KHOA, JSON.stringify(duLieu)); } catch (e) {} }
@@ -70,15 +76,15 @@ function veTrang(B) {
   function coSao(id, ten) { SAO.push({ id: id, ten: ten }); }
   function datSao(id) { if (duLieu.sao[id]) return; duLieu.sao[id] = true; luu(); veSao(); }
 
-  $("dau-phu").textContent = "Bài thơ “" + DS_BAI[BAI].ten + "” của Tản Đà · Khổ " + B.kho + " · Chủ đề: " + B.chuDe;
-  $("t-kho").textContent = "Bài thơ " + DS_BAI[BAI].ten + " · " + DS_BAI[BAI].tong + " khổ";
+  $("dau-phu").textContent = "Bài thơ “" + DS_BAI[BAI].ten + "” của Tản Đà · Bài " + B.kho + " · " + NHAN_KHO + " · Chủ đề: " + B.chuDe;
+  $("t-kho").textContent = "Bài thơ " + DS_BAI[BAI].ten + " · " + DS_BAI[BAI].tong + " bài";
   (function () {
     const ol = $("ds-kho");
     for (let i = 1; i <= DS_BAI[BAI].tong; i++) {
       const xong = (docLuu(khoaKho(BAI, i)) || {}).xong;
       const li = tao("li", i === B.kho ? "dang" : (xong ? "xong" : ""));
       const a = tao("a", "", String(i)); a.href = "kho.html#" + BAI + "-" + i;
-      a.setAttribute("aria-label", "Khổ " + i + (i === B.kho ? ", đang học" : ""));
+      a.setAttribute("aria-label", "Bài " + i + (i === B.kho ? ", đang học" : ""));
       if (i === B.kho) a.setAttribute("aria-current", "page");
       li.appendChild(a); ol.appendChild(li);
     }
@@ -106,9 +112,10 @@ function veTrang(B) {
 
   /* ---------- 1. Khổ thơ + cô Hà đọc ---------- */
   (function () {
-    const sec = theMoi("phan-tho", "Khổ " + B.kho + " · " + B.tieuDe,
-      (B.tieuDeEn ? B.tieuDeEn + " " : "") + "Tap the button to hear cô Hà read this verse, and read along. Each line has 3 words.");
-    const tho = tao("div", "bh-tho"); const cau = [];
+    const soChu = (B.tho[0][0][0].match(/[0-9A-Za-zÀ-ỹđĐ]+/g) || []).length;
+    const sec = theMoi("phan-tho", "Bài " + B.kho + " · " + B.tieuDe,
+      (B.tieuDeEn ? B.tieuDeEn + " " : "") + "This lesson has verses " + KT[0] + " and " + KT[1] + ". Tap the button to hear cô Hà read them, and read along. Each line has " + soChu + " words.");
+    const tho = tao("div", "bh-tho n" + B.tho.length); const cau = [];
     B.tho.forEach(function (nhom) {
       const div = tao("div", "nhom");
       nhom.forEach(function (c) { const p = tao("p"); const sp = tao("span", "bh-nua", c[0]); cau.push({ el: sp, bd: c[1], kt: c[2] }); p.appendChild(sp); div.appendChild(p); });
@@ -117,7 +124,7 @@ function veTrang(B) {
     sec.appendChild(tho);
     const hang = tao("div", "bh-nut-hang"); const nut = tao("button", "ttv-nut", "▶ Nghe cô Hà đọc thơ"); nut.type = "button";
     hang.appendChild(nut); sec.appendChild(hang);
-    sec.appendChild(tao("p", "bh-ghi", "Mỗi câu thơ có 3 chữ. Chữ sáng lên theo giọng cô, các bạn đọc theo nhé!"));
+    sec.appendChild(tao("p", "bh-ghi", NHAN_KHO + " của bài thơ. Mỗi câu thơ có " + soChu + " chữ. Chữ sáng lên theo giọng cô, các bạn đọc theo nhé!"));
     const am = new Audio(); am.preload = "none"; let dang = false;
     function toSang() {
       const t = am.currentTime;
@@ -355,7 +362,7 @@ function veTrang(B) {
       const ph = []; const ch = B.viet.choi.map(function (c, i) { return (duLieu.viet["choi" + i] || "").trim(); }).filter(Boolean).join("\n");
       if (ch) ph.push(ch); if ((duLieu.viet.la || "").trim()) ph.push(duLieu.viet.la.trim());
       if (!ph.length) { bao.textContent = "Em chưa viết gì ở mức Vừa hoặc Khó."; return; }
-      const chu = DS_BAI[BAI].ten + " – Khổ " + B.kho + "\n\n" + ph.join("\n\n");
+      const chu = DS_BAI[BAI].ten + " – Bài " + B.kho + " (" + NHAN_KHO.toLowerCase() + ")\n\n" + ph.join("\n\n");
       try { navigator.clipboard.writeText(chu).then(function () { bao.textContent = "Đã sao chép. Em dán gửi thầy cô nhé!"; }, function () { bao.textContent = "Máy này chưa cho sao chép. Em chọn chữ rồi sao chép nhé."; }); }
       catch (e) { bao.textContent = "Máy này chưa cho sao chép. Em chọn chữ rồi sao chép nhé."; }
     });
@@ -385,13 +392,13 @@ function veTrang(B) {
   /* ---------- Phần đang soạn ---------- */
   if (thieu.length) {
     const sec = tao("section", "ttv-the bh-sap-co");
-    sec.appendChild(tao("h2", "ttv-tieu-de", "Sắp có ở khổ này")).style.cssText = "font-size:1.2rem;margin:0 0 10px";
+    sec.appendChild(tao("h2", "ttv-tieu-de", "Sắp có ở bài này")).style.cssText = "font-size:1.2rem;margin:0 0 10px";
     const ul = tao("ul"); thieu.forEach(function (t) { ul.appendChild(tao("li", "", t)); }); sec.appendChild(ul); khung.appendChild(sec);
   }
 
   /* ---------- Tổng sao + chuyển khổ ---------- */
   const tong = tao("section", "ttv-the bh-tong");
-  tong.appendChild(tao("h2", "ttv-tieu-de", "Sao của em ở khổ này")).style.fontSize = "1.3rem";
+  tong.appendChild(tao("h2", "ttv-tieu-de", "Sao của em ở bài này")).style.fontSize = "1.3rem";
   const oSao = tao("div"); const chuSao = tao("p"); tong.appendChild(oSao); tong.appendChild(chuSao); khung.appendChild(tong);
   function veSao() {
     oSao.textContent = ""; let co = 0;
@@ -406,9 +413,9 @@ function veTrang(B) {
   }
   veSao();
 
-  const chuyen = tao("nav", "bh-chuyen"); chuyen.setAttribute("aria-label", "Chuyển khổ");
-  if (B.kho > 1) { const a = tao("a", "ttv-nut-phu", "← Khổ " + (B.kho - 1)); a.href = "kho.html#" + BAI + "-" + (B.kho - 1); chuyen.appendChild(a); } else chuyen.appendChild(tao("span"));
-  if (B.kho < DS_BAI[BAI].tong) { const a = tao("a", "ttv-nut", "Khổ " + (B.kho + 1) + " →"); a.href = "kho.html#" + BAI + "-" + (B.kho + 1); chuyen.appendChild(a); }
+  const chuyen = tao("nav", "bh-chuyen"); chuyen.setAttribute("aria-label", "Chuyển bài");
+  if (B.kho > 1) { const a = tao("a", "ttv-nut-phu", "← Bài " + (B.kho - 1)); a.href = "kho.html#" + BAI + "-" + (B.kho - 1); chuyen.appendChild(a); } else chuyen.appendChild(tao("span"));
+  if (B.kho < DS_BAI[BAI].tong) { const a = tao("a", "ttv-nut", "Bài " + (B.kho + 1) + " →"); a.href = "kho.html#" + BAI + "-" + (B.kho + 1); chuyen.appendChild(a); }
   khung.appendChild(chuyen);
   khung.appendChild(tao("p", "bh-nguon", B.nguon));
 }

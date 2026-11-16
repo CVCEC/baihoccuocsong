@@ -1,4 +1,4 @@
-/* Lên Sáu – Khổ 1. Đủ bài. */
+/* Lên Sáu – Bài 1 (khổ 1–2). Đủ bài. */
 window.BAI_HOC = {
  "kho": 1,
  "tieuDe": "Học chữ nước ta",
@@ -75,7 +75,7 @@ window.BAI_HOC = {
  "amThanh": {
   "tho": "audio/lensau/kho01-tho.mp3",
   "giang": "audio/lensau/kho01-giang.mp3",
-  "giangGiay": 232
+  "giangGiay": 246
  },
  "video": {
   "src": "video/lensau/kho01.mp4",
@@ -226,12 +226,12 @@ window.BAI_HOC = {
   {
    "vi": "Chào tất cả các bạn nhỏ! Cô xin tự giới thiệu cô tên là Hà, cô sẽ đồng hành cùng các con mở trang sách đầu tiên cho chương trình học tiếng Việt và Văn hoá truyền thống của người Việt Nam. Trước tiên, cô sẽ đưa các bạn nhỏ quay ngược thời gian về hơn 100 năm trước để lắng nghe những lời nhắn nhủ vô cùng thân thương của nhà thơ Tản Đà qua khổ thơ đầu tiên của bài Lên sáu.",
    "en": "Cô Hà introduces herself. She takes you back more than 100 years to hear the poet Tản Đà's first verse of the poem “Lên Sáu” (Turning Six).",
-   "t": 1.68
+   "t": 1.63
   },
   {
    "vi": "Hai câu thơ mở đầu vang lên như một lời khẳng định đầy tự hào:",
    "en": "The first lines are a proud statement:",
-   "t": 27.87
+   "t": 27.82
   },
   {
    "tho": [
@@ -241,22 +241,22 @@ window.BAI_HOC = {
     "Đều phải học."
    ],
    "en": "Quốc ngữ books are our country's writing. Every child in the family must learn it.",
-   "t": 32.6
+   "t": 32.56
   },
   {
    "vi": "Các con có biết “chữ nước ta” ở đây là gì không? Đó chính là chữ Quốc ngữ – những nét chữ, những âm thanh mà cô trò chúng ta sắp bắt đầu đọc đây. Vào năm 1919, khi bài thơ này ra đời, việc học chữ Quốc ngữ là một điều vô cùng mới mẻ và thiêng liêng. Nhà thơ Tản Đà đã dùng hai chữ “nước ta” để nhắc nhở các con rằng: Tiếng Việt là linh hồn, là niềm tự hào của dân tộc. Học chữ Quốc ngữ không chỉ là học kiến thức, mà chính là cách các con thể hiện tình yêu đối với quê hương, đất nước của mình ngay từ khi còn nhỏ.",
    "en": "“Chữ nước ta” means Quốc ngữ – the letters and sounds we are about to read. In 1919, learning Quốc ngữ was new and special. Vietnamese is the soul and pride of our people, and learning it is a way to show love for your homeland.",
-   "t": 39.35
+   "t": 38.04
   },
   {
    "vi": "Đã là “con cái nhà” – tức là những người con có nguồn gốc là người Việt, dù sống ở bất kỳ nơi nào trên thế giới cũng vẫn là người Việt Nam, thì “đều phải học”. Việc đi học ở tuổi lên sáu không chỉ là để biết chữ, mà đó là bổn phận, là cách các con bày tỏ tình yêu thương với cha mẹ và niềm tự hào về đất nước mình.",
    "en": "“Con cái nhà” means children of Vietnamese families, wherever they live in the world – they all should learn it. Going to school at six is not only about reading; it is your duty and a way to show love for your parents.",
-   "t": 76.94
+   "t": 80.03
   },
   {
    "vi": "Khi ngồi học, chúng ta phải học như thế nào để vừa giỏi, vừa ngoan? Nhà thơ Tản Đà đã chỉ cho các con một bí kíp tuyệt vời:",
    "en": "How can you study well and behave well? The poet gives you a great tip:",
-   "t": 105.45
+   "t": 105.4
   },
   {
    "tho": [
@@ -266,22 +266,22 @@ window.BAI_HOC = {
     "Chớ láu táu."
    ],
    "en": "Your mouth reads, your ears listen. Don't wake up crying, don't rush.",
-   "t": 115.35
+   "t": 115.31
   },
   {
    "vi": "Bí kíp đó là gì nhỉ? Đó là sự phối hợp nhịp nhàng: “Miệng thì đọc” thật to, rõ ràng, dứt khoát để ghi nhớ mặt chữ; đồng thời “tai thì nghe” – tai nghe lời thầy cô giảng bài, tai nghe tiếng đọc của chính mình và của bạn để sửa cho đúng.",
    "en": "The tip: read out loud, clearly, to remember the letters – and at the same time listen to your teacher, to yourself and to your friends, so you can fix mistakes.",
-   "t": 121.85
+   "t": 120.59
   },
   {
    "vi": "Bên cạnh đó, nhà thơ cũng nhắc nhở các con phải bỏ ngay hai thói quen xấu: Một là “chớ ngủ nhè” – buổi sáng phải tự giác thức dậy đúng giờ, vui vẻ đến trường chứ không được khóc nhè, mè nheo với cha mẹ. Hai là “chớ láu táu” – khi làm bài, khi trả lời câu hỏi phải suy nghĩ thật kỹ, không được vội vàng, hấp tấp mà làm sai nhé!",
    "en": "Drop two bad habits. First, “chớ ngủ nhè”: get up on time by yourself and go to school happily, without crying or fussing. Second, “chớ láu táu”: think carefully before you answer – don't rush and make mistakes.",
-   "t": 141.7
+   "t": 141.65
   },
   {
    "vi": "Bốn câu thơ cuối của khổ thơ chính là lời đúc kết đầy ý nghĩa dành riêng cho các con:",
    "en": "The last four lines sum it all up, just for you:",
-   "t": 171.1
+   "t": 168.52
   },
   {
    "tho": [
@@ -291,17 +291,17 @@ window.BAI_HOC = {
     "Thầy khỏi mắng."
    ],
    "en": "You are six and starting your first lessons. Understand each lesson well, and your teacher won't need to scold you.",
-   "t": 174.84
+   "t": 174.8
   },
   {
-   "vi": "Tuổi “lên sáu” là một cột mốc vô cùng kỳ diệu. Các con bắt đầu bước vào giai đoạn “vỡ lòng”, tức là những bước đi chập chững đầu tiên trên con đường học vấn. Mọi thứ đều mới mẻ và có chút bỡ ngỡ. Nhà thơ khuyên chúng ta phải “học cho thông”. “Thông” ở đây nghĩa là học đến đâu hiểu đến đó, đọc thông viết thạo, hiểu rõ ý nghĩa của bài học. Khi các con chăm chỉ, tập trung và “học cho thông” thì chắc chắn “thầy khỏi mắng”. Thầy cô sẽ chỉ có những nụ cười khen ngợi, những điểm 10 đỏ chói và niềm tự hào dành cho các con mà thôi!",
-   "en": "Turning six is a special milestone: “vỡ lòng” means your very first steps in learning, when everything is new. “Học cho thông” means understanding each lesson as you go – reading and writing well. Then your teacher won't scold you; you'll get smiles, praise and top marks instead!",
-   "t": 180.5
+   "vi": "Tuổi “lên sáu” là một cột mốc vô cùng kỳ diệu. Các con bắt đầu bước vào giai đoạn “vỡ lòng”, tức là những bước đi chập chững đầu tiên trên con đường học vấn. Mọi thứ đều mới mẻ và có chút bỡ ngỡ. Nhà thơ khuyên chúng ta phải “học cho thông”. “Thông” ở đây nghĩa là học đến đâu hiểu đến đó, đọc thông viết thạo, hiểu rõ ý nghĩa của bài học. Khi các con chăm chỉ, tập trung và “học cho thông” thì chắc chắn “thầy khỏi mắng”. Thầy cô sẽ chỉ có những nụ cười ngợi khen, và những điểm tốt dành cho các con mà thôi!",
+   "en": "Turning six is a special milestone: “vỡ lòng” means your very first steps in learning, when everything is new. “Học cho thông” means understanding each lesson as you go – reading and writing well. Then your teacher won't scold you; you'll get smiles, praise and good marks instead!",
+   "t": 179.75
   },
   {
-   "vi": "Các con thấy không, khổ thơ đầu tiên của bài “Lên sáu” giống như một chiếc gương soi hằng ngày cho chúng ta. Cô mong rằng mỗi ngày đến lớp, các con sẽ luôn nhớ: Yêu chữ nước mình, học hành chăm chỉ, phối hợp cả miệng đọc – tai nghe, không ngủ nhè, không láu táu để luôn là những người học trò xuất sắc nhất nhé!",
-   "en": "This verse is like a mirror to look into every day: love your language, study hard, read aloud and listen, don't cry in the morning, and don't rush.",
-   "t": 210.76
+   "vi": "Các con thấy không, khổ thơ đầu tiên của bài “Lên sáu” giống như một chiếc gương soi hằng ngày cho chúng ta. Cô mong rằng mỗi ngày đến lớp, các con sẽ luôn nhớ: Yêu chữ nước mình, học hành chăm chỉ, phối hợp cả miệng đọc – tai nghe, không ngủ nhè, không láu táu để luôn là những người học trò xuất sắc! Cảm ơn các con đã cùng cô đi hết hai khổ thơ đầu tiên của bài thơ “Lên Sáu”.",
+   "en": "This verse is like a mirror to look into every day: love your language, study hard, read aloud and listen, don't cry in the morning, and don't rush. Cô Hà thanks you for learning the first two verses of “Lên Sáu” with her.",
+   "t": 218.16
   }
  ],
  "keBoMe": [
@@ -359,5 +359,9 @@ window.BAI_HOC = {
  "baiHocEn": "Love your Vietnamese letters and study hard. Read aloud and listen well. Don't wake up crying, and don't rush.",
  "viecTot": "Mỗi sáng, em tự dậy đúng giờ, không khóc nhè, và đọc to cho bố mẹ nghe một câu tiếng Việt.",
  "nguon": "Thơ: Tản Đà, bài “Lên Sáu” (1919) · Giảng và đọc thơ: cô Hà",
- "bai": "lensau"
+ "bai": "lensau",
+ "khoTho": [
+  1,
+  2
+ ]
 };

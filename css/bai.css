@@ -49,6 +49,9 @@
   .bh-tho .nhom p { margin: 0; }
   @media (max-width: 700px) { .bh-tho { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 420px) { .bh-tho { grid-template-columns: 1fr; gap: 10px; } }
+  /* Lên Tám: 2 khổ, câu 5 chữ */
+  .bh-tho.n2 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 28px; }
+  @media (max-width: 760px) { .bh-tho.n2 { grid-template-columns: 1fr; } }
   .bh-nua { padding: 0 4px; border-radius: 8px; transition: background .15s; box-shadow: inset 0 -4px 0 transparent;
     white-space: nowrap; display: inline-block; }
   .bh-nua.sang { background: #FDECC4; box-shadow: inset 0 -4px 0 var(--ttv-sao); }

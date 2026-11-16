@@ -49,8 +49,12 @@ HTML/CSS/JS thuần; dữ liệu bài trong const BAI_HOC đầu script; chạm/
 - Khi chép CLAUDE.md vào một kho đã có CLAUDE.md, giữ lại các dòng NGOẠI LỆ RIÊNG của kho đó.
 
 ## Riêng kho này (cuocsong.cvcec.org – Bài học cuộc sống)
-- Trang chủ góc học: index.html; trang bài dùng chung: kho.html#lensau-1 … #lensau-18.
-- Dữ liệu mỗi khổ: data/lensau/khoNN.js (window.BAI_HOC). Phần nào chưa có trong dữ liệu thì trang tự ghi "Sắp có".
-- Âm thanh: audio/lensau/khoNN-tho.mp3 (cô Hà đọc thơ, có mốc từng câu) và khoNN-giang.mp3 (lời giảng, đã cắt phần câu hỏi cuối).
-- Khoá lưu: cuocsong:lensau:khoN – không đổi tên.
+- Hai bài thơ của Tản Đà: "Lên Sáu" (18 bài giảng, mỗi bài 2 khổ, khổ 1–36) và "Lên Tám" (mỗi bài 2 khổ; hiện có ghi âm bài 1–32, khổ 1–64).
+- Nhãn hiển thị: "Bài N · Khổ a–b". Trang chủ: index.html (#lensau / #lentam chọn bài thơ).
+- Trang bài dùng chung: kho.html#lensau-1 … #lensau-18 và kho.html#lentam-1 … #lentam-32.
+- Dữ liệu: data/lensau/khoNN.js và data/lentam/baiNN.js (window.BAI_HOC; kho = số bài, khoTho = [khổ đầu, khổ cuối]).
+  Danh sách cho trang chủ: data/lensau/danh-sach.js, data/lentam/danh-sach.js. Phần nào chưa có trong dữ liệu thì trang tự ghi "Sắp có".
+- Âm thanh: audio/<bài thơ>/…-tho.mp3 (cô Hà đọc thơ, có mốc từng câu) và …-giang.mp3 (lời giảng).
+  Bản ghi 16/11/2026: Lên Sáu kết bằng lời cảm ơn của cô Hà; Lên Tám không có câu "Nào giờ thì… hôm nay" nên lời giảng hiển thị cũng bỏ câu đó.
+- Khoá lưu: cuocsong:lensau:khoN (không đổi tên) và cuocsong:lentam:baiN.
 - Màu góc tạm đặt trong css/bai.css (html:root); khi góc đã có trong TTV_DANH_SACH thì xoá khối đó.
