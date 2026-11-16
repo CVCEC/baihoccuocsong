@@ -247,3 +247,16 @@
   /* Chuyển khổ */
   .bh-chuyen { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
   .bh-chuyen a { text-decoration: none; }
+
+/* ---------- Nối với trình độ cơ bản, Em làm được, gợi ý mức viết (16-11-2026) ---------- */
+.bh-noi { display: grid; gap: 8px; border: 2px dashed var(--ttv-goc, var(--ttv-vien)); }
+.bh-noi p { margin: 0; }
+.bh-noi-nhan { justify-self: start; padding: 2px 12px; border-radius: var(--ttv-bo-nut); background: var(--ttv-goc-dam); color: #FFFFFF; font-weight: 800; font-size: .9rem; letter-spacing: .04em; }
+.bh-noi-bai { font-weight: 700; }
+.bh-noi-nut { display: flex; flex-wrap: wrap; gap: 10px; margin: 6px 0 10px; }
+.bh-noi-nut a { min-height: 44px; display: inline-flex; align-items: center; text-decoration: none; }
+.bh-lam button { min-height: 56px; font-weight: 700; font-size: 1.05rem; padding: 10px 14px; text-align: left; }
+.bh-muc button { display: inline-flex; flex-direction: column; align-items: center; gap: 2px; min-height: 52px; }
+.bh-muc-goi-y { font-size: .78rem; font-weight: 700; opacity: .85; }
+.bh-lua-chon.bh-lam { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 600px) { .bh-lua-chon.bh-lam { grid-template-columns: 1fr; } }

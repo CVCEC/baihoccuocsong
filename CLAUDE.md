@@ -56,5 +56,6 @@ HTML/CSS/JS thuần; dữ liệu bài trong const BAI_HOC đầu script; chạm/
   Danh sách cho trang chủ: data/lensau/danh-sach.js, data/lentam/danh-sach.js. Phần nào chưa có trong dữ liệu thì trang tự ghi "Sắp có".
 - Âm thanh: audio/<bài thơ>/…-tho.mp3 (cô Hà đọc thơ, có mốc từng câu) và …-giang.mp3 (lời giảng).
   Bản ghi 16/11/2026: Lên Sáu kết bằng lời cảm ơn của cô Hà; Lên Tám không có câu "Nào giờ thì… hôm nay" nên lời giảng hiển thị cũng bỏ câu đó.
-- Khoá lưu: cuocsong:lensau:khoN (không đổi tên) và cuocsong:lentam:baiN.
+- Khoá lưu: cuocsong:lensau:khoN (không đổi tên) và cuocsong:lentam:baiN; mức viết đã chọn: cuocsong:muc-viet.
+- Nâng cao của "Thơ lễ nghĩa" (trò số 1 Bài 1–145 ở baihoc). data/noi-co-ban.js sinh từ CVCEC/truong-tieng-viet chung/tho-le-nghia.json: bài cơ bản đã học từng đoạn và câu hỏi "Em làm được".
 - Màu góc tạm đặt trong css/bai.css (html:root); khi góc đã có trong TTV_DANH_SACH thì xoá khối đó.

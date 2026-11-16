@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/hinh.css">
 <link rel="stylesheet" href="css/bai.css">
 <script src="https://mau.cvcec.org/v1/cvcec-chung.js" defer></script>
+<script src="data/noi-co-ban.js"></script>
 <script src="js/hinh.js"></script>
 <script src="js/hinh-ghep.js"></script>
 <script src="js/canh-tap-the.js" defer></script>
@@ -18,7 +19,7 @@
   <div class="bh-dau-trong">
     <img src="assets/trau-wave.png" alt="Trâu Con vẫy tay chào">
     <div class="bh-dau-chu">
-      <span class="bh-nhan">Lời thơ xưa – bài học nay</span>
+      <span class="bh-nhan">Nâng cao · Lời thơ xưa – bài học nay</span>
       <h1 class="ttv-tieu-de">Bài học cuộc sống</h1>
       <p class="bh-phu" id="dau-phu"></p>
     </div>
@@ -100,6 +101,28 @@ function veTrang(B) {
 
   const khung = $("khung");
   let soMuc = 0;
+
+  /* ---------- Nối với trình độ cơ bản (Thơ lễ nghĩa trong Bài 1–145) ---------- */
+  const NOI = (window.NOI_CO_BAN && NOI_CO_BAN[BAI] && NOI_CO_BAN[BAI][String(B.kho)]) || [];
+  (function () {
+    const sec = tao("section", "ttv-the bh-noi");
+    sec.appendChild(tao("p", "bh-noi-nhan", "Nâng cao"));
+    sec.appendChild(tao("p", "", "Dành cho các bạn đã đọc thông, viết được câu. Mới bắt đầu? Các bạn học “Thơ lễ nghĩa” trong Bài 1–145 trước nhé."));
+    const bai = [], on = [];
+    NOI.forEach(function (d) { d.bai.forEach(function (n) { if (bai.indexOf(n) < 0) bai.push(n); }); d.on.forEach(function (n) { if (on.indexOf(n) < 0) on.push(n); }); });
+    if (bai.length) {
+      const coVanHoa = bai.some(function (n) { return n >= 81; }), coCoBan = bai.some(function (n) { return n <= 80; });
+      const goc = coVanHoa && coCoBan ? "Tiếng Việt cơ bản và Văn hoá truyền thống" : coVanHoa ? "Văn hoá truyền thống" : "Tiếng Việt cơ bản";
+      sec.appendChild(tao("p", "bh-noi-bai", "Đoạn thơ này các bạn đã gặp ở Bài " + bai.join(", ") + " (" + goc + ")" + (on.length ? ", ôn lại ở Bài " + on.join(", ") : "") + "."));
+      const hang = tao("div", "bh-noi-nut");
+      [[coCoBan, "baihoc", "Về Tiếng Việt cơ bản"], [coVanHoa, "vanhoa", "Về Văn hoá truyền thống"]].forEach(function (x) {
+        if (!x[0]) return;
+        const a = tao("a", "ttv-nut-phu", x[2]); a.href = "https://vietclass.cvcec.org/#" + x[1]; a.target = "_top"; hang.appendChild(a);
+      });
+      sec.appendChild(hang);
+    }
+    khung.appendChild(sec);
+  })();
   const thieu = [];
   function theMoi(id, tieuDe, en) {
     soMuc++;
@@ -161,7 +184,7 @@ function veTrang(B) {
 
   /* ---------- 3. Dịch xuôi ---------- */
   if (B.dichXuoi) {
-    const sec = theMoi("phan-xuoi", "Hiểu khổ thơ bằng lời dễ hiểu", null);
+    const sec = theMoi("phan-xuoi", "Thơ nói gì?", null);
     const nut = tao("button", "bh-en", "EN"); nut.type = "button"; nut.lang = "en"; nut.setAttribute("aria-expanded", "false");
     sec.querySelector(".bh-the-dau").appendChild(nut);
     const box = tao("div");
@@ -176,7 +199,31 @@ function veTrang(B) {
       const mo = nut.getAttribute("aria-expanded") !== "true"; nut.setAttribute("aria-expanded", mo ? "true" : "false");
       box.querySelectorAll(".bh-cap-en").forEach(function (e) { e.classList.toggle("mo", mo); });
     });
-  } else thieu.push("Hiểu khổ thơ bằng lời dễ hiểu (có tiếng Anh)");
+  } else thieu.push("Thơ nói gì? (có tiếng Anh)");
+
+  /* ---------- Em làm được: câu hỏi việc làm đúng, giống trình độ cơ bản ---------- */
+  if (NOI.length) {
+    const sec = theMoi("phan-lam", "Em làm được",
+      "These are the same questions as in the basic lessons. Choose the good thing to do.");
+    NOI.forEach(function (d, i) {
+      const c = tao("div", "bh-cau"); c.appendChild(tao("h3", "", "Câu " + (i + 1) + ". " + d.hoi));
+      const ds = tao("div", "bh-lua-chon bh-lam"); const ph = tao("div", "bh-phan-hoi"); const nhan = tao("span"); ph.appendChild(nhan);
+      const chon = Math.random() < 0.5 ? [d.dung, d.sai] : [d.sai, d.dung];
+      chon.forEach(function (ch) {
+        const b = tao("button", "", ch); b.type = "button";
+        b.addEventListener("click", function () {
+          ds.querySelectorAll("button").forEach(function (x) { x.classList.remove("sai"); });
+          if (ch === d.dung) {
+            b.classList.add("dung"); nhan.className = "ttv-nhan-dung"; nhan.textContent = "Đúng rồi!";
+            ds.querySelectorAll("button").forEach(function (x) { x.disabled = true; });
+          } else { b.classList.add("sai"); nhan.className = "ttv-nhan-sai"; nhan.textContent = "Thử lại nhé"; }
+          ph.classList.add("hien");
+        });
+        ds.appendChild(b);
+      });
+      c.appendChild(ds); c.appendChild(ph); sec.appendChild(c);
+    });
+  }
 
   /* ---------- 4. Thẻ từ ---------- */
   if (B.tuKho) {
@@ -294,17 +341,22 @@ function veTrang(B) {
     const sec = theMoi("phan-viet", "Viết đoạn văn ngắn",
       "Pick your level. Dễ (easy): fill in the missing words. Vừa (medium): finish three sentences. Khó (hard): write a short paragraph of 5–7 sentences. Your writing is saved on this device.");
     const muc = tao("div", "bh-muc"); muc.setAttribute("role", "tablist");
-    const ten = [["mam", "★ Dễ"], ["choi", "★★ Vừa"], ["la", "★★★ Khó"]]; const phan = {};
-    ten.forEach(function (x, i) {
-      const b = tao("button", "", x[1]); b.type = "button"; b.setAttribute("role", "tab"); b.setAttribute("aria-selected", i === 0 ? "true" : "false"); b.dataset.muc = x[0];
+    const ten = [["mam", "★ Dễ", "mới viết được từ"], ["choi", "★★ Vừa", "viết được câu"], ["la", "★★★ Khó", "viết được đoạn văn"]]; const phan = {};
+    // Nhớ mức viết bé chọn lần trước (khoá riêng, mới: cuocsong:muc-viet)
+    const KHOA_MUC = "cuocsong:muc-viet";
+    let mucDaChon = "mam"; try { const v = localStorage.getItem(KHOA_MUC); if (v === "mam" || v === "choi" || v === "la") mucDaChon = v; } catch (e) {}
+    ten.forEach(function (x) {
+      const b = tao("button", ""); b.type = "button"; b.setAttribute("role", "tab"); b.setAttribute("aria-selected", x[0] === mucDaChon ? "true" : "false"); b.dataset.muc = x[0];
+      b.appendChild(tao("span", "bh-muc-ten", x[1])); b.appendChild(tao("small", "bh-muc-goi-y", x[2]));
       muc.appendChild(b);
       b.addEventListener("click", function () {
         muc.querySelectorAll("button").forEach(function (y) { y.setAttribute("aria-selected", y === b ? "true" : "false"); });
         Object.keys(phan).forEach(function (k) { phan[k].classList.toggle("mo", k === x[0]); });
+        try { localStorage.setItem(KHOA_MUC, x[0]); } catch (e) {}
       });
     });
     sec.appendChild(muc);
-    ["mam", "choi", "la"].forEach(function (k, i) { phan[k] = tao("div", "bh-viet-phan" + (i === 0 ? " mo" : "")); phan[k].setAttribute("role", "tabpanel"); sec.appendChild(phan[k]); });
+    ["mam", "choi", "la"].forEach(function (k) { phan[k] = tao("div", "bh-viet-phan" + (k === mucDaChon ? " mo" : "")); phan[k].setAttribute("role", "tabpanel"); sec.appendChild(phan[k]); });
 
     // Dễ: điền từ
     phan.mam.appendChild(tao("p", "bh-goi-y", "Chạm vào từ để điền vào chỗ trống:"));
