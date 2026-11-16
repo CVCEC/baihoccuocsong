@@ -366,5 +366,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "People are the most precious in the world. Little ones need to be taught. We learn to become good people, and we get better as we grow.",
  "viecTot": "Hôm nay, em hỏi bố mẹ một điều em chưa biết, lắng nghe thật kỹ rồi nói lời cảm ơn.",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho02.mp4",
+  "poster": "video/lensau/kho02.jpg"
+ }
 };

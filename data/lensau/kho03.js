@@ -361,5 +361,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "Our parents gave birth to us and love us. Our warm clothes and our food come from their hard work. Be thankful to them – they are our dearest people.",
  "viecTot": "Hôm nay, sau bữa cơm, em nói “Con cảm ơn bố mẹ” và giúp dọn bát đũa.",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho03.mp4",
+  "poster": "video/lensau/kho03.jpg"
+ }
 };

@@ -351,5 +351,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "Our parents are our dearest people. Being thankful means being good to them – that is how a child should live. Wherever we go, we remember our parents.",
  "viecTot": "Mỗi lần ra khỏi nhà và khi về, em chào bố mẹ thật lễ phép.",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho04.mp4",
+  "poster": "video/lensau/kho04.jpg"
+ }
 };

@@ -351,5 +351,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "Having parents who care for us is a great joy. Mum loves us, so we shouldn't whine. At school, behave well and don't make trouble.",
  "viecTot": "Tuần này, em tự mặc quần áo, tự đi giày và cất đồ chơi gọn gàng, không cần mẹ nhắc.",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho05.mp4",
+  "poster": "video/lensau/kho05.jpg"
+ }
 };

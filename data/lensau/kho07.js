@@ -351,5 +351,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "Brothers and sisters are as close as hands and feet. Love each other and don't be jealous. With older siblings, show love first, then good manners.",
  "viecTot": "Hôm nay, em chia đồ ăn hoặc đồ chơi cho anh chị em (hoặc bạn) và nói lời cảm ơn khi được giúp.",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho07.mp4",
+  "poster": "video/lensau/kho07.jpg"
+ }
 };

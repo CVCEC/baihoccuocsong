@@ -351,5 +351,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "Our uncles and aunts are family. Respect older people and give way to younger ones. Greet adults and answer them politely.",
  "viecTot": "Tuần này, em gọi điện hoặc gặp một người họ hàng và chào hỏi thật lễ phép: “Con chào … ạ!”",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho08.mp4",
+  "poster": "video/lensau/kho08.jpg"
+ }
 };

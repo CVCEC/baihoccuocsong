@@ -356,5 +356,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "Everyone in our family comes from our ancestors. Dad's side is “họ nội”, Mum's side is “họ ngoại”. Learn the right names for close relatives first.",
  "viecTot": "Tuần này, em cùng bố mẹ vẽ một “cây gia đình” có ông bà nội, ông bà ngoại và các bác, chú, cô, cậu, dì.",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho09.mp4",
+  "poster": "video/lensau/kho09.jpg"
+ }
 };

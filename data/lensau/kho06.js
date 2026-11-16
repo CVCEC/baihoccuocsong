@@ -351,5 +351,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "Mum worries about every meal we eat and works hard when we are sick. Eating clean food and staying healthy is a way to love her back.",
  "viecTot": "Tuần này, em rửa tay trước mỗi bữa ăn và không đòi ăn kẹo trước bữa cơm.",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho06.mp4",
+  "poster": "video/lensau/kho06.jpg"
+ }
 };

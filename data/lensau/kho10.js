@@ -351,5 +351,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "Respect all older people, known or not. Behave when guests visit and accept gifts politely. Answer grandparents with “dạ”, and never be rude at home.",
  "viecTot": "Tuần này, mỗi khi được cho quà hay được giúp, em nhận bằng hai tay và nói “Con cảm ơn ạ”.",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho10.mp4",
+  "poster": "video/lensau/kho10.jpg"
+ }
 };

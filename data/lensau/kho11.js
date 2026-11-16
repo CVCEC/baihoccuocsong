@@ -356,5 +356,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "To grow into a capable person, study hard. Focus when you read, and don't give up halfway. Learn with friends and respect your teacher, and you'll improve quickly.",
  "viecTot": "Mỗi ngày tuần này, em đọc sách 10 phút thật tập trung: tắt ti vi, cất điện thoại, chỉ nhìn vào trang sách.",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho11.mp4",
+  "poster": "video/lensau/kho11.jpg"
+ }
 };

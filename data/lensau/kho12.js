@@ -371,5 +371,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "Eat cooked food and drink safe water; don't eat unripe fruit. Change into clean clothes and wash your face every day. Be extra careful in summer.",
  "viecTot": "Tuần này, sáng nào em cũng tự đánh răng, rửa mặt, và rửa tay bằng xà phòng trước mỗi bữa ăn.",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho12.mp4",
+  "poster": "video/lensau/kho12.jpg"
+ }
 };
