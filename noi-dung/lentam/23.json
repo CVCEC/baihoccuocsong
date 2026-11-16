@@ -1,0 +1,44 @@
+{
+ "tieuDeEn": "Brothers and sisters grow up in one home, like orchids and chrysanthemums growing in the same pot: each flower keeps its own kind and fragrance, and when the plant is healthy, flowers bloom close together.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Anh chị em không xa cách, cùng lớn lên trong một nhà. Giống như hoa lan, hoa cúc, nhiều cành hoa cùng mọc trong một chậu.", "en": "Brothers and sisters are never far apart; they grow up in the same home. Like orchids and chrysanthemums, many flowering stems grow in one pot."},
+  {"nhom": 1, "vi": "Nhìn hoa ta thấy: lan ra lan, cúc ra cúc, mỗi loài một vẻ, một hương. Cây khỏe thì hoa nở chen nhau thật nhiều.", "en": "Look at the flowers: orchids are orchids, chrysanthemums are chrysanthemums, each with its own look and scent. When the plant is healthy, the flowers bloom close together."}
+ ],
+ "tuKho": [
+  {"tu": "sinh trưởng", "nghia": "sinh ra và lớn lên", "en": "to be born and grow up"},
+  {"tu": "lan, cúc", "nghia": "hai loài hoa đẹp, thơm, được người Việt quý", "en": "orchid and chrysanthemum – two treasured flowers"},
+  {"tu": "giống", "nghia": "(ở đây) loài, nòi", "en": "(here) kind, species"},
+  {"tu": "chen chúc", "nghia": "nhiều, sát bên nhau", "en": "crowded close together"}
+ ],
+ "cauHoi": [
+  {"hoi": "Anh chị em cùng sinh ra và lớn lên ở đâu?", "chon": [["Ở trường học", "truong"], ["Ở chợ", "ban-hang"], ["Trong một nhà", "nha|anh|em"]], "dung": 2, "giai": "“Anh em tình không xa, sinh trưởng trong một nhà.”"},
+  {"hoi": "Nhà thơ ví anh chị em như gì?", "chon": [["Như những cành hoa trong một chậu", "chau-lan-cuc"], ["Như hòn đá", "da"], ["Như con cá", "ca"]], "dung": 0, "giai": "“Như lan và như cúc, một chậu bao cành hoa.”"},
+  {"hoi": "Chiếc chậu hoa giống với điều gì?", "chon": [["Cái cặp sách", "chong-sach"], ["Gia đình và tình thương của cha mẹ", "bo|chau-lan-cuc|me"], ["Cái nồi nấu cơm", "noi-dong"]], "dung": 1, "giai": "Chiếc chậu là gia đình; mỗi cành hoa là một người con."},
+  {"hoi": "“Lan lan và cúc cúc” nghĩa là gì?", "chon": [["Hoa lan biến thành hoa cúc", "hoa"], ["Mỗi loài hoa giữ vẻ đẹp, hương thơm riêng", "chau-lan-cuc|sao-nho"], ["Không có hoa nào", "da"]], "dung": 1, "giai": "Cùng gốc sinh ra, anh em giống nhau về dòng máu, nếp nhà."},
+  {"hoi": "“Cây tốt hoa chen chúc” giống gia đình thế nào?", "chon": [["Gia đình hạnh phúc, anh em đoàn kết cùng lớn", "bo:vui|anh:cuoi|em:vui|me:vui"], ["Anh em chen lấn, xô đẩy", "anh:gian|em:khoc"], ["Mỗi người ở một nơi", "nha|nui"]], "dung": 0, "giai": "Được cha mẹ chăm, anh em quây quần, cùng nhau phát triển."}
+ ],
+ "keBoMe": ["Nếu gia đình mình là một chậu hoa, con muốn mình là hoa gì? Vì sao?", "Anh chị em (hoặc anh chị em họ) của con giống và khác con ở những điểm nào?", "Hỏi bố mẹ: bố mẹ có thích loài hoa nào không? Nhà mình có trồng hoa không?"],
+ "viet": {
+  "mam": {"cau": "Anh em tình không [xa]. Sinh trưởng trong một [nhà]. Như lan và như [cúc]. Cây tốt hoa chen [chúc].", "them": ["chợ", "đá"]},
+  "choi": [
+   {"mo": "Gia đình em như một chậu hoa vì", "vd": "…mọi người cùng lớn lên trong một nhà."},
+   {"mo": "Nếu là một bông hoa, em muốn là", "vd": "…hoa cúc vàng vì rất tươi vui."},
+   {"mo": "Anh chị em đoàn kết thì", "vd": "…gia đình luôn vui vẻ, hạnh phúc."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu: Chậu hoa gia đình em.",
+   "goiY": ["Anh chị em cùng lớn lên ở đâu?", "Vì sao nhà thơ ví anh em như hoa lan, hoa cúc trong một chậu?", "Chậu hoa và những cành hoa giống gì trong gia đình?", "Em làm gì để chậu hoa gia đình luôn tươi tốt?"],
+   "tu": ["sinh trưởng", "một nhà", "hoa lan", "hoa cúc", "chậu hoa", "cành hoa", "hương thơm", "chen chúc", "đoàn kết"]
+  }
+ },
+ "baiHoc": ["Anh chị em cùng lớn lên trong một nhà.", "Như lan, như cúc mọc chung một chậu.", "Cây tốt hoa nhiều – nhà hòa thuận thì hạnh phúc."],
+ "baiHocEn": "Siblings grow up in the same home, like orchids and chrysanthemums in one pot. A healthy plant has many flowers – a peaceful home is a happy one.",
+ "viecTot": "Tuần này, em cùng anh chị em (hoặc bố mẹ) chăm một chậu cây hay vẽ chung một bức tranh “chậu hoa gia đình”.",
+ "en": [
+  "Cô Hà welcomes you to lesson twenty-three of “Lên Tám”. Last time she taught you about sharing food and clothes between brothers and sisters. Today the poet Tản Đà brings a beautiful image: bright orchids and chrysanthemums growing in one pot, to show how closely siblings are bound together. Look at your book and listen.",
+  "Brothers and sisters are never far apart, growing up in one home – like orchids and chrysanthemums, many flowering stems in one pot.",
+  "Look at the flowers: each has its own kind – orchids are orchids and chrysanthemums are chrysanthemums, each with its own flowers and fragrance; when the plant is healthy, the flowers crowd together.",
+  "The poem describes a childhood full of memories: from your first wobbly steps until you grow up, brothers and sisters are always together under one loving roof. The poet cleverly compares them to orchid and chrysanthemum stems in one pretty pot. The pot is the family and your parents' love; each stem is a child, drawing life from the same source to grow tall.",
+  "Because they grow from the same root, the orchid keeps an orchid's beauty and the chrysanthemum its own scent – just as siblings share the same blood and family traditions. When the soil is well cared for, the plant is green and flowers bloom close together. Flowers gathered in full bloom are a symbol of a happy family, where siblings unite, help each other and grow strong under their parents' care."
+ ]
+}

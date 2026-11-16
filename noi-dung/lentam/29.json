@@ -1,0 +1,46 @@
+{
+ "tieuDeEn": "When we learn from books we must treasure them and keep them clean – every page takes so much work, so don't tear it. We learn from our teachers and are grateful to them: knowledge is endless, and teachers show us the right way.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Học sách thì phải quý sách, giữ sách vở sạch sẽ. Mỗi tờ giấy làm ra rất công phu, chúng mình đừng để rách.", "en": "When we learn from books, we must treasure them and keep them clean. Every sheet of paper takes a lot of work to make, so let's not tear it."},
+  {"nhom": 1, "vi": "Học thầy thì phải biết ơn thầy; có thầy dạy ta mới giỏi. Điều hay lẽ phải nhiều như biển không bờ – ai chỉ cho ta con đường đúng, nếu không phải thầy?", "en": "When we learn from teachers, we must be grateful – thanks to them we become wise. Knowledge is like a sea without shores – who else would show us the right path?"}
+ ],
+ "tuKho": [
+  {"tu": "quý sách", "nghia": "yêu quý, giữ gìn sách", "en": "to treasure books"},
+  {"tu": "công phu", "nghia": "tốn nhiều công sức", "en": "a lot of hard work"},
+  {"tu": "biết ơn", "nghia": "nhớ và trân trọng điều người khác làm cho mình", "en": "grateful"},
+  {"tu": "không bờ bến", "nghia": "rộng lớn, không có điểm cuối", "en": "endless, with no shore"},
+  {"tu": "trỏ", "nghia": "chỉ, chỉ đường", "en": "to point, to show"},
+  {"tu": "con đường ngay", "nghia": "con đường đúng đắn, lẽ phải", "en": "the right path"}
+ ],
+ "cauHoi": [
+  {"hoi": "Theo bài thơ, chúng mình phải đối xử với sách thế nào?", "chon": [["Vẽ bậy lên sách", "sach|be:mo"], ["Quý sách, giữ sách sạch sẽ", "sach|be:cuoi"], ["Để sách ở đâu cũng được", "sach|giuong"]], "dung": 1, "giai": "“Học sách phải quý sách, sách vở giữ cho sạch.”"},
+  {"hoi": "Vì sao không được làm rách giấy?", "chon": [["Vì tờ giấy làm ra rất công phu", "chong-sach|bo:hoi|tien"], ["Vì giấy rất to", "sach"], ["Vì giấy biết nói", "noi:Ối!|sach"]], "dung": 0, "giai": "“Tờ giấy bao công phu, chúng ta đừng để rách.”"},
+  {"hoi": "Bạn nhỏ nào giữ gìn sách vở tốt?", "chon": [["Gập mép, làm nhàu", "chong-sach|be:gian"], ["Để sách dưới mưa", "mua|sach"], ["Bọc sách, xếp gọn gàng", "chong-sach|be:cuoi|ban-hoc"]], "dung": 2, "giai": "Bọc sách cẩn thận, không vẽ bậy, không gập mép."},
+  {"hoi": "“Có thầy ta mới hay” nghĩa là gì?", "chon": [["Không cần thầy dạy", "be:phung"], ["Nhờ thầy cô dạy dỗ, ta mới hiểu biết", "thay:cuoi|bang:a b c|be:vui"], ["Thầy hay hát", "thay"]], "dung": 1, "giai": "“Học thầy, biết ơn thầy, có thầy ta mới hay.”"},
+  {"hoi": "Ai “trỏ con đường ngay” cho chúng mình?", "chon": [["Thầy cô giáo", "co:cuoi:gio-tay|be|ban"], ["Cái ti vi", "tivi"], ["Con mèo", "meo"]], "dung": 0, "giai": "Kiến thức như biển rộng; thầy cô là người dẫn đường đúng."}
+ ],
+ "keBoMe": ["Con giữ gìn sách vở của con thế nào? Con có quyển sách nào rất quý không?", "Thầy cô nào đã dạy con điều con nhớ nhất? Con kể cho bố mẹ nghe.", "Hỏi bố mẹ: hồi đi học, bố mẹ có nhớ thầy cô nào không? Vì sao?"],
+ "viet": {
+  "mam": {"cau": "Học sách phải quý [sách]. Sách vở giữ cho [sạch]. Học thầy, biết ơn [thầy]. Có thầy ta mới [hay].", "them": ["rách", "quên"]},
+  "choi": [
+   {"mo": "Em giữ sách vở sạch đẹp bằng cách", "vd": "…bọc bìa và rửa tay trước khi đọc."},
+   {"mo": "Em biết ơn thầy cô vì", "vd": "…thầy cô dạy em đọc, viết và làm người tốt."},
+   {"mo": "Thầy cô giống người dẫn đường vì", "vd": "…chỉ cho em điều đúng, điều sai."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu: Quý sách, biết ơn thầy.",
+   "goiY": ["Vì sao phải quý sách và giữ sách sạch?", "Để làm ra một quyển sách cần công sức của những ai?", "Thầy cô đã giúp em những gì?", "Em thể hiện lòng biết ơn thầy cô thế nào?"],
+   "tu": ["quý sách", "sạch sẽ", "tờ giấy", "công phu", "giữ gìn", "biết ơn", "thầy cô", "dẫn đường", "con đường ngay"]
+  }
+ },
+ "baiHoc": ["Quý sách, giữ sách vở sạch đẹp.", "Mỗi tờ giấy đều tốn nhiều công sức.", "Biết ơn thầy cô – người chỉ đường đúng cho ta."],
+ "baiHocEn": "Treasure books and keep them clean – every page takes hard work. Be grateful to your teachers, who show you the right path.",
+ "viecTot": "Tuần này, em bọc lại sách vở, xếp góc học tập gọn gàng và viết một lời cảm ơn gửi thầy cô.",
+ "en": [
+  "Cô Hà welcomes you to lesson twenty-nine of “Lên Tám”. Last time we chose the path of being good and studying hard to make our parents happy. Today she'll guide you in very practical actions right at your desk: how to treat your dear books, and how to be grateful to your teachers. Listen to today's two verses.",
+  "When learning from books, treasure your books; keep your books and notebooks clean; every sheet of paper takes so much work – let's not let it tear.",
+  "Learn from your teacher and be grateful to your teacher; with a teacher we become wise; knowledge has no shore – who else shows us the right path?",
+  "The poem gives a gentle but important reminder: every book and notebook is a close friend on your journey to knowledge. Making the book in your hands took the work of paper-makers and printers, and your parents' carefully saved money. So cover your books carefully, don't scribble in them, don't fold the corners, and don't let them get stained or torn. Keeping books clean shows respect for knowledge.",
+  "The next verse reminds us to honour our teachers. Without their teaching, correcting every letter and sentence, you couldn't learn and grow. The world of knowledge is as vast as a sea without shores; without a teacher to guide you and show you the right path, it would be easy to get lost. Always respect and be grateful to your teachers."
+ ]
+}

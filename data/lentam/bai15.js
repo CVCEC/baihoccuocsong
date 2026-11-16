@@ -223,7 +223,7 @@ window.BAI_HOC = {
     ],
     [
      "Chăm ngoan, học tốt, giúp việc nhà",
-     "be:cuoi|vo-but|v"
+     "be:cuoi|vo-but"
     ],
     [
      "Không nghe lời",

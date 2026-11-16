@@ -219,7 +219,7 @@ window.BAI_HOC = {
    "chon": [
     [
      "Lấy nước, dọn bàn, quét nhà",
-     "be:vui:dua|nuoc|v"
+     "be:vui:dua|nuoc"
     ],
     [
      "Bày đồ chơi khắp nhà",

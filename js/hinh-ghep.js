@@ -330,6 +330,17 @@
       return { svg: '<ellipse cx="-16" cy="-12" rx="14" ry="9" class="f-son"/><path d="M-30,-14 q-8,-10 -2,-16 M-2,-14 q8,-10 2,-16" class="s-son" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="-34" cy="-30" r="4" class="f-son"/><circle cx="2" cy="-30" r="4" class="f-son"/><circle cx="-20" cy="-16" r="1.6" class="f-muc"/><circle cx="-12" cy="-16" r="1.6" class="f-muc"/>' +
         '<path d="M14,-10 q10,-18 26,-10 q-6,6 -4,12 q-12,6 -22,-2 Z" class="f-cam"/><path d="M36,-20 l6,-10 M38,-18 l8,-6" class="s-cam" stroke-width="1.5"/><circle cx="34" cy="-17" r="1.4" class="f-muc"/>', rong: 84, cao: 40 };
     },
+    "chau-lan-cuc": function () { // một chậu, nhiều cành lan và cúc
+      var s = '<path d="M-30,-26 h60 l-8,26 h-44z" class="f-dat-nung"/><rect x="-33" y="-30" width="66" height="7" rx="3" class="f-dat-nung-dam"/>';
+      var canh = [[-24, -62, 'c'], [-10, -78, 'l'], [4, -68, 'c'], [16, -82, 'l'], [26, -58, 'c']];
+      canh.forEach(function (c) { s += '<path d="M' + (c[0] / 3) + ',-30 Q' + (c[0] * 0.8) + ',' + ((c[1] - 30) / 2) + ' ' + c[0] + ',' + c[1] + '" class="s-goc-dam" stroke-width="2.5" fill="none"/>'; });
+      s += '<path d="M-6,-30 q-18,-6 -26,-20 M6,-30 q18,-6 24,-18" class="s-goc-dam" stroke-width="4" fill="none" stroke-linecap="round"/>';
+      canh.forEach(function (c) {
+        if (c[2] === 'c') { for (var k = 0; k < 10; k++) { var g = k * Math.PI / 5; s += '<ellipse cx="' + (c[0] + Math.cos(g) * 6).toFixed(1) + '" cy="' + (c[1] + Math.sin(g) * 6).toFixed(1) + '" rx="5" ry="2.4" transform="rotate(' + (k * 36) + ' ' + (c[0] + Math.cos(g) * 6).toFixed(1) + ' ' + (c[1] + Math.sin(g) * 6).toFixed(1) + ')" class="f-sao"/>'; } s += '<circle cx="' + c[0] + '" cy="' + c[1] + '" r="4" class="f-cam"/>'; }
+        else { s += '<path d="M' + c[0] + ',' + (c[1] - 9) + ' q7,4 8,10 q-8,4 -8,8 q0,-4 -8,-8 q1,-6 8,-10z" class="f-son-nhat"/><circle cx="' + c[0] + '" cy="' + (c[1] + 2) + '" r="3" class="f-son"/>'; }
+      });
+      return { svg: s, rong: 76, cao: 94 };
+    },
     "ao-quan": function () { // bộ quần áo gấp gọn
       var s = '<path d="M-44,-60 l14,-8 h12 q6,8 12,0 h12 l14,8 l-8,14 l-8,-4 v34 h-32 v-34 l-8,4z" class="f-troi"/><path d="M-20,-68 q6,8 12,0" class="s-muc" stroke-width="1.5" fill="none"/>';
       s += '<path d="M10,-56 h32 v8 l-4,44 h-10 l-2,-36 l-2,36 h-10 l-4,-44z" class="f-troi-dam"/><path d="M10,-50 h32" class="s-muc" stroke-width="1.2"/>';

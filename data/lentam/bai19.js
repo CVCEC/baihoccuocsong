@@ -161,7 +161,7 @@ window.BAI_HOC = {
     ],
     [
      "Giữ gìn sạch sẽ, cẩn thận",
-     "ao-quan|be:cuoi|v"
+     "ao-quan|be:cuoi"
     ],
     [
      "Vứt lung tung",

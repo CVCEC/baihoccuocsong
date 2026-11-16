@@ -306,7 +306,7 @@ window.DANH_SACH_LENTAM = [
    "Ta nghĩ tình thịt xương,",
    "Không như người đi đường."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 23,
@@ -320,7 +320,7 @@ window.DANH_SACH_LENTAM = [
    "Anh em tình không xa",
    "Sinh trưởng trong một nhà."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 24,
@@ -334,7 +334,7 @@ window.DANH_SACH_LENTAM = [
    "Hoa cúc và hoa lan,",
    "Vinh hoa trong thế gian"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 25,
@@ -348,7 +348,7 @@ window.DANH_SACH_LENTAM = [
    "Ai sinh ra mẹ cha",
    "Trên có ông bà ta."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 26,
@@ -362,7 +362,7 @@ window.DANH_SACH_LENTAM = [
    "Tôn trưởng trong họ hàng",
    "Thầy bạn trong nhà trường"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 27,
@@ -376,7 +376,7 @@ window.DANH_SACH_LENTAM = [
    "Sự học từ luân thường",
    "Suy ra khắp mọi đường"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 28,
@@ -390,7 +390,7 @@ window.DANH_SACH_LENTAM = [
    "Con nghĩ đến mẹ cha",
    "Sao cho hơn người ta."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 29,
@@ -404,7 +404,7 @@ window.DANH_SACH_LENTAM = [
    "Học sách phải quý sách",
    "Sách vở giữ cho sạch."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 30,
@@ -418,7 +418,7 @@ window.DANH_SACH_LENTAM = [
    "Học thầy vui có bạn,",
    "Đua bạn, học không chán,"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 31,
@@ -432,7 +432,7 @@ window.DANH_SACH_LENTAM = [
    "Chúng ta tuổi còn xanh",
    "Tính trời đang thanh minh."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 32,
@@ -446,6 +446,6 @@ window.DANH_SACH_LENTAM = [
    "Tư chất ai không tốt,",
    "Học lười ai cũng dốt."
   ],
-  "du": false
+  "du": true
  }
 ];

@@ -1,38 +1,194 @@
 {
  "tieuDeEn": "“Hiếu” is a child's duty: our parents' kindness is like the mountains and the sea, so great that our small love can hardly repay it.",
  "dichXuoi": [
-  {"nhom": 0, "vi": "Chữ hiếu là đạo làm con: phải biết ơn cha mẹ. Ơn cha, ơn mẹ to lớn như núi cao, như biển rộng.", "en": "“Hiếu” is how a child should live: be thankful to your parents. Their kindness is as great as high mountains and wide seas."},
-  {"nhom": 1, "vi": "Nghĩ đến núi cao biển rộng, rồi nghĩ lại công ơn cha mẹ, mới thấy tình con nhỏ bé quá. Lấy gì để đền đáp cho đủ ơn nghĩa ấy?", "en": "Thinking of the high mountains and wide seas, then of our parents' kindness, we see how small our love is. How could we ever repay it?"}
+  {
+   "nhom": 0,
+   "vi": "Chữ hiếu là đạo làm con: phải biết ơn cha mẹ. Ơn cha, ơn mẹ to lớn như núi cao, như biển rộng.",
+   "en": "“Hiếu” is how a child should live: be thankful to your parents. Their kindness is as great as high mountains and wide seas."
+  },
+  {
+   "nhom": 1,
+   "vi": "Nghĩ đến núi cao biển rộng, rồi nghĩ lại công ơn cha mẹ, mới thấy tình con nhỏ bé quá. Lấy gì để đền đáp cho đủ ơn nghĩa ấy?",
+   "en": "Thinking of the high mountains and wide seas, then of our parents' kindness, we see how small our love is. How could we ever repay it?"
+  }
  ],
  "tuKho": [
-  {"tu": "đạo làm con", "nghia": "bổn phận của người con với cha mẹ", "en": "a child's duty to their parents"},
-  {"tu": "non", "nghia": "núi", "en": "mountain"},
-  {"tu": "bể", "nghia": "biển", "en": "sea"},
-  {"tu": "tưởng đến", "nghia": "nghĩ đến, nhớ đến", "en": "to think of"},
-  {"tu": "giả nghĩa", "nghia": "đền đáp ơn nghĩa, trả ơn", "en": "to repay a kindness"}
+  {
+   "tu": "đạo làm con",
+   "nghia": "bổn phận của người con với cha mẹ",
+   "en": "a child's duty to their parents"
+  },
+  {
+   "tu": "non",
+   "nghia": "núi",
+   "en": "mountain"
+  },
+  {
+   "tu": "bể",
+   "nghia": "biển",
+   "en": "sea"
+  },
+  {
+   "tu": "tưởng đến",
+   "nghia": "nghĩ đến, nhớ đến",
+   "en": "to think of"
+  },
+  {
+   "tu": "giả nghĩa",
+   "nghia": "đền đáp ơn nghĩa, trả ơn",
+   "en": "to repay a kindness"
+  }
  ],
  "cauHoi": [
-  {"hoi": "Chữ hiếu là đạo làm gì?", "chon": [["Đạo làm bạn", "be|ban"], ["Đạo làm con", "be::cui|bo|me"], ["Đạo làm thầy", "thay"]], "dung": 1, "giai": "“Chữ hiếu đạo làm con, cha mẹ ta biết ơn.”"},
-  {"hoi": "Bài thơ ví ơn cha mẹ như gì?", "chon": [["Như núi và biển", "nui|bien"], ["Như cái bánh", "keo"], ["Như quả bóng", "bong"]], "dung": 0, "giai": "“Ơn cha cùng ơn mẹ, như bể và như non.”"},
-  {"hoi": "Khi nghĩ đến ơn cha mẹ, bạn nhỏ thấy tình con thế nào?", "chon": [["To hơn núi", "nui"], ["Không cần nghĩ", "be|tivi"], ["Nhỏ bé, chưa đền đáp được bao nhiêu", "em:hoi|nui|bien"]], "dung": 2, "giai": "“Khó thay chút tình con, lấy gì đem giả nghĩa?”"},
-  {"hoi": "“Giả nghĩa” nghĩa là gì?", "chon": [["Đền đáp, trả ơn", "be:vui:dua|qua-tang|me:vui"], ["Giả vờ", "be:mo|hoi"], ["Đi chơi", "bong"]], "dung": 0, "giai": "Giả nghĩa là đền đáp ơn nghĩa."},
-  {"hoi": "Hằng ngày, em có thể đền đáp cha mẹ bằng cách nào?", "chon": [["Đòi quà mỗi ngày", "noi:Quà của con đâu?|be:phung|me"], ["Chăm ngoan, học tốt, giúp việc nhà", "be:cuoi|vo-but|v"], ["Không nghe lời", "be:gian|bo"]], "dung": 1, "giai": "Chưa đền hết được ơn cha mẹ, nhưng chăm ngoan mỗi ngày làm cha mẹ an lòng."}
+  {
+   "hoi": "Chữ hiếu là đạo làm gì?",
+   "chon": [
+    [
+     "Đạo làm bạn",
+     "be|ban"
+    ],
+    [
+     "Đạo làm con",
+     "be::cui|bo|me"
+    ],
+    [
+     "Đạo làm thầy",
+     "thay"
+    ]
+   ],
+   "dung": 1,
+   "giai": "“Chữ hiếu đạo làm con, cha mẹ ta biết ơn.”"
+  },
+  {
+   "hoi": "Bài thơ ví ơn cha mẹ như gì?",
+   "chon": [
+    [
+     "Như núi và biển",
+     "nui|bien"
+    ],
+    [
+     "Như cái bánh",
+     "keo"
+    ],
+    [
+     "Như quả bóng",
+     "bong"
+    ]
+   ],
+   "dung": 0,
+   "giai": "“Ơn cha cùng ơn mẹ, như bể và như non.”"
+  },
+  {
+   "hoi": "Khi nghĩ đến ơn cha mẹ, bạn nhỏ thấy tình con thế nào?",
+   "chon": [
+    [
+     "To hơn núi",
+     "nui"
+    ],
+    [
+     "Không cần nghĩ",
+     "be|tivi"
+    ],
+    [
+     "Nhỏ bé, chưa đền đáp được bao nhiêu",
+     "em:hoi|nui|bien"
+    ]
+   ],
+   "dung": 2,
+   "giai": "“Khó thay chút tình con, lấy gì đem giả nghĩa?”"
+  },
+  {
+   "hoi": "“Giả nghĩa” nghĩa là gì?",
+   "chon": [
+    [
+     "Đền đáp, trả ơn",
+     "be:vui:dua|qua-tang|me:vui"
+    ],
+    [
+     "Giả vờ",
+     "be:mo|hoi"
+    ],
+    [
+     "Đi chơi",
+     "bong"
+    ]
+   ],
+   "dung": 0,
+   "giai": "Giả nghĩa là đền đáp ơn nghĩa."
+  },
+  {
+   "hoi": "Hằng ngày, em có thể đền đáp cha mẹ bằng cách nào?",
+   "chon": [
+    [
+     "Đòi quà mỗi ngày",
+     "noi:Quà của con đâu?|be:phung|me"
+    ],
+    [
+     "Chăm ngoan, học tốt, giúp việc nhà",
+     "be:cuoi|vo-but"
+    ],
+    [
+     "Không nghe lời",
+     "be:gian|bo"
+    ]
+   ],
+   "dung": 1,
+   "giai": "Chưa đền hết được ơn cha mẹ, nhưng chăm ngoan mỗi ngày làm cha mẹ an lòng."
+  }
  ],
- "keBoMe": ["Theo con, vì sao ơn cha được ví như núi, ơn mẹ như biển?", "Con nghĩ mình đã làm được những gì để đền đáp cha mẹ?", "Bố mẹ vui nhất khi con làm việc gì?"],
+ "keBoMe": [
+  "Theo con, vì sao ơn cha được ví như núi, ơn mẹ như biển?",
+  "Con nghĩ mình đã làm được những gì để đền đáp cha mẹ?",
+  "Bố mẹ vui nhất khi con làm việc gì?"
+ ],
  "viet": {
-  "mam": {"cau": "Chữ hiếu đạo làm [con]. Cha mẹ ta biết [ơn]. Ơn cha cùng ơn mẹ, như bể và như [non]. Lấy gì đem giả [nghĩa]?", "them": ["bạn", "quên"]},
+  "mam": {
+   "cau": "Chữ hiếu đạo làm [con]. Cha mẹ ta biết [ơn]. Ơn cha cùng ơn mẹ, như bể và như [non]. Lấy gì đem giả [nghĩa]?",
+   "them": [
+    "bạn",
+    "quên"
+   ]
+  },
   "choi": [
-   {"mo": "Ơn cha mẹ giống như núi cao vì", "vd": "…cha mẹ luôn che chở, nâng đỡ em."},
-   {"mo": "Em muốn đền đáp cha mẹ bằng cách", "vd": "…học thật giỏi và luôn ngoan ngoãn."},
-   {"mo": "Cha mẹ vui nhất khi em", "vd": "…tự giác học bài và giúp việc nhà."}
+   {
+    "mo": "Ơn cha mẹ giống như núi cao vì",
+    "vd": "…cha mẹ luôn che chở, nâng đỡ em."
+   },
+   {
+    "mo": "Em muốn đền đáp cha mẹ bằng cách",
+    "vd": "…học thật giỏi và luôn ngoan ngoãn."
+   },
+   {
+    "mo": "Cha mẹ vui nhất khi em",
+    "vd": "…tự giác học bài và giúp việc nhà."
+   }
   ],
   "la": {
    "de": "Viết đoạn văn 5–7 câu: Ơn cha nghĩa mẹ.",
-   "goiY": ["Vì sao ơn cha mẹ được ví như núi và biển?", "Cha mẹ đã làm những gì cho em?", "Vì sao tình con thấy “nhỏ bé” khi nghĩ đến ơn cha mẹ?", "Mỗi ngày em làm gì để đền đáp?"],
-   "tu": ["chữ hiếu", "đạo làm con", "biết ơn", "núi non", "biển cả", "công ơn", "đền đáp", "giả nghĩa", "chăm ngoan"]
+   "goiY": [
+    "Vì sao ơn cha mẹ được ví như núi và biển?",
+    "Cha mẹ đã làm những gì cho em?",
+    "Vì sao tình con thấy “nhỏ bé” khi nghĩ đến ơn cha mẹ?",
+    "Mỗi ngày em làm gì để đền đáp?"
+   ],
+   "tu": [
+    "chữ hiếu",
+    "đạo làm con",
+    "biết ơn",
+    "núi non",
+    "biển cả",
+    "công ơn",
+    "đền đáp",
+    "giả nghĩa",
+    "chăm ngoan"
+   ]
   }
  },
- "baiHoc": ["Chữ hiếu là đạo làm con.", "Ơn cha mẹ cao như núi, rộng như biển.", "Chăm ngoan mỗi ngày để đền đáp ơn cha mẹ."],
+ "baiHoc": [
+  "Chữ hiếu là đạo làm con.",
+  "Ơn cha mẹ cao như núi, rộng như biển.",
+  "Chăm ngoan mỗi ngày để đền đáp ơn cha mẹ."
+ ],
  "baiHocEn": "“Hiếu” is a child's duty. Our parents' kindness is as high as mountains and as wide as the sea. Be good every day to repay it.",
  "viecTot": "Tuần này, em tự làm một việc nhà mà không cần ai nhắc (gấp quần áo, quét nhà, tưới cây…) để cha mẹ vui.",
  "en": [
