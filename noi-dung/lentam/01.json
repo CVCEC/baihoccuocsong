@@ -1,0 +1,46 @@
+{
+ "tieuDeEn": "The first verses of “Lên Tám” say people are the most special of all living things, thanks to our minds – and we are lucky to have parents who feed us and keep us warm.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Trong mọi loài trên trời đất, con người là hơn cả. Nhờ có trí óc, con người làm chủ Trái Đất và biết dùng muôn vật để phục vụ cuộc sống.", "en": "Of all living things in the world, people are the most special. Thanks to our minds, we look after the Earth and use everything around us to make life better."},
+  {"nhom": 1, "vi": "Chúng mình được sinh ra làm người, có bố mẹ sinh ra và nuôi nấng. Được ăn ngon, mặc ấm, chúng mình sung sướng hơn mọi loài.", "en": "We were born as people, with parents who gave us life and raise us. We eat good food and wear warm clothes – we are luckier than any other creature."}
+ ],
+ "tuKho": [
+  {"tu": "giống", "nghia": "loài (giống người là loài người)", "en": "kind, species"},
+  {"tu": "địa cầu", "nghia": "Trái Đất", "en": "the Earth"},
+  {"tu": "chủ trương", "nghia": "(ở đây) làm chủ, đứng đầu", "en": "(here) to be in charge"},
+  {"tu": "sai dùng", "nghia": "biết dùng, biết khiến cho việc của mình", "en": "to make use of"},
+  {"tu": "muôn vật", "nghia": "mọi vật, mọi loài trên đời", "en": "all things"},
+  {"tu": "mắc áo", "nghia": "mặc áo", "en": "to wear clothes"}
+ ],
+ "cauHoi": [
+  {"hoi": "Theo bài thơ, trong các loài trên trời đất, loài nào là hơn nhất?", "chon": [["Loài chim", "chim"], ["Loài cá", "ca"], ["Loài người", "bo:vui|be:vui|me:vui"]], "dung": 2, "giai": "“Các giống trong trời đất, giống người là hơn nhất.”"},
+  {"hoi": "Nhờ đâu con người làm chủ được Trái Đất?", "chon": [["Nhờ có trí óc thông minh", "be:cuoi|chong-sach|sao"], ["Nhờ chạy nhanh", "be:mo"], ["Nhờ ngủ nhiều", "giuong:ngu"]], "dung": 0, "giai": "Con người có trí tuệ: biết làm máy móc, trồng trọt, dùng muôn vật phục vụ cuộc sống."},
+  {"hoi": "“Địa cầu” nghĩa là gì?", "chon": [["Quả bóng", "bong"], ["Trái Đất", "chu:Trái Đất"], ["Mặt Trăng", "trang"]], "dung": 1, "giai": "“Mặt địa cầu” là bề mặt Trái Đất."},
+  {"hoi": "Ai đã sinh ra và chăm lo cho chúng mình?", "chon": [["Bố mẹ", "bo:vui|em:vui|me:vui"], ["Con mèo", "meo"], ["Cái ti vi", "tivi"]], "dung": 0, "giai": "“Ta sinh làm giống người, bố mẹ đẻ ra đời.”"},
+  {"hoi": "Vì sao chúng mình “sướng hơn hết mọi loài”?", "chon": [["Vì phải tự kiếm ăn ngoài mưa nắng", "mua|chim"], ["Vì không phải đi học", "be|bong"], ["Vì được ăn ngon, mặc ấm, có nhà, có bố mẹ", "nha|mam-com|be:vui"]], "dung": 2, "giai": "Chúng mình có nhà che mưa nắng, có bố mẹ lo từng bữa ăn, manh áo."}
+ ],
+ "keBoMe": ["Theo con, con người hơn các loài vật ở những điểm nào?", "Kể cho bố mẹ nghe: hôm nay con được ăn món gì ngon, mặc áo gì ấm? Ai đã chuẩn bị cho con?", "Con sẽ làm gì để cảm ơn bố mẹ vì đã cho con một cuộc sống ấm êm?"],
+ "viet": {
+  "mam": {"cau": "Trong trời đất, giống [người] là hơn nhất. Ta sinh làm người, bố [mẹ] đẻ ra đời. Ta được ăn [ngon], mặc áo [ấm].", "them": ["chim", "lạnh"]},
+  "choi": [
+   {"mo": "Con người thông minh vì", "vd": "…biết suy nghĩ, biết học hỏi và sáng tạo."},
+   {"mo": "Em thấy mình sung sướng vì", "vd": "…có bố mẹ yêu thương và một ngôi nhà ấm áp."},
+   {"mo": "Em biết ơn bố mẹ nên em", "vd": "…ngoan ngoãn và giúp bố mẹ việc nhà."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu: Em thấy mình may mắn vì điều gì?",
+   "goiY": ["Con người có điều gì đặc biệt hơn các loài vật?", "Gia đình đã cho em những gì: nhà ở, bữa ăn, áo ấm…?", "Một con vật ngoài tự nhiên phải sống vất vả thế nào?", "Em sẽ làm gì để xứng đáng với sự may mắn ấy?"],
+   "tu": ["con người", "trí óc", "Trái Đất", "muôn vật", "bố mẹ", "ăn ngon", "áo ấm", "may mắn", "biết ơn"]
+  }
+ },
+ "baiHoc": ["Con người quý nhất nhờ có trí óc.", "Được bố mẹ sinh ra, nuôi nấng là điều may mắn.", "Biết trân trọng và biết ơn cuộc sống ấm êm."],
+ "baiHocEn": "People are special because of our minds. Having parents who give us life and raise us is a great blessing. Value and be thankful for a warm, happy life.",
+ "viecTot": "Tối nay, em nói với bố mẹ: “Con cảm ơn bố mẹ đã cho con ăn ngon, mặc ấm.”",
+ "en": [
+  "Cô Hà introduces herself and welcomes you to “Lên Tám”, the next book of poems by Tản Đà, for children who have passed six and seven. It is full of precious lessons to help your mind grow. Sit up nicely and listen to the first two verses.",
+  "Of all the kinds of beings in the world, people are the highest; they are in charge of the Earth and make use of all things.",
+  "We were born as people; our parents brought us into the world. We eat well and wear warm clothes – happier than any other creature.",
+  "The world is huge – sky, clouds, land, rivers and countless creatures. Among them, the poem proudly says people are the highest on Earth. Why? Because of a priceless gift: our minds. With them we build machines, grow food, raise animals and use everything around us to make life better.",
+  "The second verse brings it home: you are lucky to be born a person and to grow up in your parents' warm, loving arms. Thanks to them you eat well and stay warm in winter. Animals in nature must find their own food in rain and sun, but you have a home and parents who care for every meal and every night's sleep. Value that great happiness, be proud to be a person, and be thankful to your parents."
+ ]
+}

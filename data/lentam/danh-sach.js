@@ -12,7 +12,7 @@ window.DANH_SACH_LENTAM = [
    "Các giống trong trời đất",
    "Giống người là hơn nhất"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 2,
@@ -26,7 +26,7 @@ window.DANH_SACH_LENTAM = [
    "Lắm lúc ta ngồi nghĩ",
    "Thật cũng không biết nghĩa"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 3,
@@ -40,7 +40,7 @@ window.DANH_SACH_LENTAM = [
    "Rằng xưa giống người này",
    "Cũng như loài chim cây"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 4,
@@ -54,7 +54,7 @@ window.DANH_SACH_LENTAM = [
    "Sự học đủ mọi đường",
    "Óc khôn ngày mở mang"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 5,
@@ -68,7 +68,7 @@ window.DANH_SACH_LENTAM = [
    "Sung sướng như chúng ta",
    "Thực là nhờ ông cha"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 6,
@@ -82,7 +82,7 @@ window.DANH_SACH_LENTAM = [
    "Ta ơn sự học này",
    "Như giếng lại như cây"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 7,
@@ -96,7 +96,7 @@ window.DANH_SACH_LENTAM = [
    "Trước hết hai thân ta",
    "Hai thân là mẹ cha"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 8,
@@ -110,7 +110,7 @@ window.DANH_SACH_LENTAM = [
    "Ba tháng con biết lẫy",
    "Ba tuổi con biết chạy"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 9,
@@ -124,7 +124,7 @@ window.DANH_SACH_LENTAM = [
    "Thân con đà ấm no",
    "Lòng mẹ chưa hết lo"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 10,
@@ -138,7 +138,7 @@ window.DANH_SACH_LENTAM = [
    "Thân mẹ, mẹ coi thường",
    "Thân con quý như vàng"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 11,
@@ -152,7 +152,7 @@ window.DANH_SACH_LENTAM = [
    "Sông bể chưa là đâu",
    "Cha mẹ ân tình sâu"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 12,
@@ -166,7 +166,7 @@ window.DANH_SACH_LENTAM = [
    "Như chim vừa vỡ bọng",
    "Lông cánh đương sinh mọc"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 13,

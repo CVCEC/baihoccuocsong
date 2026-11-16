@@ -316,6 +316,32 @@
       return { svg: '<rect x="-44" y="-30" width="88" height="30" class="f-goc"/><rect x="-44" y="-36" width="88" height="8" class="f-goc-dam"/><path d="M-48,-60 h96 l-6,-14 h-84 Z" class="f-son"/><path d="M-40,-60 v24 M40,-60 v24" class="s-goc-dam" stroke-width="3"/>' +
         '<circle cx="-24" cy="-42" r="7" class="f-son"/><circle cx="-12" cy="-42" r="7" class="f-sao"/><circle cx="10" cy="-42" r="7" class="f-lua"/><circle cx="22" cy="-42" r="7" class="f-son"/>', rong: 96, cao: 74 };
     },
+    "em-be": function (kieu) { // em bé quấn khăn
+      return { svg: '<ellipse cx="0" cy="-16" rx="24" ry="16" class="f-kem"/><path d="M-22,-20 q22,14 44,0" class="s-goc" stroke-width="2.5" fill="none"/>' + mat(-14, -26, 12, kieu || "ngu", "f-toc") + (kieu === "khoc" ? '' : '<path d="M6,-44 q2,-4 6,-2" class="s-muc" stroke-width="1.5" fill="none"/>'), rong: 56, cao: 40 };
+    },
+    "noi-em-be": function () { // nôi đung đưa có em bé
+      return { svg: '<path d="M-40,-52 Q0,-96 40,-52" class="s-goc-dam" stroke-width="3" fill="none"/><path d="M-36,-40 Q0,4 36,-40 Z" class="f-goc"/><path d="M-36,-40 H36" class="s-goc-dam" stroke-width="3"/>' + mat(-10, -44, 11, "ngu", "f-toc") + '<path d="M-30,-40 q30,10 58,0" class="f-kem"/>' +
+        '<path d="M-28,-2 q28,8 56,0" class="s-goc-dam" stroke-width="4" fill="none" stroke-linecap="round"/>', rong: 84, cao: 76 };
+    },
+    "bien": function () { // sông bể mênh mông
+      return { svg: '<rect x="-56" y="-46" width="112" height="46" rx="6" class="f-troi"/><path d="M-56,-36 q14,-8 28,0 t28,0 t28,0 t28,0 M-56,-20 q14,-8 28,0 t28,0 t28,0 t28,0" class="s-troi-dam" stroke-width="3" fill="none"/><circle cx="34" cy="-62" r="10" class="f-sao"/>', rong: 112, cao: 72 };
+    },
+    "tom-cua": function () {
+      return { svg: '<ellipse cx="-16" cy="-12" rx="14" ry="9" class="f-son"/><path d="M-30,-14 q-8,-10 -2,-16 M-2,-14 q8,-10 2,-16" class="s-son" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="-34" cy="-30" r="4" class="f-son"/><circle cx="2" cy="-30" r="4" class="f-son"/><circle cx="-20" cy="-16" r="1.6" class="f-muc"/><circle cx="-12" cy="-16" r="1.6" class="f-muc"/>' +
+        '<path d="M14,-10 q10,-18 26,-10 q-6,6 -4,12 q-12,6 -22,-2 Z" class="f-cam"/><path d="M36,-20 l6,-10 M38,-18 l8,-6" class="s-cam" stroke-width="1.5"/><circle cx="34" cy="-17" r="1.4" class="f-muc"/>', rong: 84, cao: 40 };
+    },
+    "to-chim": function () { // tổ chim có chim non đang mọc cánh
+      var s = '<path d="M-6,0 V-30" class="s-goc-dam" stroke-width="5"/><path d="M-40,-30 H40" class="s-goc-dam" stroke-width="5" stroke-linecap="round"/>';
+      s += '<path d="M-30,-34 q30,22 60,0 q-4,-10 -30,-10 q-26,0 -30,10z" class="f-nau"/>';
+      [-14, 2, 16].forEach(function (x) { s += '<circle cx="' + x + '" cy="-44" r="8" class="f-sao"/><path d="M' + (x + 6) + ',-46 l5,2 l-5,2z" class="f-son"/><circle cx="' + (x + 2) + '" cy="-46" r="1.4" class="f-muc"/>'; });
+      s += '<path d="M34,-70 q14,-12 26,0" class="s-muc" stroke-width="3" fill="none"/>';
+      return { svg: s, rong: 84, cao: 76 };
+    },
+    "gieng": function () { // giếng nước làng quê
+      return { svg: '<ellipse cx="0" cy="-30" rx="30" ry="9" class="f-troi-dam"/><path d="M-30,-30 V0 H30 V-30" class="f-gach"/><ellipse cx="0" cy="-30" rx="30" ry="9" class="s-goc-dam" stroke-width="3" fill="none"/>' +
+        '<path d="M-30,-20 H30 M-30,-10 H30 M-15,-30 V-20 M10,-20 V-10 M-5,-10 V0" class="s-goc-dam" stroke-width="1.5" opacity=".6"/>' +
+        '<path d="M-22,-34 V-74 M22,-34 V-74 M-28,-74 H28" class="s-goc-dam" stroke-width="4" stroke-linecap="round"/><path d="M6,-74 V-52" class="s-muc" stroke-width="1.5"/><path d="M-2,-52 h16 l-2,12 h-12 Z" class="f-goc"/>', rong: 68, cao: 80 };
+    },
     "bo-rom": function () {
       var s = "";
       for (var i = 0; i < 6; i++) {

@@ -51,3 +51,4 @@
 .hinh .f-dong-dam { fill: color-mix(in srgb, var(--ttv-sao) 30%, var(--ttv-chinh-dam)); }
 .hinh .s-dong-dam { stroke: color-mix(in srgb, var(--ttv-sao) 30%, var(--ttv-chinh-dam)); fill: none; }
 .hinh .f-bac { fill: color-mix(in srgb, var(--ttv-chu-mo) 25%, #fff); }
+.hinh .f-gach { fill: color-mix(in srgb, var(--ttv-chinh) 35%, var(--ttv-kem-rom)); }

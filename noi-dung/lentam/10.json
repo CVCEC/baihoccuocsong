@@ -1,0 +1,45 @@
+{
+ "tieuDeEn": "Mum takes little care of herself but treats her child like gold; we are as small as shrimps and crabs, while her love is as wide as rivers and seas.",
+ "dichXuoi": [
+  {"nhom": 0, "vi": "Mẹ không tiếc thân mình, nhưng coi con quý như vàng. Mẹ ốm sốt vẫn dầm mưa gió đi làm; con sốt một chút là mẹ đã vội tìm thuốc chữa cho con.", "en": "Mum doesn't spare herself, but treats her child as precious as gold. When Mum has a fever she still works in rain and wind; when we have a fever, she rushes to find medicine."},
+  {"nhom": 1, "vi": "Con còn nhỏ bé, mà tình mẹ thì kể sao cho hết. Con nhỏ như con tôm, con cua; lòng mẹ rộng như sông, như biển.", "en": "We are still small, and Mum's love is beyond words. We are as tiny as shrimps and crabs; Mum's love is as wide as rivers and seas."}
+ ],
+ "tuKho": [
+  {"tu": "coi thường", "nghia": "(ở đây) không để ý, không tiếc cho bản thân", "en": "(here) not caring about yourself"},
+  {"tu": "dầm mưa gió", "nghia": "đi trong mưa gió, chịu ướt, chịu lạnh", "en": "to be out in the rain and wind"},
+  {"tu": "thuốc thang", "nghia": "thuốc men để chữa bệnh", "en": "medicine"},
+  {"tu": "khôn xiết kể", "nghia": "nhiều đến mức kể không hết", "en": "too much to put into words"},
+  {"tu": "sông bể", "nghia": "sông và biển (bể là biển)", "en": "rivers and seas"}
+ ],
+ "cauHoi": [
+  {"hoi": "Theo bài thơ, mẹ coi con quý như gì?", "chon": [["Như đồ chơi", "bong"], ["Như vàng", "vang|em-be"], ["Như hòn đá", "da"]], "dung": 1, "giai": "“Thân mẹ, mẹ coi thường, thân con quý như vàng.”"},
+  {"hoi": "Khi mẹ bị ốm, mẹ thường làm gì?", "chon": [["Vẫn cố đi làm, dầm mưa gió", "me:om|mua|o"], ["Đòi con chăm sóc", "noi:Chăm mẹ!|me|be"], ["Không làm gì", "me|giuong"]], "dung": 0, "giai": "“Mẹ sốt dầm mưa gió”: mẹ ốm vẫn cố làm việc để nuôi con."},
+  {"hoi": "Khi con bị sốt, mẹ làm gì?", "chon": [["Đi chơi", "me|o"], ["Không để ý", "me|tivi"], ["Vội tìm thuốc, chăm con", "giuong:om|me:hoi|thuoc"]], "dung": 2, "giai": "“Con sốt đà thuốc thang.”"},
+  {"hoi": "Nhà thơ ví con nhỏ bé như gì?", "chon": [["Như tôm, như cua", "tom-cua"], ["Như núi cao", "nui"], ["Như cây mít", "cay-mit"]], "dung": 0, "giai": "“Thân con như tôm cua.”"},
+  {"hoi": "Lòng mẹ được ví như gì?", "chon": [["Như cái cốc", "nuoc"], ["Như sông, như biển", "bien"], ["Như hạt gạo", "bat-com"]], "dung": 1, "giai": "“Lòng mẹ như sông bể” – rộng lớn, bao la."}
+ ],
+ "keBoMe": ["Hỏi mẹ: có lần nào mẹ bị ốm mà vẫn phải đi làm không?", "Khi con bị ốm, mẹ (hoặc bố) đã chăm con thế nào?", "Vì sao nhà thơ ví con như tôm cua, còn lòng mẹ như sông bể?"],
+ "viet": {
+  "mam": {"cau": "Thân con quý như [vàng]. Con sốt, mẹ lo thuốc [thang]. Thân con như tôm [cua]. Lòng mẹ như sông [bể].", "them": ["đá", "núi"]},
+  "choi": [
+   {"mo": "Khi mẹ mệt, em sẽ", "vd": "…rót nước mời mẹ và để mẹ nghỉ."},
+   {"mo": "Lòng mẹ rộng như biển vì", "vd": "…mẹ luôn yêu thương và che chở em."},
+   {"mo": "Khi em ốm, mẹ em", "vd": "…cho em uống thuốc và ở bên em."}
+  ],
+  "la": {
+   "de": "Viết đoạn văn 5–7 câu: Lòng mẹ bao la như biển.",
+   "goiY": ["Mẹ quý em như thế nào?", "Khi mẹ ốm và khi em ốm, mẹ làm gì?", "Vì sao lòng mẹ được ví như sông biển?", "Em sẽ chăm sóc mẹ thế nào khi mẹ mệt?"],
+   "tu": ["quý như vàng", "dầm mưa gió", "thuốc thang", "chăm sóc", "tôm cua", "sông bể", "bao la", "che chở", "đền đáp"]
+  }
+ },
+ "baiHoc": ["Mẹ quý con như vàng, quên cả bản thân.", "Con ốm, mẹ lo thuốc thang, chăm sóc.", "Con nhỏ như tôm cua, lòng mẹ như sông bể."],
+ "baiHocEn": "Mum treasures her child like gold and forgets herself. When we are sick, she cares for us. We are as small as shrimps; her love is as wide as the sea.",
+ "viecTot": "Khi mẹ (hoặc bố) mệt, em mời nước, đấm lưng và để mẹ được nghỉ ngơi.",
+ "en": [
+  "Cô Hà welcomes you to lesson ten of “Lên Tám”. Last time we understood the deep bond between mother and child. Today we'll hear verses showing how that love overcomes every hardship and illness. Sit nicely, look at your book and listen.",
+  "Mum takes no care of her own body; your body she treasures like gold. When Mum has a fever she still goes out in rain and wind; when you have a fever she already brings medicine.",
+  "Your body is still small, and Mum's heart is beyond words; you are like a shrimp or crab, and Mum's heart is like rivers and seas.",
+  "The poem says something simple and moving: Mum may not care about her own health, but her child is a priceless treasure, kept safe like gold. Even when she is ill with a fever, she keeps working in rain and sun to support her child without complaint. Yet if she hears you cough or feels you're a little warm, she rushes to find a doctor and medicine and cares for you day and night.",
+  "The next verse uses a special comparison. At eight you are still small and young, like little shrimps and crabs in the water. Mum's love and protection are as wide as rivers and the endless sea, always holding, feeding and protecting the little ones from life's storms. It's the greatest, unconditional love in the world. Treasure it, and study well to repay a heart as wide as the ocean."
+ ]
+}
