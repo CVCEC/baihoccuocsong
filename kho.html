@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="css/bai.css">
 <script src="https://mau.cvcec.org/v1/cvcec-chung.js" defer></script>
 <script src="js/hinh.js"></script>
+<script src="js/hinh-ghep.js"></script>
 <script src="js/canh-tap-the.js" defer></script>
 </head>
 <body class="ttv-trang">
@@ -265,7 +266,7 @@ function veTrang(B) {
         ph.appendChild(nhan); ph.appendChild(giai);
         q.chon.forEach(function (ch, j) {
           const b = tao("button"); b.type = "button";
-          if (window.HINH && HINH[ch[1]]) b.insertAdjacentHTML("beforeend", HINH[ch[1]]);
+          if (window.layHinh) b.insertAdjacentHTML("beforeend", layHinh(ch[1]));
           b.appendChild(tao("span", "", ch[0]));
           b.addEventListener("click", function () {
             ds.querySelectorAll("button").forEach(function (x) { x.classList.remove("sai"); });

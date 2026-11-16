@@ -26,7 +26,7 @@ window.DANH_SACH_KHO = [
    "Trong trời đất,",
    "Nhất là người."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 3,
@@ -40,7 +40,7 @@ window.DANH_SACH_KHO = [
    "Ai đẻ ta?",
    "Cha cùng mẹ."
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 4,
@@ -54,7 +54,7 @@ window.DANH_SACH_KHO = [
    "Hai thân là,",
    "Là thân nhất,"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 5,
@@ -68,7 +68,7 @@ window.DANH_SACH_KHO = [
    "Con còn nhỏ,",
    "Có mẹ cha,"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 6,
@@ -82,7 +82,7 @@ window.DANH_SACH_KHO = [
    "Con còn bé,",
    "Mẹ hay lo,"
   ],
-  "du": false
+  "du": true
  },
  {
   "kho": 7,

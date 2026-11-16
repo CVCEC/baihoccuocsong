@@ -24,3 +24,21 @@
 .hinh .s-trang { stroke: #fff; fill: none; }
 .hinh .s-vien { stroke: var(--ttv-goc); }
 .hinh .f-trang.s-vien, .hinh .f-trang.s-muc { fill: #fff; }
+/* Tranh ghép (js/hinh-ghep.js) */
+.hinh .s-tay { stroke: #F7D3B5; fill: none; }
+.hinh .f-toc-bac { fill: #C9C4BE; }
+.hinh .f-cam { fill: color-mix(in srgb, var(--ttv-sao) 70%, var(--ttv-chinh)); }
+.hinh .s-cam { stroke: color-mix(in srgb, var(--ttv-sao) 70%, var(--ttv-chinh)); fill: none; }
+.hinh .f-nau { fill: color-mix(in srgb, var(--ttv-kem-rom) 60%, var(--ttv-chinh-dam)); }
+.hinh .s-nau { stroke: color-mix(in srgb, var(--ttv-kem-rom) 60%, var(--ttv-chinh-dam)); fill: none; }
+.hinh .f-kem { fill: var(--ttv-kem-rom); }
+.hinh .f-troi-dam { fill: color-mix(in srgb, var(--ttv-troi) 45%, var(--ttv-chu)); }
+.hinh .s-troi-dam { stroke: color-mix(in srgb, var(--ttv-troi) 45%, var(--ttv-chu)); fill: none; }
+.hinh .s-troi { stroke: color-mix(in srgb, var(--ttv-troi) 60%, var(--ttv-chu)); }
+.hinh .f-xam-nhat { fill: color-mix(in srgb, var(--ttv-chu-mo) 30%, #fff); }
+.hinh .f-lua-sang { fill: var(--ttv-lua-sang); }
+.hinh .f-lua-dam { fill: var(--ttv-lua-dam); }
+.hinh .f-bang { fill: color-mix(in srgb, var(--ttv-dung) 70%, var(--ttv-chu)); }
+.hinh .f-dat { fill: color-mix(in srgb, var(--ttv-kem-rom) 55%, #fff); }
+.hinh .s-goc-dam { stroke: var(--ttv-goc-dam); }
+.hinh .f-son-nhat { fill: color-mix(in srgb, var(--ttv-chinh) 45%, #fff); }
