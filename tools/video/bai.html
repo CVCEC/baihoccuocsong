@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Video 2D – Bài học cuộc sống</title>
+<link rel="stylesheet" href="fonts/andika/400.css">
+<link rel="stylesheet" href="fonts/andika/700.css">
+<link rel="stylesheet" href="fonts/nunito/700.css">
+<link rel="stylesheet" href="fonts/nunito/800.css">
+<link rel="stylesheet" href="fonts/baloo-2/700.css">
+<link rel="stylesheet" href="fonts/baloo-2/800.css">
+<link rel="stylesheet" href="cvcec-chung.css">
+<link rel="stylesheet" href="trang/hinh.css">
+<script src="trang/hinh.js"></script>
+<script src="trang/hinh-ghep.js"></script>
+<script src="kichban.js"></script>
+<style>
+  html, body { margin: 0; padding: 0; width: 1920px; height: 1080px; overflow: hidden; background: #000; }
+  * { box-sizing: border-box; }
+  #san { position: relative; width: 1920px; height: 1080px; overflow: hidden; font-family: "Nunito", sans-serif; color: var(--ttv-chu); }
+
+  /* Cảnh làng: trời – mây – mặt trời – ruộng bậc thang */
+  .lang { position: absolute; inset: 0; background: var(--ttv-troi); }
+  .lang .mat-troi { position: absolute; width: 170px; height: 170px; border-radius: 50%; background: var(--ttv-mat-troi);
+    right: 120px; top: 40px; box-shadow: 0 0 0 26px rgba(252,230,164,.45); }
+  .may { position: absolute; height: 54px; border-radius: 999px; background: #fff; }
+  .may::before, .may::after { content: ""; position: absolute; border-radius: 50%; background: #fff; }
+  .may::before { width: 90px; height: 90px; left: 34px; top: -44px; }
+  .may::after { width: 66px; height: 66px; left: 108px; top: -30px; }
+  .ruong { position: absolute; border-radius: 50% 50% 0 0 / 120px 120px 0 0; }
+  .r1 { bottom: 0; height: 330px; background: var(--ttv-lua-sang); left: -30%; width: 110%; box-shadow: inset 0 6px 0 rgba(255,255,255,.35); }
+  .r2 { bottom: 0; height: 240px; background: var(--ttv-lua); left: 15%; width: 100%; box-shadow: inset 0 6px 0 rgba(255,255,255,.35); }
+  .r3 { bottom: 0; height: 140px; background: var(--ttv-lua-dam); left: -10%; width: 120%; border-radius: 50% 50% 0 0 / 70px 70px 0 0; }
+
+  .logo { position: absolute; left: 36px; top: 26px; background: #fff; border-radius: 26px; padding: 12px 20px; z-index: 20;
+    box-shadow: 0 4px 0 rgba(0,48,96,.08); }
+  .logo img { height: 74px; width: auto; display: block; }
+  .ban-quyen { position: absolute; right: 22px; bottom: 12px; font-size: 18px; color: rgba(0,48,96,.55); z-index: 20; font-weight: 700; }
+
+  /* Trâu Con – ảnh chính thức, chỉ dịch chuyển và phóng đều, không kéo méo */
+  .trau { position: absolute; left: 150px; bottom: 210px; width: 470px; height: 560px; z-index: 5; }
+  .trau img { position: absolute; left: 50%; bottom: 0; height: 470px; width: auto; transform: translateX(-50%); opacity: 0; }
+  .trau-bong { position: absolute; left: 50%; bottom: -14px; width: 300px; height: 34px; border-radius: 50%; background: rgba(0,0,0,.12); transform: translateX(-50%); }
+
+  /* Bảng */
+  .bang { position: absolute; left: 690px; top: 120px; width: 1170px; height: 700px; z-index: 4; }
+  .bang-khung { position: absolute; inset: 0; border-radius: 30px; background: var(--ttv-goc-dam); padding: 20px; box-shadow: 0 14px 0 rgba(0,0,0,.12); }
+  .bang-mat { position: relative; width: 100%; height: 100%; border-radius: 18px; background: var(--ttv-chu); overflow: hidden; }
+  .chan-bang { position: absolute; top: 790px; width: 28px; height: 200px; background: var(--ttv-goc-dam); border-radius: 10px; z-index: 3; }
+  .canh { position: absolute; inset: 0; padding: 46px 56px; opacity: 0; color: #fff; }
+  .canh h2 { margin: 0; font-family: "Baloo 2", sans-serif; font-weight: 800; color: var(--ttv-sao); font-size: 50px; line-height: 1.1; }
+  .tap-doc { font-family: "Andika", sans-serif; }
+
+  /* cảnh giới thiệu */
+  #c-gioi-thieu { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 18px; }
+  #c-gioi-thieu .to { font-family: "Baloo 2", sans-serif; font-weight: 800; font-size: 120px; line-height: 1; }
+  #c-gioi-thieu .vua { font-size: 46px; font-weight: 800; }
+  #c-gioi-thieu .nhan { display: inline-block; background: var(--ttv-sao); color: var(--ttv-chu); border-radius: 999px; padding: 6px 30px;
+    font-family: "Baloo 2", sans-serif; font-weight: 800; font-size: 46px; }
+
+  /* cảnh thơ */
+  .luoi-tho { display: grid; grid-template-columns: repeat(var(--cot, 3), auto); justify-content: space-between; gap: 0 8px; margin-top: 46px; }
+  #c-tho { padding: 44px 34px; }
+  #c-tho .cau-tho { font-size: 45px; padding: 20px 8px 24px; }
+  .cau-tho { position: relative; font-family: "Andika", sans-serif; font-size: 50px; line-height: 1; padding: 22px 10px 24px; color: #fff; white-space: nowrap; border-radius: 14px; }
+  .cau-tho .vach { position: absolute; left: 10px; bottom: 10px; height: 8px; border-radius: 4px; background: var(--ttv-sao); width: 0; }
+  .cau-tho.sang { color: var(--ttv-sao); background: rgba(240,176,80,.14); }
+  .cau-tho.mo { color: rgba(255,255,255,.42); }
+  .nhan-nho { font-size: 30px; font-weight: 800; color: var(--ttv-goc-nhat); margin-top: 6px; }
+
+  /* cảnh dịch xuôi */
+  .xuoi { display: grid; grid-template-columns: var(--rong-tho, 430px) 1fr; gap: 44px; height: 100%; align-items: center; }
+  .xuoi .cot-tho .cau-tho { font-size: 54px; padding: 18px 10px 20px; }
+  .the-hinh { background: #fff; border-radius: 28px; height: 520px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+  .the-hinh .o-hinh { position: absolute; inset: 30px; display: flex; align-items: center; justify-content: center; opacity: 0; }
+  .the-hinh .o-hinh svg { width: 100%; max-width: 560px; height: auto; max-height: 460px; }
+
+  /* cảnh từ mới */
+  .luoi-tu { display: grid; grid-template-columns: repeat(var(--so-tu, 4), minmax(0, 1fr)); gap: 20px; margin-top: 40px; }
+  .the-tu { background: rgba(255,255,255,.08); border: 4px solid rgba(255,255,255,.25); border-radius: 26px; height: 420px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px; padding: 16px; }
+  .the-tu .hinh-nho { width: 100%; background: #fff; border-radius: 18px; padding: 10px; }
+  .the-tu .hinh-nho svg { width: 100%; height: 190px; display: block; }
+  .the-tu.chi-chu span { font-size: 60px; }
+  .luoi-tu.chi-chu .the-tu { height: 200px; }
+  .the-tu span { font-family: "Andika", sans-serif; font-weight: 700; font-size: 52px; color: #fff; text-align: center; line-height: 1.12; }
+  .the-tu.sang { border-color: var(--ttv-sao); background: rgba(240,176,80,.16); }
+  .the-tu.sang span { color: var(--ttv-sao); }
+
+  /* cảnh nhớ nhé */
+  .ds-nho { margin: 50px 0 0; padding: 0; list-style: none; }
+  .ds-nho li { font-family: "Baloo 2", sans-serif; font-weight: 800; font-size: 50px; line-height: 1.12; margin: 0 0 30px; display: flex; align-items: center; gap: 26px; opacity: 0; }
+  .ds-nho li .sao { width: 64px; height: 64px; flex: 0 0 64px; background: var(--ttv-sao);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+
+  /* cảnh kết */
+  .ds-buoc { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 46px; }
+  .buoc { background: #fff; border-radius: 26px; padding: 18px 18px 22px; text-align: center; color: var(--ttv-chu); opacity: 0; }
+  .buoc svg { width: 100%; height: 230px; display: block; }
+  .buoc .so { display: inline-flex; width: 58px; height: 58px; border-radius: 50%; background: var(--ttv-chinh); color: #fff; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 34px; }
+  .buoc p { margin: 10px 0 0; font-family: "Baloo 2", sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; }
+
+  /* Phụ đề */
+  .phu-de { position: absolute; left: 50%; bottom: 46px; transform: translateX(-50%); max-width: 1680px; z-index: 15;
+    background: rgba(0,48,96,.92); color: #fff; border-radius: 28px; padding: 16px 40px; font-size: 46px; font-weight: 800; line-height: 1.22;
+    text-align: center; opacity: 0; }
+  .phu-de .ai { display: inline-block; background: var(--ttv-sao); color: var(--ttv-chu); border-radius: 999px; padding: 0 18px; font-size: 32px; margin-right: 14px; vertical-align: 6px; }
+
+  /* Thẻ mở đầu / kết thúc */
+  .the-dau { position: absolute; inset: 0; background: radial-gradient(circle at 30% 40%, #FFFDF6, var(--ttv-nen) 70%); z-index: 30; opacity: 0;
+    display: flex; align-items: center; justify-content: center; gap: 120px; }
+  .the-dau .mascot { height: 520px; width: auto; }
+  .the-dau .ben-phai { text-align: center; }
+  .the-dau .ben-phai img { height: 170px; width: auto; }
+  .the-dau h1 { margin: 30px 0 6px; font-family: "Baloo 2", sans-serif; font-weight: 800; font-size: 84px; color: var(--ttv-chu); line-height: 1; }
+  .the-dau .phu { font-size: 46px; font-weight: 800; color: var(--ttv-goc-dam); }
+  .the-dau .bq { position: absolute; right: 22px; bottom: 12px; font-size: 18px; color: rgba(0,48,96,.55); font-weight: 700; }
+</style>
+</head>
+<body>
+<div id="san">
+  <div class="lang">
+    <div class="mat-troi"></div>
+    <div class="may" style="width:210px;left:130px;top:330px"></div>
+    <div class="may" style="width:190px;left:820px;top:80px;transform:scale(.7)"></div>
+    <div class="may" style="width:210px;left:1380px;top:60px;transform:scale(.55)"></div>
+    <div class="ruong r1"></div><div class="ruong r2"></div><div class="ruong r3"></div>
+  </div>
+  <div class="logo"><img src="assets/logo.png" alt=""></div>
+
+  <div class="trau" id="trau">
+    <div class="trau-bong"></div>
+    <img data-tu-the="wave" src="assets/trau-wave.png" alt="">
+    <img data-tu-the="listening" src="assets/trau-listening.png" alt="">
+    <img data-tu-the="reading" src="assets/trau-reading.png" alt="">
+    <img data-tu-the="thinking" src="assets/trau-thinking.png" alt="">
+    <img data-tu-the="thumbs-up" src="assets/trau-thumbs-up.png" alt="">
+    <img data-tu-the="cheer" src="assets/trau-cheer.png" alt="">
+  </div>
+
+  <div class="chan-bang" style="left:820px"></div>
+  <div class="chan-bang" style="left:1700px"></div>
+  <div class="bang" id="bang">
+    <div class="bang-khung"><div class="bang-mat" id="mat-bang">
+
+      <div class="canh" id="c-gioi-thieu">
+        <span class="nhan">Bài học cuộc sống</span>
+        <div class="to tap-doc" id="gt-ten"></div>
+        <div class="vua">Thơ: Tản Đà</div>
+        <div class="vua" style="color:var(--ttv-sao)" id="gt-nhan"></div>
+        <div class="vua" style="max-width:980px;line-height:1.15" id="gt-tieu-de"></div>
+      </div>
+
+      <div class="canh" id="c-tho">
+        <h2 id="tho-tieu-de"></h2>
+        <div class="nhan-nho">Cô Hà đọc thơ – các bạn đọc theo nhé!</div>
+        <div class="luoi-tho" id="luoi-tho"></div>
+      </div>
+
+      <div class="canh" id="c-xuoi">
+        <div class="xuoi">
+          <div class="cot-tho" id="cot-tho"></div>
+          <div class="the-hinh" id="the-hinh"></div>
+        </div>
+      </div>
+
+      <div class="canh" id="c-tu">
+        <h2>Các bạn đọc theo mình nhé</h2>
+        <div class="luoi-tu" id="luoi-tu"></div>
+      </div>
+
+      <div class="canh" id="c-nho">
+        <h2>Các bạn hãy nhớ nhé</h2>
+        <ul class="ds-nho" id="ds-nho"></ul>
+      </div>
+
+      <div class="canh" id="c-ket">
+        <h2>Bây giờ, các bạn…</h2>
+        <div class="ds-buoc" id="ds-buoc"></div>
+      </div>
+
+    </div></div>
+  </div>
+
+  <div class="phu-de" id="phu-de"></div>
+  <div class="ban-quyen">Copyrighted by CVCEC Trường Tiếng Việt Của Em 2026</div>
+
+  <div class="the-dau" id="the-dau">
+    <img class="mascot" src="assets/trau-wave.png" alt="">
+    <div class="ben-phai">
+      <img src="assets/logo.png" alt="">
+      <h1>Bài học cuộc sống</h1>
+      <div class="phu" id="dau-phu"></div>
+    </div>
+    <div class="bq">Copyrighted by CVCEC Trường Tiếng Việt Của Em 2026</div>
+  </div>
+  <div class="the-dau" id="the-cuoi">
+    <img class="mascot" src="assets/trau-wave.png" alt="">
+    <div class="ben-phai">
+      <img src="assets/logo.png" alt="">
+      <h1>Hẹn gặp lại các bạn!</h1>
+      <div class="phu" id="cuoi-phu"></div>
+    </div>
+    <div class="bq">Copyrighted by CVCEC Trường Tiếng Việt Của Em 2026</div>
+  </div>
+</div>
+
+<script>
+/* Dòng thời gian do dung_video.py ghi vào (window.KICH_BAN) */
+const KB = window.KICH_BAN;
+const $ = (id) => document.getElementById(id);
+const R = document.documentElement.style;
+R.setProperty("--ttv-goc", KB.mau.goc); R.setProperty("--ttv-goc-dam", KB.mau.dam); R.setProperty("--ttv-goc-nhat", KB.mau.nhat);
+R.setProperty("--cot", KB.tho.length);
+$("gt-ten").textContent = KB.tenTho; $("gt-nhan").textContent = KB.nhan; $("gt-tieu-de").textContent = KB.tieuDe;
+$("tho-tieu-de").textContent = KB.tenTho + " · " + KB.nhan;
+$("dau-phu").textContent = KB.tenTho + " · " + KB.nhan; $("cuoi-phu").textContent = "Bài học cuộc sống · " + KB.tenTho;
+const HINH_MOT = (ma) => (window.layHinh ? layHinh(ma) : "");
+
+/* --- dựng sẵn các cảnh --- */
+const cauTho = []; // {el, vach, bd, kt}
+KB.tho.forEach((nhom) => {
+  const cot = document.createElement("div");
+  nhom.forEach((c) => {
+    const d = document.createElement("div"); d.className = "cau-tho"; d.textContent = c[0];
+    const v = document.createElement("i"); v.className = "vach"; d.appendChild(v);
+    cot.appendChild(d); cauTho.push({ el: d, vach: v, bd: c[1], kt: c[2] });
+  });
+  $("luoi-tho").appendChild(cot);
+});
+const cotTho = []; // 12 câu ở cảnh dịch xuôi, chỉ hiện nhóm đang kể
+KB.tho.forEach((nhom, g) => nhom.forEach((c, i) => {
+  const d = document.createElement("div"); d.className = "cau-tho"; d.textContent = c[0];
+  d.dataset.nhom = g; d.dataset.so = KB.tho.slice(0, g).reduce((s, n) => s + n.length, 0) + i; $("cot-tho").appendChild(d); cotTho.push(d);
+}));
+const oHinh = {};
+KB.hinhCan.forEach((ten) => {
+  const o = document.createElement("div"); o.className = "o-hinh"; o.innerHTML = HINH_MOT(ten); $("the-hinh").appendChild(o); oHinh[ten] = o;
+});
+const theTu = KB.tuMoi.map((w) => {
+  const d = document.createElement("div"); d.className = "the-tu";
+  if (w.hinh) { const h = document.createElement("div"); h.className = "hinh-nho"; h.innerHTML = HINH_MOT(w.hinh); d.appendChild(h); }
+  else d.classList.add("chi-chu");
+  const s = document.createElement("span"); s.textContent = w.tu; d.appendChild(s);
+  $("luoi-tu").appendChild(d); return d;
+});
+const dongNho = KB.nho.map((t) => {
+  const li = document.createElement("li"); const s = document.createElement("i"); s.className = "sao"; li.appendChild(s);
+  li.appendChild(document.createTextNode(t)); $("ds-nho").appendChild(li); return li;
+});
+const buoc = KB.buoc.map((b, i) => {
+  const d = document.createElement("div"); d.className = "buoc";
+  d.innerHTML = HINH_MOT(b.hinh) + '<span class="so">' + (i + 1) + '</span><p>' + b.chu + '</p>';
+  $("ds-buoc").appendChild(d); return d;
+});
+const coTranhTu = KB.tuMoi.some((w) => w.hinh);
+R.setProperty("--so-tu", coTranhTu ? Math.max(1, KB.tuMoi.length) : (KB.tuMoi.length === 4 ? 2 : Math.max(1, KB.tuMoi.length)));
+if (!coTranhTu) $("luoi-tu").classList.add("chi-chu");
+/* chữ thơ vừa khung: thu nhỏ đều đến khi không tràn */
+function vua(ds, khung, toiDa, toiThieu) {
+  for (let c = toiDa; c >= toiThieu; c -= 2) { ds.forEach((d) => d.style.fontSize = c + "px"); if (khung()) return c; }
+  return toiThieu;
+}
+function canChu() {
+document.querySelectorAll(".canh").forEach((c) => c.style.display = "block");
+vua(cauTho.map((x) => x.el), () => $("luoi-tho").scrollWidth <= $("luoi-tho").clientWidth + 1, 45, 30);
+const rongTho = KB.tho[0][0][0].split(" ").length > 4 ? 500 : 430; R.setProperty("--rong-tho", rongTho + "px");
+vua(cotTho, () => cotTho.every((d) => d.scrollWidth <= rongTho + 1), 54, 30);
+/* thẻ từ: một cỡ chữ chung cho mọi thẻ; từ dài quá thì xuống hai dòng */
+(function () {
+  const sp = theTu.map((d) => d.querySelector("span")); let c = coTranhTu ? 52 : 60;
+  sp.forEach((x) => x.style.whiteSpace = "nowrap");
+  const vuaHet = () => theTu.every((d, i) => sp[i].scrollWidth <= d.clientWidth - 24);
+  while (c > 40 && !vuaHet()) { c -= 2; sp.forEach((x) => x.style.fontSize = c + "px"); }
+  sp.forEach((x, i) => { x.style.fontSize = c + "px"; if (x.scrollWidth > theTu[i].clientWidth - 24) x.style.whiteSpace = "normal"; });
+})();
+document.querySelectorAll(".canh").forEach((c) => c.style.display = "");
+}
+const tuThe = {}; document.querySelectorAll("#trau img").forEach((im) => tuThe[im.dataset.tuThe] = im);
+
+function mo(t, a, b, f) { // độ hiện của đoạn [a,b] có mờ dần f giây
+  f = f || 0.35;
+  if (t < a - f || t > b + f) return 0;
+  if (t < a) return 1 - (a - t) / f;
+  if (t > b) return 1 - (t - b) / f;
+  return 1;
+}
+function trongCanh(t) { return KB.canh.find((c) => t >= c.bd && t < c.kt) || KB.canh[KB.canh.length - 1]; }
+
+window.ve = function (t) {
+  // thẻ đầu, thẻ cuối
+  $("the-dau").style.opacity = mo(t, -1, KB.theDau, 0.5);
+  $("the-cuoi").style.opacity = mo(t, KB.theCuoi, 9999, 0.5);
+
+  // các cảnh trên bảng
+  const doHien = {};
+  KB.canh.forEach((c) => { doHien[c.id] = Math.max(doHien[c.id] || 0, mo(t, c.bd + 0.2, c.kt - 0.2, 0.3)); });
+  Object.keys(doHien).forEach((id) => { const el = $(id); if (el) el.style.opacity = Math.min(1, doHien[id]); });
+
+  // Trâu Con: tư thế theo đoạn
+  const ttHienTai = (KB.tuThe.filter((x) => t >= x.t).pop() || KB.tuThe[0]);
+  const truoc = KB.tuThe[KB.tuThe.indexOf(ttHienTai) - 1];
+  const chuyen = Math.min(1, (t - ttHienTai.t) / 0.3);
+  Object.keys(tuThe).forEach((k) => {
+    let o = 0;
+    if (k === ttHienTai.ten) o = chuyen;
+    else if (truoc && k === truoc.ten && chuyen < 1) o = 1 - chuyen;
+    tuThe[k].style.opacity = o;
+  });
+  const dangNoi = KB.cues.some((c) => c.ai === "trau" && t >= c.t && t <= c.t + c.d);
+  const nhun = dangNoi ? Math.sin(t * Math.PI * 2 * 1.6) * 7 : Math.sin(t * Math.PI * 2 * 0.45) * 3;
+  $("trau").style.transform = "translateY(" + nhun.toFixed(2) + "px)";
+
+  // cảnh thơ: chữ sáng theo giọng cô Hà
+  const tTho = t - KB.thoBatDau;
+  cauTho.forEach((c) => {
+    const dang = tTho >= c.bd - 0.05 && tTho <= c.kt + 0.12;
+    c.el.classList.toggle("sang", dang);
+    const p = Math.max(0, Math.min(1, (tTho - c.bd) / Math.max(0.3, c.kt - c.bd)));
+    c.vach.style.width = dang ? (p * (c.el.clientWidth - 20)) + "px" : "0px";
+  });
+
+  // cảnh dịch xuôi
+  const canh = trongCanh(t);
+  if (canh.nhom != null) {
+    const cue = KB.cues.filter((c) => c.ai === "trau" && c.cau && t >= c.t - 0.3).pop();
+    cotTho.forEach((d) => {
+      const so = +d.dataset.so, cungNhom = +d.dataset.nhom === canh.nhom;
+      d.style.display = cungNhom ? "block" : "none";
+      const sang = cue && cue.cau && cue.cau.indexOf(so) >= 0 && t <= cue.t + cue.d + 0.6;
+      d.classList.toggle("sang", !!sang);
+      d.classList.toggle("mo", !sang && cungNhom && !!cue && cue.cau && +d.dataset.nhom === canh.nhom);
+    });
+    const hinhCue = KB.cues.filter((c) => c.hinh && t >= c.t - 0.3 && c.t >= canh.bd - 0.5).pop();
+    Object.keys(oHinh).forEach((k) => {
+      let o = 0;
+      if (hinhCue && k === hinhCue.hinh) o = Math.min(1, (t - (hinhCue.t - 0.3)) / 0.35);
+      oHinh[k].style.opacity = o;
+    });
+  }
+
+  // cảnh từ mới
+  KB.tuMoi.forEach((w, i) => theTu[i].classList.toggle("sang", t >= w.t - 0.1 && t < w.t + 2.6));
+  // cảnh nhớ nhé
+  KB.nho.forEach((x, i) => { dongNho[i].style.opacity = Math.max(0, Math.min(1, (t - KB.nhoT[i] + 0.2) / 0.35)); });
+  // cảnh kết
+  buoc.forEach((b, i) => { b.style.opacity = Math.max(0, Math.min(1, (t - KB.buocT[i]) / 0.35)); });
+
+  // phụ đề
+  const pd = $("phu-de");
+  const c = KB.cues.filter((x) => t >= x.t - 0.1 && t <= x.t + x.d + 0.35).pop();
+  if (c) {
+    if (pd.dataset.k !== String(c.t)) {
+      pd.dataset.k = String(c.t);
+      pd.innerHTML = (c.ai === "coha" ? '<span class="ai">Cô Hà</span>' : "") + c.sub.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+    }
+    pd.style.opacity = Math.min(1, (t - (c.t - 0.1)) / 0.12, (c.t + c.d + 0.35 - t) / 0.15);
+  } else pd.style.opacity = 0;
+};
+document.fonts.ready.then(() => { canChu(); window.SAN_SANG = true; });
+</script>
+</body>
+</html>

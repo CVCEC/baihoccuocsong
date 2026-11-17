@@ -1,0 +1,331 @@
+[
+{
+"lan": 1,
+"bai": [
+[
+"lensau",
+1
+]
+],
+"gio": "09:47",
+"dai": "1:28",
+"tep": "elio/goc/lan01.wav"
+},
+{
+"lan": 2,
+"bai": [
+[
+"lensau",
+2
+],
+[
+"lensau",
+3
+],
+[
+"lensau",
+4
+]
+],
+"gio": "09:49",
+"dai": "4:27",
+"tep": "elio/goc/lan02.wav"
+},
+{
+"lan": 3,
+"bai": [
+[
+"lensau",
+5
+],
+[
+"lensau",
+6
+],
+[
+"lensau",
+7
+]
+],
+"dai": "4:01",
+"tep": "elio/goc/lan03.wav"
+},
+{
+"lan": 4,
+"bai": [
+[
+"lensau",
+8
+],
+[
+"lensau",
+9
+],
+[
+"lensau",
+10
+]
+],
+"dai": "4:12",
+"tep": "elio/goc/lan04.wav"
+},
+{
+"lan": 5,
+"bai": [
+[
+"lensau",
+11
+],
+[
+"lensau",
+12
+],
+[
+"lensau",
+13
+]
+],
+"dai": "3:59",
+"tep": "elio/goc/lan05.wav"
+},
+{
+"lan": 6,
+"bai": [
+[
+"lensau",
+14
+],
+[
+"lensau",
+15
+],
+[
+"lensau",
+16
+]
+],
+"dai": "4:10",
+"tep": "elio/goc/lan06.wav"
+},
+{
+"lan": 7,
+"bai": [
+[
+"lensau",
+17
+],
+[
+"lensau",
+18
+],
+[
+"lentam",
+1
+]
+],
+"dai": "3:51",
+"tep": "elio/goc/lan07.wav"
+},
+{
+"lan": 8,
+"bai": [
+[
+"lentam",
+2
+],
+[
+"lentam",
+3
+],
+[
+"lentam",
+4
+]
+],
+"dai": "3:35",
+"tep": "elio/goc/lan08.wav"
+},
+{
+"lan": 9,
+"bai": [
+[
+"lentam",
+5
+],
+[
+"lentam",
+6
+],
+[
+"lentam",
+7
+]
+],
+"dai": "3:52",
+"tep": "elio/goc/lan09.wav"
+},
+{
+"lan": 10,
+"bai": [
+[
+"lentam",
+8
+],
+[
+"lentam",
+9
+],
+[
+"lentam",
+10
+]
+],
+"dai": "3:41",
+"tep": "elio/goc/lan10.wav"
+},
+{
+"lan": 11,
+"bai": [
+[
+"lentam",
+11
+],
+[
+"lentam",
+12
+],
+[
+"lentam",
+13
+]
+],
+"dai": "3:53",
+"tep": "elio/goc/lan11.wav"
+},
+{
+"lan": 12,
+"bai": [
+[
+"lentam",
+14
+],
+[
+"lentam",
+15
+],
+[
+"lentam",
+16
+]
+],
+"dai": "3:50",
+"tep": "elio/goc/lan12.wav"
+},
+{
+"lan": 13,
+"bai": [
+[
+"lentam",
+17
+],
+[
+"lentam",
+18
+],
+[
+"lentam",
+19
+]
+],
+"dai": "3:51",
+"tep": "elio/goc/lan13.wav"
+},
+{
+"lan": 14,
+"bai": [
+[
+"lentam",
+20
+],
+[
+"lentam",
+21
+],
+[
+"lentam",
+22
+]
+],
+"dai": "4:56",
+"ghi": "dài bất thường – kiểm tra",
+"tep": "elio/goc/lan14.wav"
+},
+{
+"lan": 15,
+"bai": [
+[
+"lentam",
+23
+],
+[
+"lentam",
+24
+],
+[
+"lentam",
+25
+]
+],
+"dai": "3:42",
+"tep": "elio/goc/lan15.wav"
+},
+{
+"lan": 16,
+"bai": [
+[
+"lentam",
+26
+],
+[
+"lentam",
+27
+],
+[
+"lentam",
+28
+]
+],
+"dai": "4:41",
+"tep": "elio/goc/lan16.wav"
+},
+{
+"lan": 17,
+"bai": [
+[
+"lentam",
+29
+],
+[
+"lentam",
+30
+],
+[
+"lentam",
+31
+]
+],
+"dai": "3:44",
+"tep": "elio/goc/lan17.wav"
+},
+{
+"lan": 18,
+"bai": [
+[
+"lentam",
+32
+]
+],
+"dai": "1:25",
+"tep": "elio/goc/lan18.wav"
+}
+]
