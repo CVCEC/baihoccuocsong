@@ -83,7 +83,19 @@ function veTrang(B) {
   function luu() { try { localStorage.setItem(KHOA, JSON.stringify(duLieu)); } catch (e) {} }
   const SAO = [];
   function coSao(id, ten) { SAO.push({ id: id, ten: ten }); }
-  function datSao(id) { if (duLieu.sao[id]) return; duLieu.sao[id] = true; luu(); veSao(); }
+  /* Ghi kết quả lên cổng (TTV.ghiKetQua, từ 17-11-2026): mỗi hoạt động có sao báo một lần mỗi lần mở trang,
+     kể cả khi sao đã có từ trước. Không tạo khoá localStorage mới. soTroChoi = số hoạt động có sao của bài. */
+  const BAT_DAU = Date.now(); const daBao = new Set();
+  function baoKetQua(id, diem, diemToiDa) {
+    if (daBao.has(id)) return; daBao.add(id);
+    diemToiDa = diemToiDa || 1; if (diem == null) diem = diemToiDa;
+    const tl = diem / diemToiDa;
+    try {
+      if (window.TTV && TTV.ghiKetQua) TTV.ghiKetQua({ bai: BAI + "-" + B.kho, hoatDong: id, soTroChoi: SAO.length, diem: diem, diemToiDa: diemToiDa,
+        sao: tl >= 0.9 ? 3 : tl >= 0.6 ? 2 : tl > 0 ? 1 : 0, thoiGianGiay: Math.round((Date.now() - BAT_DAU) / 1000) });
+    } catch (e) {}
+  }
+  function datSao(id, diem, diemToiDa) { baoKetQua(id, diem, diemToiDa); if (duLieu.sao[id]) return; duLieu.sao[id] = true; luu(); veSao(); }
 
   $("dau-phu").textContent = "Bài thơ “" + DS_BAI[BAI].ten + "” của Tản Đà · Bài " + B.kho + " · " + NHAN_KHO + " · Chủ đề: " + B.chuDe;
   $("t-kho").textContent = "Bài thơ " + DS_BAI[BAI].ten + " · " + DS_BAI[BAI].tong + " bài";
@@ -306,7 +318,7 @@ function veTrang(B) {
       B.cauHoi ? "Look at the pictures and choose the best answer. Get them all right to earn a star. Then talk about the last questions with your family."
                : "Talk about these questions from cô Hà with your family.");
     if (B.cauHoi) {
-      const box = tao("div"); const dungHet = new Set();
+      const box = tao("div"); const dungHet = new Set(); const saiTruoc = new Set();
       B.cauHoi.forEach(function (q, i) {
         const c = tao("div", "bh-cau"); c.appendChild(tao("h3", "", "Câu " + (i + 1) + ". " + q.hoi));
         const ds = tao("div", "bh-lua-chon"); const ph = tao("div", "bh-phan-hoi"); const nhan = tao("span"); const giai = tao("span", "giai");
@@ -320,8 +332,8 @@ function veTrang(B) {
             if (j === q.dung) {
               b.classList.add("dung"); nhan.className = "ttv-nhan-dung"; nhan.textContent = "Đúng rồi!"; giai.textContent = q.giai; dungHet.add(i);
               ds.querySelectorAll("button").forEach(function (x) { x.disabled = true; });
-              if (dungHet.size === B.cauHoi.length) datSao("hoi");
-            } else { b.classList.add("sai"); nhan.className = "ttv-nhan-sai"; nhan.textContent = "Thử lại nhé"; giai.textContent = ""; }
+              if (dungHet.size === B.cauHoi.length) datSao("hoi", B.cauHoi.length - saiTruoc.size, B.cauHoi.length);
+            } else { saiTruoc.add(i); b.classList.add("sai"); nhan.className = "ttv-nhan-sai"; nhan.textContent = "Thử lại nhé"; giai.textContent = ""; }
             ph.classList.add("hien");
           });
           ds.appendChild(b);
