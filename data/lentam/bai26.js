@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Con đã có lần nào mắc lỗi và tự sửa được chưa? Con kể cho bố mẹ nghe.",
   "Hỏi bố mẹ: ngày xưa ông bà dạy bố mẹ chào hỏi người lớn như thế nào?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai26.mp4",
+  "poster": "video/lentam/bai26.jpg"
+ }
 };

@@ -289,5 +289,9 @@ window.BAI_HOC = {
   "Nếu có bạn rủ con làm điều chưa ngoan, con sẽ nói gì với bạn?",
   "Hỏi bố mẹ: theo bố mẹ, thế nào là một người bạn tốt?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai30.mp4",
+  "poster": "video/lentam/bai30.jpg"
+ }
 };

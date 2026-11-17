@@ -284,5 +284,9 @@ window.BAI_HOC = {
   "Con giữ gìn quần áo, giày dép của mình như thế nào?",
   "Hỏi bố mẹ: khi con đi chơi với bạn, bố mẹ muốn con nhớ những điều gì?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai19.mp4",
+  "poster": "video/lentam/bai19.jpg"
+ }
 };

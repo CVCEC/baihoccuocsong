@@ -289,5 +289,9 @@ window.BAI_HOC = {
   "Thầy cô đã dạy con điều hay nào mà con thấy giúp con ngoan hơn ở nhà?",
   "Hỏi bố mẹ: điều gì làm bố mẹ vui nhất khi đi họp phụ huynh hoặc nghe thầy cô kể về con?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai16.mp4",
+  "poster": "video/lentam/bai16.jpg"
+ }
 };

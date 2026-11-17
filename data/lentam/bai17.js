@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Vì sao nhà thơ ví con như ngọn cỏ, còn cha mẹ như mùa xuân?",
   "Con đã làm gì để “mùa xuân” của bố mẹ thêm vui?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai17.mp4",
+  "poster": "video/lentam/bai17.jpg"
+ }
 };

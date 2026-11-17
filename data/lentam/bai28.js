@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Theo con, một người “nết na” thường cư xử thế nào?",
   "Hỏi bố mẹ: bố mẹ mong con giỏi điều gì và ngoan ở điều gì nhất?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai28.mp4",
+  "poster": "video/lentam/bai28.jpg"
+ }
 };

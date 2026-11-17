@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Thầy cô nào đã dạy con điều con nhớ nhất? Con kể cho bố mẹ nghe.",
   "Hỏi bố mẹ: hồi đi học, bố mẹ có nhớ thầy cô nào không? Vì sao?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai29.mp4",
+  "poster": "video/lentam/bai29.jpg"
+ }
 };

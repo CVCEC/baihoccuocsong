@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Con có thể làm những gì để mẹ bớt lo lắng cho con?",
   "Theo con, vì sao không có cái thước nào đo được tình thương của mẹ?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai09.mp4",
+  "poster": "video/lentam/bai09.jpg"
+ }
 };

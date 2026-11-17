@@ -284,5 +284,9 @@ window.BAI_HOC = {
   "Anh chị em (hoặc anh chị em họ) của con giống và khác con ở những điểm nào?",
   "Hỏi bố mẹ: bố mẹ có thích loài hoa nào không? Nhà mình có trồng hoa không?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai23.mp4",
+  "poster": "video/lentam/bai23.jpg"
+ }
 };

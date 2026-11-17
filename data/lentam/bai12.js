@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Hỏi bố mẹ: ước mơ của bố mẹ dành cho con là gì?",
   "Con giữ gìn sách vở, bút giấy bố mẹ mua cho con như thế nào?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai12.mp4",
+  "poster": "video/lentam/bai12.jpg"
+ }
 };

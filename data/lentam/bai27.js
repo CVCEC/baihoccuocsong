@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Hỏi bố mẹ: bố mẹ tự hào nhất về con ở điều gì?",
   "Theo con, học giỏi mà không ngoan thì có tốt không? Vì sao?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai27.mp4",
+  "poster": "video/lentam/bai27.jpg"
+ }
 };

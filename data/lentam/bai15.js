@@ -289,5 +289,9 @@ window.BAI_HOC = {
   "Con nghĩ mình đã làm được những gì để đền đáp cha mẹ?",
   "Bố mẹ vui nhất khi con làm việc gì?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai15.mp4",
+  "poster": "video/lentam/bai15.jpg"
+ }
 };

@@ -289,5 +289,9 @@ window.BAI_HOC = {
   "Lớn lên, con muốn chăm sóc bố mẹ bằng những việc gì?",
   "Hỏi bố mẹ: bố mẹ thích nghe con đáp lời như thế nào khi được nhờ?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai20.mp4",
+  "poster": "video/lentam/bai20.jpg"
+ }
 };

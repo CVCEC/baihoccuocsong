@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Vì sao nhà thơ ví các bạn nhỏ như “lúa còn con gái”?",
   "Con đã làm gì để mình lớn lên khỏe mạnh và giỏi giang như lúa xanh tốt?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai11.mp4",
+  "poster": "video/lentam/bai11.jpg"
+ }
 };

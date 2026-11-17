@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Hỏi bố mẹ: có điều gì bố mẹ tiếc vì hồi nhỏ chưa học không?",
   "Con muốn học thật giỏi điều gì khi còn nhỏ?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai31.mp4",
+  "poster": "video/lentam/bai31.jpg"
+ }
 };

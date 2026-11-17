@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Một ngày của con thường dành bao nhiêu thời gian để học, bao nhiêu để chơi?",
   "Hỏi bố mẹ: bây giờ bố mẹ học một điều mới có khó hơn hồi nhỏ không?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai32.mp4",
+  "poster": "video/lentam/bai32.jpg"
+ }
 };

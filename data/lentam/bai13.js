@@ -289,5 +289,9 @@ window.BAI_HOC = {
   "Theo con, công của cha mẹ và công của thầy cô khác nhau thế nào?",
   "Con thích đọc quyển sách nào nhất? Con học được điều gì từ quyển sách đó?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai13.mp4",
+  "poster": "video/lentam/bai13.jpg"
+ }
 };

@@ -284,5 +284,9 @@ window.BAI_HOC = {
   "Con và anh chị em (hoặc bạn thân) đã từng cãi nhau chưa? Sau đó các con làm lành thế nào?",
   "Theo con, “hữu ái” là gì? Con kể một việc hữu ái mà con đã làm."
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai24.mp4",
+  "poster": "video/lentam/bai24.jpg"
+ }
 };

@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Hỏi bố mẹ: ông bà nội, ông bà ngoại của con quê ở đâu?",
   "Con có những cô, chú, cậu, dì hay anh chị em họ nào? Con thích chơi với ai nhất?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai25.mp4",
+  "poster": "video/lentam/bai25.jpg"
+ }
 };

@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Con đã làm những việc gì để thể hiện chữ “hiếu” với bố mẹ, ông bà?",
   "Hỏi bố mẹ: hồi nhỏ, ông bà đã dạy bố mẹ những điều gì về cách làm người?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai14.mp4",
+  "poster": "video/lentam/bai14.jpg"
+ }
 };

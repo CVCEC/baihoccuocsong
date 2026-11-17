@@ -289,5 +289,9 @@ window.BAI_HOC = {
   "Có lần nào anh chị em của con bị đau hay buồn, con đã làm gì?",
   "Hỏi bố mẹ: bố mẹ vui nhất khi thấy các con đối xử với nhau thế nào?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai21.mp4",
+  "poster": "video/lentam/bai21.jpg"
+ }
 };

@@ -289,5 +289,9 @@ window.BAI_HOC = {
   "Theo con, vì sao tấm lòng thơm thảo quý hơn miếng ăn ngon?",
   "Hỏi bố mẹ: hồi nhỏ, bố mẹ và anh chị em của bố mẹ đã nhường nhịn nhau thế nào?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai22.mp4",
+  "poster": "video/lentam/bai22.jpg"
+ }
 };

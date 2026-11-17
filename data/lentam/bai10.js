@@ -289,5 +289,9 @@ window.BAI_HOC = {
   "Khi con bị ốm, mẹ (hoặc bố) đã chăm con thế nào?",
   "Vì sao nhà thơ ví con như tôm cua, còn lòng mẹ như sông bể?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai10.mp4",
+  "poster": "video/lentam/bai10.jpg"
+ }
 };

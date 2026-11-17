@@ -289,5 +289,9 @@ window.BAI_HOC = {
   "Khi thấy bố hoặc mẹ buồn, con thường làm gì?",
   "Con nghĩ ra một việc nhỏ nào để bố mẹ vui ngay hôm nay?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai18.mp4",
+  "poster": "video/lentam/bai18.jpg"
+ }
 };
