@@ -289,5 +289,9 @@ window.BAI_HOC = {
   "Theo con, vì sao các bạn nhỏ được sống sung sướng?",
   "Khi chưa hiểu bài ở lớp, con thường làm gì?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai02.mp4",
+  "poster": "video/lentam/bai02.jpg"
+ }
 };

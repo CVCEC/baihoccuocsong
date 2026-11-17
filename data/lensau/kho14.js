@@ -361,5 +361,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "Look carefully and you'll see trees and grasses are different. The jackfruit tree has many branches; rice and grass have joints. Stay curious – you'll understand more as you grow.",
  "viecTot": "Tuần này, em ra vườn hoặc công viên với bố mẹ, tìm một cây có nhiều cành và một loại cỏ có thân từng đốt.",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho14.mp4",
+  "poster": "video/lensau/kho14.jpg"
+ }
 };

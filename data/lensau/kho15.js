@@ -376,5 +376,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "Stones and earth are non-living: they don't eat, grow or feel. Pebbles, blue stone, pottery shards and clay all come from the earth. Long ago this group was called “loài kim”.",
  "viecTot": "Tuần này, em cùng bố mẹ tìm và so sánh hai thứ: một vật có sự sống (cây, con vật) và một vật vô tri (hòn đá, cái cốc).",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho15.mp4",
+  "poster": "video/lensau/kho15.jpg"
+ }
 };

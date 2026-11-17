@@ -351,5 +351,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "Metals come from the ground. Iron and copper make tools; precious gold and silver were once made into money. To live comfortably, study hard, work hard and save.",
  "viecTot": "Tuần này, em có một ống tiết kiệm nhỏ và giữ gìn cẩn thận đồ dùng học tập của mình.",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho16.mp4",
+  "poster": "video/lensau/kho16.jpg"
+ }
 };

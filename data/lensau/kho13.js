@@ -371,5 +371,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "There are many kinds of animals, each living in its own place. Some are cold-blooded, some have wings and fly. Never touch a hairy caterpillar.",
  "viecTot": "Tuần này, em cùng bố mẹ quan sát một con vật quanh nhà (chim, mèo, chó, sóc…) và kể cho bố mẹ nghe nó trông thế nào, sống ở đâu.",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho13.mp4",
+  "poster": "video/lensau/kho13.jpg"
+ }
 };

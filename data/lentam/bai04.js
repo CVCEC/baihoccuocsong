@@ -289,5 +289,9 @@ window.BAI_HOC = {
   "Theo con, người “có tài” và người “có đức” khác nhau thế nào? Vì sao cần cả hai?",
   "Hỏi bố mẹ: cuộc sống của ông bà ngày xưa khác cuộc sống của con bây giờ ra sao?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai04.mp4",
+  "poster": "video/lentam/bai04.jpg"
+ }
 };

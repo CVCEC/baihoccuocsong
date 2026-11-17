@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Kể cho bố mẹ nghe: hôm nay con được ăn món gì ngon, mặc áo gì ấm? Ai đã chuẩn bị cho con?",
   "Con sẽ làm gì để cảm ơn bố mẹ vì đã cho con một cuộc sống ấm êm?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai01.mp4",
+  "poster": "video/lentam/bai01.jpg"
+ }
 };

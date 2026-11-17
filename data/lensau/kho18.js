@@ -385,5 +385,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "Learn our language so your mind grows. To succeed, work hard and don't be idle. Learning is good for you and your country – never give up.",
  "viecTot": "Tuần này, em viết ước mơ của mình ra một tờ giấy, dán ở góc học tập, và mỗi ngày làm một việc nhỏ hướng tới ước mơ ấy.",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho18.mp4",
+  "poster": "video/lensau/kho18.jpg"
+ }
 };

@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Con có biết mình được sinh ra ở đâu, vào ngày nào không? Hỏi bố mẹ nhé!",
   "Con sẽ làm gì để cảm ơn cha mẹ đã sinh ra con?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai07.mp4",
+  "poster": "video/lentam/bai07.jpg"
+ }
 };

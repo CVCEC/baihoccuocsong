@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Hôm nay con đã học thêm được điều gì mới? Kể cho bố mẹ nghe nhé!",
   "Hỏi ông bà, bố mẹ: ngày xưa đi học có vất vả không?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai03.mp4",
+  "poster": "video/lentam/bai03.jpg"
+ }
 };

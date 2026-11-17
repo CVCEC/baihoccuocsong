@@ -289,5 +289,9 @@ window.BAI_HOC = {
   "Kể một lần mẹ (hoặc bố) nhường cho con phần ngon nhất hoặc chiếc áo ấm nhất.",
   "Con có thể làm gì để mẹ được nghỉ ngơi và vui hơn?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai08.mp4",
+  "poster": "video/lentam/bai08.jpg"
+ }
 };

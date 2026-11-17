@@ -356,5 +356,9 @@ window.BAI_HOC = {
  ],
  "baiHocEn": "Vietnamese people share the same roots: “Hồng Lạc”. Việt Nam has a long history, and North and South are one country. Laos and Cambodia are our close neighbours.",
  "viecTot": "Tuần này, em cùng bố mẹ tìm Việt Nam trên bản đồ thế giới và hỏi bố mẹ: quê nội, quê ngoại của em ở miền nào?",
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lensau/kho17.mp4",
+  "poster": "video/lensau/kho17.jpg"
+ }
 };

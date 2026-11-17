@@ -289,5 +289,9 @@ window.BAI_HOC = {
   "Theo con, vì sao có những người muốn học mà chưa học được? Mình có thể giúp gì không?",
   "Một điều “hay lẽ phải” con đã biết từ bé là gì? Ai dạy con điều đó?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai06.mp4",
+  "poster": "video/lentam/bai06.jpg"
+ }
 };

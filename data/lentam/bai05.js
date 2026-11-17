@@ -294,5 +294,9 @@ window.BAI_HOC = {
   "Vì sao nhà thơ lại chọn hình ảnh “giếng nước” và “cây cao” để nói về ông cha?",
   "Gia đình mình thể hiện lòng biết ơn ông bà, tổ tiên bằng những việc gì?"
  ],
- "du": true
+ "du": true,
+ "video": {
+  "src": "video/lentam/bai05.mp4",
+  "poster": "video/lentam/bai05.jpg"
+ }
 };
