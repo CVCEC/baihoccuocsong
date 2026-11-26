@@ -86,13 +86,19 @@ function veTrang(B) {
   /* Ghi kết quả lên cổng (TTV.ghiKetQua, từ 17-11-2026): mỗi hoạt động có sao báo một lần mỗi lần mở trang,
      kể cả khi sao đã có từ trước. Không tạo khoá localStorage mới. soTroChoi = số hoạt động có sao của bài. */
   const BAT_DAU = Date.now(); const daBao = new Set();
+  /* Kết quả từng câu (từ 26-11-2026): CAU[id] giữ lần trả lời ĐẦU TIÊN của mỗi câu, gửi kèm `cau` khi báo kết quả.
+     `tu` luôn lấy từ dữ liệu bài (≤30 ký tự), không bao giờ là chữ người học chọn hay gõ. Không lưu vào localStorage. */
+  const CAU = {};
+  function ngan(t) { t = nfc(t).trim(); return t.length > 30 ? t.slice(0, 29) + "…" : t; }
+  function ghiCau(id, c) { const ds = CAU[id] || (CAU[id] = []); if (ds.some(function (x) { return x.ma === c.ma; })) return; c.tu = ngan(c.tu); if (c.dung || !c.loi) delete c.loi; ds.push(c); }
   function baoKetQua(id, diem, diemToiDa) {
     if (daBao.has(id)) return; daBao.add(id);
     diemToiDa = diemToiDa || 1; if (diem == null) diem = diemToiDa;
     const tl = diem / diemToiDa;
     try {
       if (window.TTV && TTV.ghiKetQua) TTV.ghiKetQua({ bai: BAI + "-" + B.kho, hoatDong: id, soTroChoi: SAO.length, diem: diem, diemToiDa: diemToiDa,
-        sao: tl >= 0.9 ? 3 : tl >= 0.6 ? 2 : tl > 0 ? 1 : 0, thoiGianGiay: Math.round((Date.now() - BAT_DAU) / 1000) });
+        sao: tl >= 0.9 ? 3 : tl >= 0.6 ? 2 : tl > 0 ? 1 : 0, thoiGianGiay: Math.round((Date.now() - BAT_DAU) / 1000),
+        cau: CAU[id] && CAU[id].length ? CAU[id].slice(0, 40) : undefined });
     } catch (e) {}
   }
   function datSao(id, diem, diemToiDa) { baoKetQua(id, diem, diemToiDa); if (duLieu.sao[id]) return; duLieu.sao[id] = true; luu(); veSao(); }
@@ -329,6 +335,11 @@ function veTrang(B) {
           b.appendChild(tao("span", "", ch[0]));
           b.addEventListener("click", function () {
             ds.querySelectorAll("button").forEach(function (x) { x.classList.remove("sai"); });
+            // “…” nghĩa là gì? → tu = cụm trong ngoặc; cụm ≤3 tiếng là nghĩa từ (tu-vung), dài hơn là hiểu câu thơ (doc-hieu).
+            // Câu hỏi khác về bài thơ → doc-hieu, tu = đáp án đúng. Sai → loi "nghia".
+            const tuHoi = /nghĩa là gì/i.test(q.hoi) && (q.hoi.match(/“([^”]+)”/) || [])[1];
+            ghiCau("hoi", { ma: "hoi-" + (i + 1), tu: tuHoi || q.chon[q.dung][0], dung: j === q.dung,
+              mang: tuHoi && tuHoi.trim().split(/\s+/).length <= 3 ? "tu-vung" : "doc-hieu", loi: "nghia" });
             if (j === q.dung) {
               b.classList.add("dung"); nhan.className = "ttv-nhan-dung"; nhan.textContent = "Đúng rồi!"; giai.textContent = q.giai; dungHet.add(i);
               ds.querySelectorAll("button").forEach(function (x) { x.disabled = true; });
@@ -395,7 +406,9 @@ function veTrang(B) {
     hang.appendChild(nk); hang.appendChild(nx); hang.appendChild(kq); phan.mam.appendChild(hang);
     nx.addEventListener("click", function () { dapAn.forEach(boChon); kq.textContent = ""; });
     nk.addEventListener("click", function () {
-      let d = 0; dapAn.forEach(function (o) { const ok = nfc(o.dataset.chon) === nfc(o.dataset.dung); o.classList.toggle("dung", ok); o.classList.toggle("sai", !!o.dataset.chon && !ok); if (ok) d++; });
+      let d = 0; dapAn.forEach(function (o, k) { const ok = nfc(o.dataset.chon) === nfc(o.dataset.dung);
+        if (o.dataset.chon) ghiCau("viet", { ma: "viet-de-" + (k + 1), tu: o.dataset.dung, dung: ok, mang: "viet",
+          loi: ok ? undefined : ((window.TTV && TTV.loaiLoi ? TTV.loaiLoi(o.dataset.dung, o.dataset.chon) : null) || "nghia") }); o.classList.toggle("dung", ok); o.classList.toggle("sai", !!o.dataset.chon && !ok); if (ok) d++; });
       kq.className = d === dapAn.length ? "ttv-nhan-dung" : "ttv-nhan-sai"; kq.textContent = d === dapAn.length ? "Đúng rồi!" : "Thử lại nhé";
       if (d === dapAn.length) datSao("viet");
     });
